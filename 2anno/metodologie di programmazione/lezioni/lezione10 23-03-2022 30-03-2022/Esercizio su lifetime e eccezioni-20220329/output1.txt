@@ -1,0 +1,34 @@
+I passi dell'esercizio-lifetime.cc
+
+-   Constructor C1::C1()        
+-   Constructor C3::C3()        ::c3
+
+-   Constructor C1::C1()        ::c1
+FINE COSTRUZIONE VARIABILI GLOBALI
+INIZIO MAIN
+-   Start
+-   Constructor C1::C1()        main::c1
+
+-   Constructor C1::C1()        d::C1
+
+-   Constructor C1::C1()        
+-   Constructor C3::C3()        d::c3
+
+-   Constructor C2::C2()
+//lancio dell'eccezione
+
+-   Destructor C3::~C3()
+-   Destructor C1::~C1()    distruzione di d::c3
+
+-   Destructor C1::~C1()    distruzione di d::C1()
+
+-   Destructor C1::~C1()    distruzione main::c1
+
+-   ...
+
+-   End
+
+-   Destructor C1::~C1()    distruzione di ::c1
+
+-   Destructor C3::~C3()    distruzione di ::c3
+-   Destructor C3::~C1()

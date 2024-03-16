@@ -1,0 +1,51 @@
+Per ODR si intende la One Definition Rule, cioè la regola di definizione unica.
+Clausole:
+	-In ogni unità di traduzione deve essere presente una ed una sola definizione di una 	classe,funzione,struct,enumerazione ed ecc.
+	
+	Esempio violazione:
+	
+	struct ODR { int a; int b;};
+	struct ODR{ char c, long e};
+	
+	-In ogni programma ci deve essere una sola definizione di una variabile o funzione inline,
+	Una funzione inline deve essere definita in ogni unità di traduzione che la utilizza.
+	
+	Esempio violazione:
+	
+	------file prova.hh--------
+	void p(int a);
+	
+	------file p1.cc-----------
+	#include "prova.hh"
+	void p(int a){return a+2};
+	
+	------file p2.cc-----------
+	#include "prova.hh"
+	void p(int a){return a+1}
+	
+	-------file p3.cc----------
+	#include "prova.hh"
+	int test(int a){return p(a);}
+	
+	-In un programma può essere presente la definizione di una funzione,classe,enumerazione
+	ed ecc, solo se esse sono:
+		a)Sintatticamente identiche
+		b)Semanticamente identiche
+	
+	Violazione a):
+	
+	---------file1.cc----------
+	struct A{ long a; long b;};
+	
+	---------file2.cc-----------
+	struct A{ long b ; long a;
+	extern A a;		//dichiarazione pura di A di file1.cc
+	
+	Violazione b):
+	----------file1.cc------------
+	using T = int;
+	struct B { T a; T b;};
+	
+	---------file2.cc-------------
+	using T = long;
+	struct B { T a; T b; };

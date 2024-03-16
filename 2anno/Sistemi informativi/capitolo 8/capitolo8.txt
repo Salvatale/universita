@@ -1,0 +1,218 @@
+1. Quali sono i problemi di safety? Come si può porvi rimedio?
+2. Quali sono i problemi di security?
+3. Quando la sicurezza può diventare un problema per il business?
+4. Come si può proteggere una comunicazione su una rete pubblica?
+5. Cosa si intende per intrusione in un sistema?
+6. Cosa si intende per impersonificazione?
+7. Cos’è il Denial-Of-Service?
+8. Quali sono i pericoli che minacciano il servizio della posta elettronica?
+9. In base a quali criteri si devono definire le regole di un firewall?
+10. Cosa si intende per virus mutante? Che pericoli comporta per un sistema?
+11. E’ sufficiente l’uso della tecnologia per prevenire i problemi di sicurezza informatica?
+
+
+Risposte:
+
+1)I problemi di safety derivavano dai danni da guasti accidentali dei sistemi informatici.
+  Per porre rimedio a problematiche relative l safety bisogna prima individuare i 
+  punti critici dei sistemi informatici rispetto a guasti e problemi accidentali, in seguito
+  a questi problemi bisogna considerare due aspetti distinti di protezione:
+  
+  	-Protezione dei dati realizzata attraverso politiche di salvataggio dei dati stessi,
+  	 essi hanno una importanza diretta ed indiretta per il business, la prima soluzione
+  	 per la salvaguardia dei dati e il salvataggio dei file che li compongono su supporti
+  	 di memorizzazione, In un sistema distribuito di grandi dimensioni si procede al 
+  	 salvataggio dei dati rilevanti dalle postazioni client su porzioni dei dischi dei
+  	 server.
+  	 
+  	 -Business continuity: la capacità del sistema di continuare ad erogare il servizio
+  	  informatico per cui esso è installato anche in prensenza di problematiche.
+  	  In questo caso potremo fornire la business continuity duplicando le strutture di
+  	  storage
+  	  e realizzarle in luoghi geograficamente diversi, questa soluzione è valida per
+  	  organizzazioni medio-grandi.
+  	  Un'altra soluzione sono i juke-box di nastri, il gestore robotizzati di nastri tiene
+  	  traccia della collocazione fisica di ogni dato salvato al suo interno.
+  	  I RAID fanno una buona funzione di business continuity che duplica i dati e li
+  	  suddivide
+  	  su più dischi.
+  	  A livello pratico sono utilizzati i sistemi RAID 1, 2 e 5, nei sistemi di qualità
+  	  migliore il RAID è accompagnato dall'hot swap, cioè è possibile cambaire il singolo
+  	  disco guasto dell'array, garantendo un'ottimo livello di business continuity.
+  	  Per raggiungere livelli più alti di sicurezza si usano le architetture ridondate, 
+  	  evoluzione dei cluster, dove ogni componente del sistema è duplicato.
+  	  Un'evoluzione di business continuity ed ottimizzazione del carico è un'applicazione
+  	  basata sul virtual computing che inserisce uno strato sottostante fra l'hardware ed i
+  	  livelli software soprastanti chiamato macchina vituale.
+  	  
+  	  
+2)Per Security si intende descrivere le tecniche di salvaguardia dei dati e dei sistemi che li
+  difendono da attacchi o usi fraudolenti.
+  La security deve definire in primis le possibili categorie di attacco, quindi capire lo scopo
+  dell'attacco, dopo scoprire il profilo dell'attaccante.
+  In seguito bisogna classificare la tipologia di attacco e base di partenza, definisce se un
+  attacco avviene attraverso la rete o direttamente all'interno di un sistema bersaglio.
+  Il problema più grave fra tutti legati alla security è comprendere il ruolo dei
+  virus informatici.
+  
+
+3)La sicurezza può diventare un problema per il business quando l'attaccante:
+	
+	-Accede a dati riservati
+	-Assume un'identità elettronica
+	-Effettua transazioni finanziarie fraudolente
+	-Usa risorse senza averne diritto
+	-Manda fuori servizio un sistema
+	
+	
+4)Una comunicazione su rete pubblica si pùo difendere effettuando una crittografia prima della
+  trasmissione dei file e proteggere tutto il canale adottando diversi protocolli come per 
+  esempio protocolli a livello applicativo(S-HTTP, SSL, SSH, SSH-VPN) oppure protocolli a livello
+  di trasporto(IPSec, IPSec_VPN).
+
+
+
+5)L'intrusione in un sistema è un accesso non autorizzato ad un servizio informatico presente 
+  su un server, o anche su un client.
+  Un'intrusione frequente nel mondo Windows è l'accesso non autorizzato ad una condivisione 
+  dischi, uno su UNIX è l'ingresso non autorizzato nel sistema da terminale remoto(telnet o SSH).
+  
+  
+6)L'impersonificazione è l'assunzione non autorizzata di una identità elettronica entro una
+  rete od un sistema, con la possibilità di svolgere le azioni abilitate per la tale identità
+  elettronica.
+  Un caso frequente è l'impersonificazione di un intero servizio come quello di una banca
+  perpretato spesso come truffa informatica.
+  
+  
+  
+7)Il Denial of Service(DoS) è un tipo di attacco che ha come obiettivo il blocco di un servizio
+  o di un intero computer server, casi di attacco frequenti sono il cyber-racket e il 
+  cyber-terrorismo.
+  Per ottenere un Dos basterebbe sovvraccaricare il servizio oggetto dell'attacco.
+  
+  
+8)Gli attacchi tipici che minacciano la posta elettronica sono:
+
+	-Mail Overflow: la capacità delle caselle di posta elettronica è limitata, con messaggi
+	 molto voluminosi si potrebbe saturare questo limite e quindi il sistema risulta
+	 incapace di accettare nuove mail finchè la casella non viene svuotata.
+	 
+	-Spamming: la posta non desiderata può portare a due problemi, il primo è la saturazione
+	 o rallentamento del sistema.
+	 Il secondo problema è dato dal fatto che il server può comportarsi da relay che invia
+	 la posta ad altri server, se non c'è un accurato controllo allora un serve potrebbe
+	 venire usato per l'invio di posta non autorizzata a tutti i server a cui egli può
+	 inviare messaggi, quindi i server di posta spediscono posta solo se ricevuta da 
+	 indirizzi e-mail e/o IP fidati.
+	 
+	 -Impersonificazione e-mail: il protocollo e-mail non verifica l'indirizzo del mittente
+	  quindi connettendosi a un server e-mail e dando comandi opportuni, si possono inviare
+	  e-mail anonime o a nome del mittente voluto.
+	  
+	  
+9)Le regole di un Firewall vengono definite secondo i seguenti criteri:
+
+	-Esiste un sito Web interno alla rete accessibile da Internet?
+	
+	-Devono essere fatte sessioni Telnet attraverso il firewall?
+	
+	-Che protocolli devono passare attraverso il firewall?
+	
+	-Che livello di accesso a Internet e al Web devono avere i dipendenti?
+	
+	-Che risorse umane si possono/devono impiegare per la gestione/verifica del
+	 firewall?
+	 
+	-Cosa può succedere alla rete se un hacker riesce comununque ad entrare?
+	
+  Le ACL(ACcess List) sono le regole che governano il funzionamento dei filtri, ogni pacchetto
+  viene valutato in base alle ACL e respinto o fatto passare.
+  Ci sono due politiche:
+  	-default allow: tutto ciò che non è negato allora è permesso
+  	-default deny: tutto ciò che non è permesso allora è negato
+
+
+
+10)Il virus mutante è una categoria esclusiva dei macro virus, durante la sua azione, il codice
+   del virus cambia.
+   È un problema per il sistema perchè in alcuni casi si è verificato un crossover, cioè la
+   fusione di diversi virus in documenti a infezione multipla, quindi con la produzione di
+   nuovi virus che hanno caratteristiche combinate.
+   
+   
+11)Non è sufficiente l'utilizzo della tecnologia per prevenire i problemi di sicurezza
+   informatica perchè il sistema informativo non è composto solo dalle risorse tecnologiche ma
+   anche dalle risorse organizzative, che nel caso della sicurezza devonono prendere la forma
+   di regolamenti e procedure per prevenire gli attacchi e i problemi e delle risorse umane, che
+   devono applicare tali procedure.
+   
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

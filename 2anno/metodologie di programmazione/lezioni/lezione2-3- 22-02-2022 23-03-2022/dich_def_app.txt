@@ -1,0 +1,237 @@
+La definizione dà informazioni supplementari su quella dichiarazione,
+ogni definizione può essere una dichiarazione ma non il contrario.
+
+VARIABILI-----------------------------------------------------------------------------------
+int a;  definizione di una variabile di tipo intero di nome a,
+        la memoria allocata per questa variabile dipende dall'implementazione
+
+extern int b;  dichiarazione pura, da qualche altra parte sarà definita questa
+                variabile.
+extern int b = 1; diventa una definizione se scritta così
+
+extern int b;
+b = 1;
+anche in questo caso diventa una definizione.
+Il tipo int non va dichiarato perchè fa parte del linguaggio.
+
+con i tipi unsigned quando si causa overflow o underflow, l'aritmetica binaria
+fa partire da 0.
+Con i tipi signed invece non si deve causare overflow o underflow, sennò si
+incappa in un undefined behaviour, ovvero potrebbe succedere qualsiasi cosa.
+Il caso peggiore è quando un programma con un errore sembra funzionare, il caso
+migliore sarebbe quando fa subito un segmentation fault.
+
+int b = 1; è una costante letteraria, cioè non inizia con 0 e quindi una costante
+            decimale intera.
+long bbb = 1; il sistema trasfroma l'intero in un long.
+long bbb = 1L; inizialliza una costante di tipo long e quindi non c'e una casting
+                di tipo long
+long bbb = 1U;
+long bbb = 1.; un numero floating point.
+long bbb = 0123; quando c'e uno zero davanti, il numero può corrispondere ad un ottale
+
+FUNZIONI----------------------------------------------------------------------------
+
+int pippo(double d); è una dichiarazione pura.
+extern int pippo(double d); non c'è nessuna differenza con la dichiarazione sopra.
+
+int pippo(double d){
+    return d;
+}
+Questa è una definizione della funzione dato che si definisce il corpo
+
+int pippo(double); nelle dichiarazioni i nomi dei parametri si può omettere,
+                    sono obbligatori il numero e il tipo di parametri.
+short int pippo(double) è un'errore perchè si sta provando a dichiarare la stessa
+                        funzione con un parametro che però torna un tipo diverso
+                        quindi è un'errore e non compila.
+short int pippo(float) in questo caso è leggittimo cioè compila ma è un errore.
+
+TIPI
+
+struct S; è un tipo definito da utente, per convenzione le variabili cominciano
+            con la lettera minuscola ed invece si usa la maiuscola per i tipi,
+            sono convenzioni dettate dall'ambiente in cui si programma.
+int il_mio_identificatore_bello_lungo; convenzione in cui il separatore è il carattere
+                                    underscore(_)
+int ilMioIdentificatoreLungoBello; in stile java dove si usa la maiuscola per
+                                    distinguere le parole.
+
+S è un nome di un tipo definito dall'utente, è una dichiarazione pura.
+
+struct S{
+    int a;
+    int b;
+};
+Questa è una definizione del tipo.
+
+S s; il compilatore conoscendo la sua definizione, conosce lo spazio da allocare
+     a questa variabile.In questo caso si allocano circa 8 byte.
+
+struct S{
+    int a;
+    char c;
+    [3 byte di padding]
+    int b;
+};
+Di solito le allocazioni in indirizzi multipli di 4 permettono un'implementazione
+più efficiente e quindi in questo caso avremo 5 byte per i dati membri a e c, e
+avremo dei byte di padding per poter allocare il dato membro b in un indirizzo
+multiplo di 4.
+Quindi nelle strutture potrebbero esserci spazi di padding riempiti con bit casuali
+e se per caso si cerca di leggere all'interno di questi spazi si potrebbe ottenere
+un undefined behaviour o lettura di bit casuali.
+L'operatore per verificare se due struct sono uguali non è definito a causa di questi
+spazi di padding, invece quello di copia si perchè copia anche tutti i byte di paddding.
+
+S* ps; è un punatore ad un oggetto di tipo S, è un puntatore di tipo opaco perchè
+        non conosce cosa c'e dentro la struttura S.
+struct S;
+
+struct T{
+    int a;
+    S* ps;
+};
+
+struct S{  class S: se lo definiamo class è un errore perchè è stato dichiarato struct.
+    double d;
+    T* pt;
+};
+In questo caso il dato ps nella struct T può puntare ad S perchè questa struttura
+è stata introdotta dalla dichiarazione pura effettuata in precedenza.
+struct S{
+    double d;
+    T* pt;
+};
+class S{
+    double d;
+    T* pt;
+};
+Non c'è nessuna differenza tra queste due strutture, l'unica differenza è che lo
+specificatore d'accesso di default di una class è private mentre per struct è public
+se scrivessi la classe in questo modo allora le due strutture sono del tutto equivalenti
+class S{
+    public:
+        double d;
+        T* pt;
+};
+La struct si utilizza quando si vuole rendere tutto pubblico per convenzione.
+
+union U {
+    int a;
+    int b;
+};
+è come una struct ma dentro la struttura puoi trovarci uno dei due dati in questo
+esempio, dipende da chi ci ha scritto l'ultima volta.
+
+enum Semaforo{VERDE,GIALLO,ROSSO}; è una collezione di valori costanti che sono 
+                                    etichettati in questo caso con dei simboli,
+                                    sono implementati con un numero interi piccoli.
+                                    Di solito di default se non specificato il primo
+                                    prendeva un numero e gli altri a seguire prendevano
+                                    i successivi,tipo Verde 123, Giallo 124 e così via.
+Non si riesce a fare una dichiarazione pura per le enum.
+enum Semaforo; è illegale
+Le enumerazioni sono una collezione di valori costanti,un software vive per diversi anni
+ed esso viene rinnovato allora si vuole semplicemente che il programma veda la modifica
+quando chiama la libreria per non doverlo di nuovo compilare.
+Quindi ogni modifica dei valori contenuti all'inteno dell'enum doveva far ricompilare
+tutto nello standard vecchio;
+Nello standard nuovo invece si può scrivere così:
+enum Semaforo : int; questa finisce nell header file 
+enum Semaforo : int {Verde,Giallo,Rosso,Cremisi}; file non header.
+
+La differenza rispetto a prima è che adesso il compilatore vedendo che è un int,
+sa quando spazio deve allocare anche non conoscendo tutte le costanti dell enum.
+
+Alias per i tipi
+typedef int Intero; questo è un costrutto linguistico e si vede nell'unità di
+                    traduzione.
+#define Intero int --> è una definizione per il preprocessore, quando vede Intero lo
+                        sostituisce testualmente con int, è un truco testuale e 
+                        nell'unità di traduzione non si vedrà mai Intero.
+
+typedef std::vector<std::list<double> >::const_iterator CIter;
+
+using Intero = int; per indicare il dato di tipo int si utilizza Intero dopo questa
+                    definizione.
+
+Anche con la presenza di using, esiste ancora il typedef perchè esiste ancora tanto
+codice scritto secondo il vecchio standard che deve essere mantenuto e nessuno
+lo tocca per non rischiare di rompere qualcosa.
+
+TEMPLATE(di funzione o di tipo)---------------------------------------------------------
+
+un template è un modello, il template di una funzione è un modello per generare una
+funzione, un template di class è un modello per generare dei tipi.
+
+template <typename T>
+T sum(const T& a, const T& b);
+
+Questa è una dichiarazione pura di modello di funzione.
+Quando daremo informazioni necessarie per capire chi è T allora instanzia una
+dichiarazione pure della funzione, quindi se specifichiamo che T è un int allora
+diventerebbe:
+template <> int sum<int>(const int& a, const int& b) questa è un'istanza della funzione
+                                                     di tipo intero.
+
+template <typename T>
+T sum(const T& a, const T& b){
+    return a + b;
+}
+Questa è una definizione di un template.
+
+template <typename T, typename U>
+struct Coppia {
+    T t;
+    U u;
+};
+Questa è una definizione di template di classe.
+
+Invece una dichiarazione pura di template sarebbe:
+template <typename T, typename U>
+struct Coppia;
+
+NAMESPACE------------------------------------------------------------------------------
+
+namespace ProgettoBello{
+
+} // namespace ProgettoBello --> questa è una convenzione utilizzata dove si 
+                                 inserisce un commento alla fine perchè la chiusura
+                                 di un namespace potrebbe essere molto distante dalla
+                                 sua apertura
+
+In passato se qualcuno dichiarava una variabile di nome a, questa poteva andare in
+conflitto con un'altra variabile di nome a dichiarata da un altro utente.
+
+namespace Parma_Polyhedra_Library {
+
+} // namespace Parma_Polyhedra_Library
+
+Una volta definito un namespace, si può utilizzare un'abbreviazione:
+namespace ppl = Parma_Polyhedra_Library;
+
+using directives :
+
+std::vector  std::cout  std::endl  std::sort  std::list
+
+using namespace std si utilizza per evitare di dover scrivere sempre std::
+
+void pluto(){
+    using namespace std;
+    .......
+}
+La direttiva di using funziona solo all'interno della funzione, quindi è controllata
+dall'utente che definsce quella funzione.
+
+void pluto(){
+    //using namespace std;
+    using std::cout;
+    ......
+}
+In questo caso si specifica esattamente che si vuole utilizzare solo cout
+
+
+
+
+

@@ -1,0 +1,66 @@
+ans
+pi
+
+ans =
+
+    3.1416
+
+i
+
+ans =
+
+   0.0000 + 1.0000i
+
+j
+
+ans =
+
+   0.0000 + 1.0000i
+
+NaN
+
+ans =
+
+   NaN
+
+Inf
+
+ans =
+
+   Inf
+
+flops
+{Unrecognized function or variable 'flops'.
+} 
+eps
+
+ans =
+
+   2.2204e-16
+
+realmax
+
+ans =
+
+  1.7977e+308
+
+realmin
+
+ans =
+
+  2.2251e-308
+
+y = cos(pi/4) + sin(pi/4)
+
+y =
+
+    1.4142
+
+format long
+y = cos(pi/4) + sin(pi/4)
+
+y =
+
+   1.414213562373095
+
+------------------------Vettori e Matrici ------------------------------------

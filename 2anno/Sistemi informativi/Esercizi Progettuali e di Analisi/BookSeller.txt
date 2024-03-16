@@ -1,0 +1,101 @@
+La società BookSell S.r.l. vuole realizzare un negozio elettronico via Web (e-shop) per la 
+vendita online di libri, destinato al mercato privato (B2C). La società, che possiede una 
+catena di librerie, ha la sede legale ed un punto vendita a Parma ed un negozio in ogni 
+capoluogo di provincia delle regioni Emilia-Romagna, Lombardia e Veneto.
+Dovranno potersi collegare al sito almeno 100 utenti simultaneamente ed il tempo di 
+elaborazione delle loro operazioni dovrà non superare i 10 secondi.
+L’interfaccia web del sito dovrà essere compatibile con tutti i browser più diffusi (MS 
+Internet Explorer, Mozilla Firefox, Google Chrome, Opera, Apple Safari).
+I clienti per poter effettuare gli acquisti dovranno registrarsi sul sito, in una apposita pagina 
+di registrazione, inserendo i propri dati anagrafici (nome, cognome, indirizzo di residenza, 
+codice fiscale, numero di telefono cellulare, e-mail). Il pagamento dovrà essere effettuato
+in anticipo via carta di credito o conto paypal, le cui credenziali o il cui numero non 
+saranno memorizzate ma dovranno essere inserite dal cliente ad ogni operazione di 
+acquisto e saranno immediatamente trasmesse alla banca convenzionata con il sito senza 
+venire memorizzate localmente nel database del sito stesso. Ad ogni cliente sarà 
+assegnato uno username ed una password per l’identificazione. La password dovrà 
+rispettare i criteri di sicurezza minimi.
+Il cliente od un visitatore non registrato potrà visionare il catalogo dei libri anche senza 
+autenticarsi con username e password, mentre, per iniziare l’ordinativo ed accumulare i 
+titoli in un carrello dovrà inserire le proprie credenziali oppure registrarsi.
+I libri saranno spediti tramite corriere all’indirizzo di residenza associato al profilo del 
+cliente, col costo fisso della spedizione di 10 Euro, oppure spediti a costo zero presso uno 
+dei punti vendita, dove il cliente li potrà ritirare entro due mesi dal momento dell’ordine.
+
+
+1) Il core business è vendere i libri, il ciclo attivo è rappresentato dalla vendita dei libri sia nei negozi che sul sito web, il
+   ciclo passivo comprende le  seguenti spese:
+        - Acquisto dei libri da vendere
+        - Logistica
+        - Spese di altri processi, eg. pulizia locali.
+        - Corsi di aggiornamento e formazione del personale
+
+    I processi primari:
+        - Vendite
+        - Gestione magazzino dei libri acquistati online e quindi depositati in negozio.
+        - Ricerca dei libri più venduti o degli autori più ricercati del momento(potremmo magari arrivare ad un contratto quadro con una società editrice o un 
+          determinato autore in modo da avere eventuali sconti sui prossimi libri o eventuali vantaggi sulla concorrenza)
+        - Logistica dei libri dalla sede centrale al negozio fisico(Sia dei libri acquistati online, sia i libri da esporre).
+        - Customer Care
+    
+    I processi ausiliari:
+        - Gestione della qualità
+        - Gestione amministrativa
+        - Direzione personale
+        - Gestione della sicurezza
+        - infrastruttura IT e gestione sito web
+        - Gestione personale e corsi di aggiornamento o formazione
+        - Controllo gestione ed analisi dei dati
+
+    I ricavi possono essere aumentati incrementando i volumi di vendita, le spese possono diminuire ottimizzando i processi logistici e di approvigionamento, comprare all'ingrosso 
+    tanti libri della stessa casa editrice stabilendo anche degli accordi vantaggiosi, ricerca di libri che potrebbero finire in tendenza ed acquistarli prima in modo che il 
+    prezzo non sia troppo alto.
+
+2) I flussi informativi: 
+    - Il cliente dopo la registrazione, riempie il carrello con i/il libri/o che intende acquistare ed emette l'ordine
+    - L'ordine viene ricevuto e verificato tramite mail del cliente
+    - Dopo la verfica allora l'ordine viene confermato, prelevato dal magazzino, imballato e spedito verso il punto vendita specificato dal cliente oppure direttamente a casa
+    - Il cliente riceve l'ordine e verifica
+
+   La comunicazione tra il cliente ed il sito web è cifrata grazie al protocollo HTTPS, il sito web invia l'ordine attraverso la rete con una VPN alla sede centrale.
+
+3) Applicativi utilizzari dall'azienda:
+    - Business Intelligence: grazie all'analisi dei dati ci permette di capire quali autori o case editrici sono di tendenza, permette di consigliare i libri più affini ai gusti
+      dei clienti sul sito web.
+    - ERP : completo di moduli di gestione magazzino e gestione produzione e sia di quelli amministrativi che quelli per coprire altri processi.
+    - Modulo dell'ERP : per la gestione logistica verso i negozi.
+    - CRM : per la gestione delle relazioni con i clienti, modulo dell'ERP.
+    - Suite office
+    - Posta elettronica
+    - Software per la gestione documenti e lavoro condiviso
+    - Anti-virus
+    - Servizi che ci segnalano tutti i prossimi libri che usciranno e una lista di tutti i libri esistenti.
+
+    Disponiamo di VPN per comunicazioni sicure attraverso la rete con i negozi, fornitori e il nostro sito web.
+    Per i sistemi di pagamento, quindi virtualPOS sul sito web e POS nei negozi, si fornisce una comunicazione cifrata HTTPS verso la banca convenzionata oppure verso Paypal.
+
+4) Infrastruttura IT:
+    - DBMS per la base dei dati di ERP(compreso il modulo CRM), dati del magazzino sede centrale e negozi, dati ed informazioni sui clienti registrati.
+    - DBMS per la base di dati della Business Intelligence
+    - ETL per gli aggiornamenti della base di dati della Business Intelligence con tutte le vendite del giorno
+
+    ERP ha un'architettura client-server web per l'accesso tramite VPN dai negozi, quindi serve un Application server ERP,CRM.
+    La business Intelligence è client-server a due livelli presente solo su poche postazioni in sede centrale.
+    Un domain server necessario per contenere tutti i dati degli utenti, i loro relativi permessi e programmi.
+    Un file server per avere un sistema di cartelle condivise, dato che la maggior parte della documentazione è contenuta nel software di gestione documenti.
+    Il servizio di posta elettronica può essere in cloud presso un provider.
+    Tutti i server sono virtuali ed operano in cluster a 4 nodi e collegati ad un sisteme di memorizzazione di massa(SAN).
+
+5) Problemi di security e safety: 
+    - Rottura nodo: disponiamo di altri nodi, quindi grazie alla ridondanza possiamo garantire la Business continuity a meno che non si rompano tutti i nodi.
+    - Rottura server: facciamo snapshot di continuo in modo da ottimizzare il ripristino delle macchine virtuali
+    - Interruzione della rete: disponiamo di due reti, una fissa a banda larga e una mobile 4-5G, in caso di guasto siamo coperti da una delle due.
+    - Intercettazioni lungo la rete, quasi impossibile con utilizzo di VPN e comunicazioni cifrate
+    - Perdita dei dati: facciamo backup frequenti in base all'importanza dei dati.
+    - Interruzioni della corrente elettrica: predisporre UPS e gruppo elettrogeno.
+    - Incendio nel data center: predisporre sistemi antincendio
+    - Aumento temperature nel data center: predisporre di sistemi di refrigerazione.
+    - Intrusione : predisporre di firewall che proteggono i sistemi interni.
+    - Virus e malware: tenere aggiornati gli Anti-virus
+    - Accesso a dati non autorizzati: profilazioni interne e politiche rigide sulle password degli utenti
+

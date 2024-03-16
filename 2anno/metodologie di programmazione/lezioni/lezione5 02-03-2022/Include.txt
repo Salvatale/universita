@@ -1,0 +1,47 @@
+
+Abbiamo un header file Razionale.hh che contiene la definizione di alcuni metodi.
+Suppponiamo di avere un file Razionale.cc che include l'header file Razionale.hh e
+quindi implementa i metodi presenti dentro l'header file.
+Abbiamo un altro file Polinomio.hh che include Razionale.hh, ed un altro file 
+Polinomio.cc che include Polinomio.hh e quindi ricorsivamente anche Razionale.hh.
+Supponiamo che abbiamo un altro file Problema.cc che include sia Polinomio.hh
+che Razionale.hh, dato che dentro Polinomio.hh c'è gia l'inclusione di Razionale.hh
+allora viene violata la ODR dato che avremo due definizioni identiche nella stessa
+unità di traduzione.
+
+Si potrebbe non includere Razionale.hh dato che già lo include Polinomio.hh, ma
+questa è una soluzione sbagliata anche perchè in Polinomio.hh potrebbe aver preso
+l'header file Razionale.hh per qualche dettaglio implementativo e magari con il tempo
+chi ha scritto Polinomio.hh decide di non includere più Razionale.hh ma un'altra
+libreria diversa e questo cambio potrebbe semplicemente non far compilare più
+Problema.cc.
+Non bisogna mai basarsi sulla inclusione indirette, se vuoi utilizzare quel tipo
+di dato bisogna fare l'inclusione corrispondente, quindi non affidarsi all'inclusione
+fatte da altri header file.
+
+Bisogna informare il preprocessore che ogni header file deve essere incluso al massimo
+una ed una sola volta per ogni unità di traduzione.
+Ci sono due tecniche:
+
+    - Non è veramente portabile dato che ci sono implementazioni del linguaggio c++ in
+     cui non funziona.
+     #pragma once che dice al preprocessore di ricordarsi questo header file incluso in modo
+     che se trova di nuovo lo stesso header file allora non lo include.
+
+     - Guardie contro l'inclusione ripetuta, sono guardie del preprocessore che controllano
+       che un header file passi solo una volta, cioè una volta che è stato incluso l'header
+       file, le guardie lo segnano e quando lo stesso header file prova a includersi di nuovo
+       lo bloccano dato che è gia stato incluso una volta.
+
+#pragma è un punto di ingresso per raggiungere funzionalità che non sono state standardizzate
+e la pragma once ha il vantaggio di dire al preprocessore di includere quella cosa una volta
+sola e quindi non devi inventare il nome della guardia e quindi fare l'errore di mettere
+due nomi di guardie uguali.
+L'utilizzo di pragma o della guardia è una scelta fatta a livello di progetto da chi scrive 
+quel determinato file.
+
+Nel file iostream era presente un #pragma che stava ad indicare al compilatore che il codice
+che sta leggendo in quel file fa parte di un header di sistema e quindi se c'è qualcosa da
+segnalare allora non è colpa del programmatore ma colpa dello sviluppatore che ha scritto 
+la libreria.
+

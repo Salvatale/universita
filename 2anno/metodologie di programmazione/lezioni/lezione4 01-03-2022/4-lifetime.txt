@@ -1,0 +1,298 @@
+
+-- Tempo di vita (lifetime)
+
+Gli oggetti sono entità memorizzati in memoria, sono utilizzabili solo quando
+sono stati creati correttamente e gli accessi in memoria sono validi se
+avvengono durante il suo lifetime, cioè prima di essere distrutti.
+
+Abbiamo visto come il concetto di scope consenta di stabilire in quali
+punti del codice (dove) è visibile il nome introdotto da una dichiarazione.
+Oltre alla dimensione spaziale, è necessario prendere in considerazione
+anche la dimensione temporale, per stabilire in quali momenti (quando)
+è legittimo interagire con determinate entità.
+
+Alcune entità (tipi di dato, funzioni, etichette) possono essere
+riferite in qualunque momento durante l'esecuzione del programma.
+Un oggetto memorizzato in memoria, invece, è utilizzabile solo dopo
+che è stato creato e soltanto fino a quando viene distrutto, ovvero
+ogni accesso è valido solo durante il suo tempo di vita (lifetime).
+
+Nota: anche se il codice eseguibile delle funzioni è memorizzato
+in memoria, tecnicamente le funzioni NON sono considerate oggetti
+in memoria e quindi non se ne considera il lifetime.
+
+Il tempo di vita di un oggetto è influenzato dal modo in cui questo
+viene creato. Gli oggetti in memoria sono creati:
+ - da una definizione (non basta una dichiarazione pura);
+ - da una chiamata dell'espressione new (oggetto nella heap, senza nome);
+  Crea un nuovo oggetto anonimo nella memoria heap inizializzato con un
+  determianto valore.
+ - dalla valutazione di una espressione che crea implicitamente
+   un nuovo oggetto (oggetto temporaneo, senza nome).
+
+Il tempo di vita di un oggetto:
+  1) inizia quando *termina* la sua costruzione, che è composta
+     da due fasi distinte:
+     a) allocazione della memoria "grezza";
+     b) inizializzazione della memoria (quando prevista);
+  2) termina quando *inizia* la sua distruzione, che è anch'essa
+     composta da due fasi distinte:
+     a) invocazione del distruttore (quando previsto);
+     b) deallocazione della memoria "grezza".
+
+Si noti che un oggetto la cui costruzione NON termina con successo,
+NON avendo iniziato il suo tempo di vita, NON dovrà terminarlo,
+ovvero per quell'oggetto NON verrà eseguita la distruzione.
+
+Si noti anche che DURANTE le fasi di creazione e di distruzione di
+un oggetto si è fuori dal suo tempo di vita, per cui le operazioni
+che è possibile effettuare sull'oggetto sono molto limitate
+(le regole del linguaggio sono complicate e comprendono numerosi
+casi particolari, che per il momento non è opportuno approfondire).
+
+Vi sono diversi tipi di "storage duration" per gli oggetti in memoria
+(il termine storage duration è talvolta tradotto come "allocazione",
+se vogliamo in maniera un po' impropria):
+
+1) allocazione statica
+
+È un allocazione fatta dal compilatore quindi prima dell'esecuzione del programma.
+La memoria di un oggetto ad allocazione statica dura per tutta l'esecuzione
+del programma. Sono dotate di memoria ad allocazione statica:
+
+ a) le variabili definite a namespace scope (dette globali)
+    Queste sono create e inizializzate *prima* di iniziare l'esecuzione
+    della funzione main, nell'ordine in cui compaiono nell'unità di
+    traduzione in cui sono definite; (nota: nel caso di variabili
+    globali definite in diverse unità di traduzione, l'ordine di
+    inizializzazione NON è specificato).
+    Se sono presenti tante definizioni di variabili in un'unica
+    unità di traduzione allore esse vengono create nell'ordine in
+    cui appaiono nell'unità di traduzione e vengono distrutte
+    nell'ordine inverso della creazione.
+    Se avessimo una variabile globale a nella prima unità di traduzione
+    e una variabile globale b nella seconda unità di traduzione, il linker
+    dopo cuce le unità di traduzione, l'ordine in cui vengono create
+    in due unità di traduzione diverse non è specificato.
+    Può avere ripercussioni perchè magari un'unità di traduzione effettua
+    operazioni con una variabile globale a di un'altra unità di traduzione,
+    potrebbe portare ad un'errore dato che magari decide di creare prima
+    la variabile globale b dell'unità che effettua le operazioni ed in questo
+    caso la variabile globale a non è ancora stata inizializzata.
+
+Il seguente programma stampa due stringhe, anche se il corpo della
+funzione main è vuoto:
+----
+#include <iostream>
+
+struct S {
+  S() { std::cout << "costruzione" << std::endl; }
+  ~S() { std::cout << "distruzione" << std::endl; }
+};
+
+S s; // allocazione globale
+
+int main() {}
+----
+
+ b) i dati membro di classi dichiarati usando la parola "static"
+    Questi sono creati come le variabili globali del punto precedente.
+
+ c) le variabili locali dichiarate usando la parole chiave "static"
+    Queste sono allocate prima di iniziare l'esecuzione della
+    funzione main, ma sono inizializzate (solo) la prima volta in cui
+    il controllo di esecuzione incontra la corrispondente definizione
+    (nelle esecuzioni successive l'inizializzazione non viene eseguita).
+
+Il seguente programma stampa una stringa, indicando il numero totale
+di volte in cui la funzione foo() è stata chiamata:
+-----
+#include <iostream>
+
+struct S {
+  int counter;
+  S() : counter(0) { }
+  ~S() { std::cout << "counter = " << counter << std::endl; }
+};
+
+void foo() {
+ static S s; // allocazione locale statica
+ ++s.counter;
+}
+
+int main() {
+  for (int i = 0; i < 10; ++i) {
+    foo();
+  }
+}
+----
+Il counter conta quante volte ha eseguito foo,è utilizzato sopratutto per
+introdurre dei timer quindi per il tempo speso all'interno di una esecuzione
+di una particolare porzione di codice.
+-----------------------------------------------------------------------
+
+2) allocazione thread local
+
+Prima del c++2011 non c'era un modo standard multithreading,ogni
+compilatore forniva un'estensione che erano incompatibili l'uno
+dall'altro.
+Un oggetto thread local è simile ad un oggetto globale, ma il suo ciclo
+di vita non è collegato al programma, bensi ad ogni singolo thread
+di esecuzione creato dal programma (esiste una istanza distinta della
+variabile per ogni thread creato). Il supporto per il multithreading
+è stato introdotto con lo standard C++ 2011.
+Si ha bisogno di una variabile che lo stesso tempo di vita di un thread,
+un thread local è un ogetto che ha lo stesso tempo di vita del thread che
+lo ha creato.
+
+-----------------------------------------------------------------------
+
+3) allocazione automatica
+
+Una variabile locale ad un blocco di funzione è dotata di allocazione
+automatica; l'oggetto viene creato dinamicamente (sullo stack) ogni
+volta che il controllo entra nel blocco in cui si trova la dichiarazione
+e viene *automaticamente* distrutto (rimuovendolo dallo stack) ogni
+volta che il controllo esce da quel blocco.
+
+----
+void foo() {
+  int a = 5;
+  {
+    int b = 7;
+    std::cout << a + b;
+  } // b viene distrutta automaticamente all'uscita da questo blocco
+  std::cout << a;
+} // a viene distrutta automaticamente all'uscita da questo blocco
+----
+
+I tipi int non hanno un vero e proprio costruttore o distruttore, però
+ovviamente viene deallocata cioè rimossa dallo stack.
+
+NOTA: nel caso di funzioni ricorsive, sullo stack possono esistere
+contemporaneamente più istanze distinte della stessa variabile locale.
+In questo caso la storage duration assomiglia allo scope potenziali,
+ma ovviamente queste due cose non sono sempre coincidenti ma solo in alcuni
+casi.
+
+--------------------------------------------------------------
+
+4) allocazione automatica di temporanei
+
+L'allocazione automatica di temporanei avviene quando un oggetto
+viene creato per memorizzare il valore calcolato da una
+sottoespressione che compare all'interno di una espressione.
+
+-----
+struct S {
+  S(int);
+  S(const S&);
+  ~S() { std::cout << "distruzione"; }
+};
+
+void foo(S s);
+
+void bar() {
+  foo(S(42)); // allocazione di un temporaneo per S(42)
+  std::cout << "fine";
+}
+
+In questo caso stampa prima distruzione e poi fine.
+In questo secondo caso invece stampa prima fine e poi distruzione dato che
+il suo lifetime arriva fino alla fine della funzione.
+void bar() {
+  S s(42);
+  foo(s);
+  std::cout << "fine";
+}
+
+-----
+
+L'oggetto temporaneo viene distrutto quando termina la valutazione
+dell'espressione completa che contiene lessicalmente il punto di
+creazione. Nell'esempio precedente, il temporaneo è distrutto
+al termine dell'esecuzione di foo, ma prima della stampa di "fine".
+
+NOTA: il lifetime di un oggetto temporaneo può essere esteso se
+l'oggetto viene utilizzato per inizializzare un riferimento;
+in tale caso, l'oggetto verrà distrutto nel momento in cui verrà
+distrutto il riferimento. Per esempio:
+
+void bar2() {
+  // il temporaneo S(42) è usato per inizializzare il riferimento s
+  const S& s = S(42);
+  std::cout << "fine";
+  // il temporaneo è distrutto quando si esce dal blocco,
+  // dopo avere stampato "fine"
+}
+
+-----------------------------------------------------------------------
+
+5) allocazione dinamica
+
+È fatta durante l'esecuzione del programma.
+Un oggetto (senza nome) può essere allocato dinamicamente nella memoria
+heap usando l'espressione new (che restituisce l'indirizzo dell'oggetto
+allocato, che va salvato in un opportuno puntatore).
+L'espressione new alloca un pezzo di memoria sufficiente per contenere l'oggetto
+, utilizza i parametri per fare la costruzione dell'oggetto, restituisce
+l'indirizzo di quell'oggetto che può essere memorizzato da un puntatore.
+
+  int* pi = new int(42);
+  // pi contiene l'indirizzo di un oggetto int di valore 42.
+
+La distruzione dell'oggetto NON è automatica, ma viene effettuata sotto
+la responsabilità del programmatore utilizzando l'istruzione delete
+(sul puntatore che contiene l'indirizzo dell'oggetto).
+
+  delete pi;
+  // l'oggetto puntato da pi è stato distrutto,
+  // ma pi continua a contenere il suo indirizzo, non più valido;
+  // pi è diventato un "dangling pointer" (puntatore penzolante)
+
+L'allocazione dinamica è una sorgente inesauribile di errori di
+programmazione:
+
+- errore "use after free"
+  usare (per leggere o scrivere sull'oggetto puntato) un puntatore
+  dangling; in pratica si usa un oggetto dopo che il suo lifetime
+  è concluso.
+  Si ottiene un undefined behaviour;
+
+- errore "double free"
+  usare la delete due o più volte sullo stesso indirizzo,
+  causando la distruzione di una porzione di memoria che non era
+  più allocata (o era stata riutilizzata per altro)
+  Due puntatori che puntavano alla stessa cosa decidono di liberare
+  la memoria ed in questo caso si ottiene undefined behaviour, se 
+  si è fortunati un semplice segmentation fault.
+
+- "memory leak"
+  si distrugge l'unico puntatore che contiene l'indirizzo dell'oggetto
+  allocato prima di avere effettuato la delete (quindi l'oggetto non
+  verrà mai più distrutto, causando come minimo uno spreco di memoria);
+  Quando il puntatore termina il suo lifetime e viene distrutto, l'oggetto
+  è rimasto in heap e non si ha nessun modo per arrivare a quell'oggetto
+  che diventa garbage.
+  Se un programma rimane in esecuzione per tanto tempo,la memoria heap
+  disponibile per il sistema diminuisce piano piano e prima o poi il 
+  programma smette di funzionare non avendo più memoria heap a disposizione.
+
+- accesso ad un "wild pointer"
+  variante della use after free; si segue un puntatore che indirizza
+  memoria "causale", leggendo o scrivendo dove non c'è un oggetto
+  (o non c'è l'oggetto inteso)
+  Un puntatore può calcolare l'indirizzo della posizione che sta subito dopo
+  la fine dell'array basta che non vada a leggere o scrivere, non si può invece
+  subito prima dell'inizio oppure avanti di due e così via portando ad un 
+  undefined behaviour.
+  Se invece abbiamo che nel nostro sistema un int vale 4 byte quindi un array
+  di int avrà ogni int ogni 4 byte, ma se ci si sposta in un numero non multiplo
+  di 4 byte si ottiene un wild pointer e quindi si legge un qualcosa che mette insieme
+  i byte di quello prima con quello dopo, ma solitamente il compilatore potrebbe 
+  causare un undefined behaviour.
+
+- accesso al "null pointer"
+  si prova ad accedere ad un puntatore nullo, quindi undefined behaviour.
+
+-----------------------------------------------------------------------

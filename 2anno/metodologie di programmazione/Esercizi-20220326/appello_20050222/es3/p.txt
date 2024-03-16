@@ -1,0 +1,5 @@
+Il problema è che c'è una violazione della clausola ODR dato che più
+file fanno le stesse inclusioni e sopratutto pi ed e non sono definiti
+dentro Costante.hh, quindi le variabili piatto,retto e giro potrebbero
+essere riempite con una secchiata di bit casuali o con 0 in alcune
+architetture.

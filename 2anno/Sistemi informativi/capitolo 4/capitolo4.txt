@@ -1,0 +1,207 @@
+1. Cos'è il Business Process Management (BPM)?
+2. Cosa significa modellizzare un processo business?
+3. Cosa si intende per Business Process Reegineering (BPR)? Che significato ha nel contesto
+di una evoluzione aziendale?
+4. Cos'è il linguaggio UML e come può essere utile per descrivere i processi?
+5. Cosa significa descrivere il processo come successione di attività?
+6. Cosa significa descrivere il processo come successione di fasi di interazione fra elementi
+in esso coinvolti?
+7. Perchè è utile definire le entità coinvolte in un processo e i loro legami logici?
+8. Perchè è utile inserire l'elemento dinamico descrivendo le interazioni fra le entità?
+9. Cosa significa descrivere il processo come successione di stati?
+10. Qual’è il legame fra i vari modelli?
+
+
+Risposte:
+
+1)Il business Process Management analizza i processi e ne realizza
+  la lora gestione ottimale in modo da ridurre i loro costi ed 
+  aumentare il valore da essi prodotto.
+
+
+2)Modellizzare un processo business significa rappresentare i 
+  processi di una organizzazione per potere:
+  -Analizzarli
+  -Scoprire difetti
+  -Misurare efficacia ed efficienza
+  -Migliorare il funzionamento
+
+
+3)Il Business Process Reegineering è una metodologia che si occupa
+  di gestire nel miglior modo possibile le risore informatiche
+  all'interno dell'azienda.
+  È una metodologia ampiamente utilizzate all'interno delle grandi
+  organizzazioni e si propone di migliorare l'efficienza dei processi
+  attraverso la loro analisi, l'inidividuazione delle attività
+  critiche o inefficienti e l'adozione di opportune azioni correttive.
+  Risulta importante per l'evoluzione aziendale dato che è una fase
+  di meccanizzazione dei sistemi informativi.
+
+
+4)UML è un linguaggio unificato per la modellazione di concetti,
+  entita, funzionalità, processi e relazioni che fra essi intercorrono.
+  Nei processi il linguaggio UML serve a descrivere in modo grafico:
+    -I requisiti utente(use case)
+    -Le componenti dei sistemi
+    -I dati in esse contenuti
+    -Le azioni da esse svolte
+    -Le relazioni che fra loro intercorrono
+
+
+5)L'Activity Diagram decsrive il processo come una successione di 
+  attività e ne evidenzia le componenti sottoforma di successione 
+  logico-temporale di azioni, eventualmente riportando entità usate
+  o modificate nelle azioni stesse, ma sempre da un punto di vista
+  di successione di azioni.
+  Rappresentano una procedura e mostrano l'evoluzione di un flusso,
+  ogni attività è un'evoluzione continua di uno stato.
+  Elementi d base:
+     -Attività
+     -Azione
+     -Stato di azione
+     -Stato di attività
+     -Transizione
+     -Object Flow
+     -Object State
+     -Swimlane
+     -Activity state(Diagram)
+     -Action state(Diagram)
+  L'enfasi ricade sulle attività e sulla sequenza di azioni di una procedura,
+  non su ci le compie.
+  Evidenzia vincoli di precedenza o di occorrenza.
+  
+ 6)Si utilizza lo Use Case Diagram che è una sequenza di transazioni eseguita da
+   un'attore in interazione col sistema la quale fornisce un valore misurabile
+   per l'attore.
+   Cerca di trovare il confine per il sistema,sottostitema o componente che si 
+   sta analizzando e si stabilisce cosa fa il sistema rispetto all'esterno,
+   identificando anche attori e use case.
+   Lo use case è un cotratto che descrive l'interazione fra due entità che
+   interagiscono tra loro stabilendo con precisione:
+      -Servizi foriniti
+      -Servizi richiesti
+      -Utenti abilitati
+      -Vincoli nell'erogazione
+   L'attore è un ruolo che usa le seguenti domande:
+      - chi ha bisogno del sistema?
+      - chi userà le funzioni pincipali?
+      - chi dovrà manutenere ed amministrare il sistema?
+      - di quali dispositivi il sistema ha bisogno?
+      - con quali altri sistemi il sistema dovrà comunicare?
+   Per ogni attore identificato si risponde:
+      - quali funzioni l'attore richiede al sistema?
+      - l'attore ha bisogno di leggere o scrivere o immagazzinare informazioni
+        nel sistema?
+      - l'attore deve ricevere notifiche di eventi dal sistema?
+   Attore e use case sono sempre collegati tra loro, un'attore isolato non può
+   interagire con il sistema ed invece uno use case isolato non fornisce alcuna
+   funzionalità all'esterno.
+   Un attore attivo inizia uno use case, invece un attore passivo partecipa ma
+   non lo inizia.
+ 
+ 
+ 7)Viene effetuato grazie ai Class Diagram ed è importante definire le entità
+   perchè possiamo costruire una classe che fornisce un modello e definisce
+   proprietà e comportamento degli oggetti.
+   Una classe hanno attribbuti e componenti, gli oggetti sono concretizzazioni
+   delle classi.
+   I class diagram modellano la relazione fra le entità sistema rappresentate
+   come classi.
+   Le classi possono avere relazioni tra loro rappresentate come associazioni
+   che possono essere unidirezionali o bidirezionali.
+   I Class Diagram identificano le entità, espresse come modello formale associato
+   al concetto da esse espresso e le relazioni o associazioni che fra esse
+   intercorrono, che identificano i rapporti che legano le entità, comprensivi
+   dei legami numerici definiti dalle molteplicità.
+   Gli Object Diagram sono simili ai Class Diagram però per ogni entità concreta
+   al loro interno, definiscono il nome univoco dell'oggetto e la sua classe
+   di appartenenza.
+   
+
+ 
+8)È utile inserire l'elemento dinamico descrivendo le interazioni tra le entità 
+  perchè descrivono le interazioni fra gli oggetti organizzate in sequenza temporale
+  Gli oggetti interagiscono tramite messaggi con cui possono far esplicitamente far
+  riferimento ai metodi coinvolti, specificare parametri e/o risultati oppure viene
+  descritta un'azione generica.
+  
+  
+9)Descrivere il processo come cambiamento di stato significa focalizzare l'attenzione
+  non sulle azioni che avvengono ma sul cambiamento di stato di una particolare entità
+  coinvolta nelle azioni stesse, si utilizzano i diagrammi di stato per descrivere il
+  comportamento nel tempo di un particolare elemento come un oggetto o un intero 
+  sottosistema, ovvero l'evoluzione di una interazione.
+  Questi ultimi mostrano l'evoluzione di un documento, rappresentando graficamente la
+  procedura di workflow associata alla catena di elaborazione/approvazione/gestione/
+  archiviazione di quel particolare tipo di documento dal punto di vista del documento
+  stesso e non dal punto di vista delle azioni da compiere.
+  
+  
+10)Il legame fra i vari modelli costituisce un diagramma UML formato così:
+	
+	entità -> interazioni fra le entità, funzionalità
+	funzionalità -> interazioni fra le entità, entità, processi
+	interazioni fra le entità -> flusso operativo
+	processi -> interazioni fra le entità, stato dei processi, funzionalità
+	stato dei processi -> processi
+	flusso operativo -> interazioni fra le entità
+	
+	
+	entità = Class Diagram
+	funzonalità = Use Case Diagram
+	interazioni fra le entità = Collaboration Diagram
+	processi = Activity Diagram
+	stato dei processi = StateChart Diagram
+	flusso operativo = Sequence Diagram
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

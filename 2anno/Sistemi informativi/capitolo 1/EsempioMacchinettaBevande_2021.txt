@@ -1,0 +1,48 @@
+MACCHINETTA DELLE BEVANDE
+
+INPUT
+
+- SCELTA UTENTE
+ - Scelta prodotto [codice]
+ - Quantità dolcificante [unità]
+ - Credito [Euro]
+
+- NECESSARI PER FUNZIONAMENTO 
+ - Energia elettrica [Watt]
+ - Acqua [Litri]
+
+- INSERITI DAL TECNICO
+ - Bicchierini [quantità]
+ - Polveri per bevande [quantità]
+ - Zucchero [grammi]
+ - Cucchiaini [quantità]
+ - Prodottti confezionati [quantità]
+ - Monete per il resto [quantità di singole monete]
+
+STATO INTERNO
+- Acceso/Spento
+- Temperatura ambientale [° C]
+- Temperatura riscaldatore [° C]
+- Pressione riscaldatore [Bar]
+- Parametri ottimali di funzionamento 
+- Credito inserito dall'utente [Euro]
+- Quantità di prodotti confezionati presenti [quantità]
+- Quantità di polvere per bevande presenti [grammi]
+- Quantità di zucchero presente [grammi]
+- Prezzi impostati per locazione [Euro]
+- Prezzi impostati per bevanda [Euro]
+- Status componenti tecnici
+- Luce interna accesa/spenta
+
+OUTPUT
+- Prodotto consegnato
+- Resto [Euro]
+- Messaggio di status 
+- Prezzi visualizzati
+- Credito inserito o rimanente sulla chiavett avisualizzato [Euro]
+- Zucchero inserito in bevanda [grammi]
+- Cucchiaino
+- Bicchiere
+- Quantità di polvere di bevanda [grammi]
+- Rumore di funzionamento
+- Calore risultante da funzionamento

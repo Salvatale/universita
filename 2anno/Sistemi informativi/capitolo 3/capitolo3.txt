@@ -1,0 +1,87 @@
+1. Come si può definire la risorsa informazione?
+2. Come funziona il ciclo di vita teorico dell’informazione?
+3. Cosa si intende per flusso informativo? E cos’è invece un flusso informatico?
+4. Cosa si intende per overload informativo?
+5. Come viene rappresentata l’informazione nel mondo digitale? Che problematiche sono
+associate a tale rappresentazione? Come si possono prevenire tali problematiche da un
+punto di vista organizzativo?
+6. Cos’è l’XML? Perché può essere utile entro i sistemi informativi?
+
+Risposte:
+
+1)L'informazione è una risorsa immateriale e costituisce la radice di ogni altra risorse immateriale tipo organizzativo conoscenza, eseprienza
+  individuale ed esperienza organizzativa.
+ 
+ 
+2)Il ciclo di vita teorico dell'informazione si divide in 4 stadi:
+	-Dati: sono materiale informativo grezzo, sono la materia prima che abbiamo a
+	 a disposizione oppure produciamo per costruire i nostri processi comunicativi
+	 Esempio: Insieme dei valori di dati di accesso ad un determinato portale Web
+	 
+	 -Informazione viene costruita dai dati trasformati in un qualche schema concettuale
+	  che diventa manipolabile ed usato per altri usi cognitivi.
+	  Essa conferisce significato ai dati perchè li organizza secondo dei modelli
+	  Esempio: Il risultato dell'analisi dei dati di accesso al portale Web
+	  
+	  -Conoscenza: è informazione applicata che conosce quando utilizzarla,
+	   si acquisisce dopo le esperienze fatte ed è fondamentale per rivelare
+	   i percorsi nascosti e i significati dell'informazione in modo che possano
+	   essere appresi da altri.
+	   Esempio: azioni di marketing svolte sulla base delle informazioni tratte
+	   dall'analisi dei dati di accesso al portale Web
+	   
+	  
+	  -Saggezza: è verità eterna distillata dalla conoscenza, è la comprensione del
+	   messaggio attraverso l'esperienza, non è possibile condividerla con gli altri,
+	   solo possibile creare esperienze in grado di fornire oppurtunità e descrivere
+	   dei processi.
+	   Esempio: regole di azione e di uso dello strumento Web estratte dalla conoscenza
+	   guadagnata dall'esperienza.
+	   
+
+3)Il flusso informativo è un flusso di informazioni che vengono trasferite tra diversi
+  componenti di un'impresa o tra l'impresa e i propri clienti.
+  Il flusso informatico è un flusso informativo realizzato attraverso un canale digitale,
+  trasferendo dati direttamente tra strumenti informatici.
+  
+4)L'overload informativo è un aumento incontrollato di informazioni complessivamente disponibile
+  , esso comporta un maggiore sforzo nel filtrare l'input estraendo le informazioni utili.
+  
+5)L'informazione viene rappresentata nel mondo digitale attraverso insiemi di byte, e le codifiche
+  assegnano significati particolari a questi valori.
+  Il problema della rappresentazione in byte avviene con la conversione dei formati di
+  rappresentazione dati fra applicazioni o sistemi diversi, per permettere loro di comunicare
+  informazione, che può generare costi notevoli o vincoli e criticità nei processi cui
+  l'informazione è associata.
+  Si possono prevenire queste problematiche utilizzando lo standard XML.
+  
+  
+6) XML è un metalinguaggio, un linguaggio che definisce altri linguaggi, basato su tag, cioè
+   particolare parole chiave racchiuse fra i caratter ASCII '<' e '>'.
+   XML consente di definire una struttura avente contenuto semantico implicito entro i documenti.
+   Quindi esso è un file di testo dove accanto alle informazioni ci sono anche metainformazioni.
+   È utile nei sistemi informativi perchè permette di far interpretare le informazioni anche
+   a programmi diversi da quelli che hanno creato il file.
+   Gli XML consentono di rappresentare anche altri tipi di dati multimediali binari, non si
+   limitano solo a quelli di testo.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

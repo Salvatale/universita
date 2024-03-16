@@ -1,0 +1,7324 @@
+%ESERCIZIO 3 ------------------------------------
+n = 1:1000
+
+n =
+
+  Columns 1 through 4
+
+           1           2           3           4
+
+  Columns 5 through 8
+
+           5           6           7           8
+
+  Columns 9 through 12
+
+           9          10          11          12
+
+  Columns 13 through 16
+
+          13          14          15          16
+
+  Columns 17 through 20
+
+          17          18          19          20
+
+  Columns 21 through 24
+
+          21          22          23          24
+
+  Columns 25 through 28
+
+          25          26          27          28
+
+  Columns 29 through 32
+
+          29          30          31          32
+
+  Columns 33 through 36
+
+          33          34          35          36
+
+  Columns 37 through 40
+
+          37          38          39          40
+
+  Columns 41 through 44
+
+          41          42          43          44
+
+  Columns 45 through 48
+
+          45          46          47          48
+
+  Columns 49 through 52
+
+          49          50          51          52
+
+  Columns 53 through 56
+
+          53          54          55          56
+
+  Columns 57 through 60
+
+          57          58          59          60
+
+  Columns 61 through 64
+
+          61          62          63          64
+
+  Columns 65 through 68
+
+          65          66          67          68
+
+  Columns 69 through 72
+
+          69          70          71          72
+
+  Columns 73 through 76
+
+          73          74          75          76
+
+  Columns 77 through 80
+
+          77          78          79          80
+
+  Columns 81 through 84
+
+          81          82          83          84
+
+  Columns 85 through 88
+
+          85          86          87          88
+
+  Columns 89 through 92
+
+          89          90          91          92
+
+  Columns 93 through 96
+
+          93          94          95          96
+
+  Columns 97 through 100
+
+          97          98          99         100
+
+  Columns 101 through 104
+
+         101         102         103         104
+
+  Columns 105 through 108
+
+         105         106         107         108
+
+  Columns 109 through 112
+
+         109         110         111         112
+
+  Columns 113 through 116
+
+         113         114         115         116
+
+  Columns 117 through 120
+
+         117         118         119         120
+
+  Columns 121 through 124
+
+         121         122         123         124
+
+  Columns 125 through 128
+
+         125         126         127         128
+
+  Columns 129 through 132
+
+         129         130         131         132
+
+  Columns 133 through 136
+
+         133         134         135         136
+
+  Columns 137 through 140
+
+         137         138         139         140
+
+  Columns 141 through 144
+
+         141         142         143         144
+
+  Columns 145 through 148
+
+         145         146         147         148
+
+  Columns 149 through 152
+
+         149         150         151         152
+
+  Columns 153 through 156
+
+         153         154         155         156
+
+  Columns 157 through 160
+
+         157         158         159         160
+
+  Columns 161 through 164
+
+         161         162         163         164
+
+  Columns 165 through 168
+
+         165         166         167         168
+
+  Columns 169 through 172
+
+         169         170         171         172
+
+  Columns 173 through 176
+
+         173         174         175         176
+
+  Columns 177 through 180
+
+         177         178         179         180
+
+  Columns 181 through 184
+
+         181         182         183         184
+
+  Columns 185 through 188
+
+         185         186         187         188
+
+  Columns 189 through 192
+
+         189         190         191         192
+
+  Columns 193 through 196
+
+         193         194         195         196
+
+  Columns 197 through 200
+
+         197         198         199         200
+
+  Columns 201 through 204
+
+         201         202         203         204
+
+  Columns 205 through 208
+
+         205         206         207         208
+
+  Columns 209 through 212
+
+         209         210         211         212
+
+  Columns 213 through 216
+
+         213         214         215         216
+
+  Columns 217 through 220
+
+         217         218         219         220
+
+  Columns 221 through 224
+
+         221         222         223         224
+
+  Columns 225 through 228
+
+         225         226         227         228
+
+  Columns 229 through 232
+
+         229         230         231         232
+
+  Columns 233 through 236
+
+         233         234         235         236
+
+  Columns 237 through 240
+
+         237         238         239         240
+
+  Columns 241 through 244
+
+         241         242         243         244
+
+  Columns 245 through 248
+
+         245         246         247         248
+
+  Columns 249 through 252
+
+         249         250         251         252
+
+  Columns 253 through 256
+
+         253         254         255         256
+
+  Columns 257 through 260
+
+         257         258         259         260
+
+  Columns 261 through 264
+
+         261         262         263         264
+
+  Columns 265 through 268
+
+         265         266         267         268
+
+  Columns 269 through 272
+
+         269         270         271         272
+
+  Columns 273 through 276
+
+         273         274         275         276
+
+  Columns 277 through 280
+
+         277         278         279         280
+
+  Columns 281 through 284
+
+         281         282         283         284
+
+  Columns 285 through 288
+
+         285         286         287         288
+
+  Columns 289 through 292
+
+         289         290         291         292
+
+  Columns 293 through 296
+
+         293         294         295         296
+
+  Columns 297 through 300
+
+         297         298         299         300
+
+  Columns 301 through 304
+
+         301         302         303         304
+
+  Columns 305 through 308
+
+         305         306         307         308
+
+  Columns 309 through 312
+
+         309         310         311         312
+
+  Columns 313 through 316
+
+         313         314         315         316
+
+  Columns 317 through 320
+
+         317         318         319         320
+
+  Columns 321 through 324
+
+         321         322         323         324
+
+  Columns 325 through 328
+
+         325         326         327         328
+
+  Columns 329 through 332
+
+         329         330         331         332
+
+  Columns 333 through 336
+
+         333         334         335         336
+
+  Columns 337 through 340
+
+         337         338         339         340
+
+  Columns 341 through 344
+
+         341         342         343         344
+
+  Columns 345 through 348
+
+         345         346         347         348
+
+  Columns 349 through 352
+
+         349         350         351         352
+
+  Columns 353 through 356
+
+         353         354         355         356
+
+  Columns 357 through 360
+
+         357         358         359         360
+
+  Columns 361 through 364
+
+         361         362         363         364
+
+  Columns 365 through 368
+
+         365         366         367         368
+
+  Columns 369 through 372
+
+         369         370         371         372
+
+  Columns 373 through 376
+
+         373         374         375         376
+
+  Columns 377 through 380
+
+         377         378         379         380
+
+  Columns 381 through 384
+
+         381         382         383         384
+
+  Columns 385 through 388
+
+         385         386         387         388
+
+  Columns 389 through 392
+
+         389         390         391         392
+
+  Columns 393 through 396
+
+         393         394         395         396
+
+  Columns 397 through 400
+
+         397         398         399         400
+
+  Columns 401 through 404
+
+         401         402         403         404
+
+  Columns 405 through 408
+
+         405         406         407         408
+
+  Columns 409 through 412
+
+         409         410         411         412
+
+  Columns 413 through 416
+
+         413         414         415         416
+
+  Columns 417 through 420
+
+         417         418         419         420
+
+  Columns 421 through 424
+
+         421         422         423         424
+
+  Columns 425 through 428
+
+         425         426         427         428
+
+  Columns 429 through 432
+
+         429         430         431         432
+
+  Columns 433 through 436
+
+         433         434         435         436
+
+  Columns 437 through 440
+
+         437         438         439         440
+
+  Columns 441 through 444
+
+         441         442         443         444
+
+  Columns 445 through 448
+
+         445         446         447         448
+
+  Columns 449 through 452
+
+         449         450         451         452
+
+  Columns 453 through 456
+
+         453         454         455         456
+
+  Columns 457 through 460
+
+         457         458         459         460
+
+  Columns 461 through 464
+
+         461         462         463         464
+
+  Columns 465 through 468
+
+         465         466         467         468
+
+  Columns 469 through 472
+
+         469         470         471         472
+
+  Columns 473 through 476
+
+         473         474         475         476
+
+  Columns 477 through 480
+
+         477         478         479         480
+
+  Columns 481 through 484
+
+         481         482         483         484
+
+  Columns 485 through 488
+
+         485         486         487         488
+
+  Columns 489 through 492
+
+         489         490         491         492
+
+  Columns 493 through 496
+
+         493         494         495         496
+
+  Columns 497 through 500
+
+         497         498         499         500
+
+  Columns 501 through 504
+
+         501         502         503         504
+
+  Columns 505 through 508
+
+         505         506         507         508
+
+  Columns 509 through 512
+
+         509         510         511         512
+
+  Columns 513 through 516
+
+         513         514         515         516
+
+  Columns 517 through 520
+
+         517         518         519         520
+
+  Columns 521 through 524
+
+         521         522         523         524
+
+  Columns 525 through 528
+
+         525         526         527         528
+
+  Columns 529 through 532
+
+         529         530         531         532
+
+  Columns 533 through 536
+
+         533         534         535         536
+
+  Columns 537 through 540
+
+         537         538         539         540
+
+  Columns 541 through 544
+
+         541         542         543         544
+
+  Columns 545 through 548
+
+         545         546         547         548
+
+  Columns 549 through 552
+
+         549         550         551         552
+
+  Columns 553 through 556
+
+         553         554         555         556
+
+  Columns 557 through 560
+
+         557         558         559         560
+
+  Columns 561 through 564
+
+         561         562         563         564
+
+  Columns 565 through 568
+
+         565         566         567         568
+
+  Columns 569 through 572
+
+         569         570         571         572
+
+  Columns 573 through 576
+
+         573         574         575         576
+
+  Columns 577 through 580
+
+         577         578         579         580
+
+  Columns 581 through 584
+
+         581         582         583         584
+
+  Columns 585 through 588
+
+         585         586         587         588
+
+  Columns 589 through 592
+
+         589         590         591         592
+
+  Columns 593 through 596
+
+         593         594         595         596
+
+  Columns 597 through 600
+
+         597         598         599         600
+
+  Columns 601 through 604
+
+         601         602         603         604
+
+  Columns 605 through 608
+
+         605         606         607         608
+
+  Columns 609 through 612
+
+         609         610         611         612
+
+  Columns 613 through 616
+
+         613         614         615         616
+
+  Columns 617 through 620
+
+         617         618         619         620
+
+  Columns 621 through 624
+
+         621         622         623         624
+
+  Columns 625 through 628
+
+         625         626         627         628
+
+  Columns 629 through 632
+
+         629         630         631         632
+
+  Columns 633 through 636
+
+         633         634         635         636
+
+  Columns 637 through 640
+
+         637         638         639         640
+
+  Columns 641 through 644
+
+         641         642         643         644
+
+  Columns 645 through 648
+
+         645         646         647         648
+
+  Columns 649 through 652
+
+         649         650         651         652
+
+  Columns 653 through 656
+
+         653         654         655         656
+
+  Columns 657 through 660
+
+         657         658         659         660
+
+  Columns 661 through 664
+
+         661         662         663         664
+
+  Columns 665 through 668
+
+         665         666         667         668
+
+  Columns 669 through 672
+
+         669         670         671         672
+
+  Columns 673 through 676
+
+         673         674         675         676
+
+  Columns 677 through 680
+
+         677         678         679         680
+
+  Columns 681 through 684
+
+         681         682         683         684
+
+  Columns 685 through 688
+
+         685         686         687         688
+
+  Columns 689 through 692
+
+         689         690         691         692
+
+  Columns 693 through 696
+
+         693         694         695         696
+
+  Columns 697 through 700
+
+         697         698         699         700
+
+  Columns 701 through 704
+
+         701         702         703         704
+
+  Columns 705 through 708
+
+         705         706         707         708
+
+  Columns 709 through 712
+
+         709         710         711         712
+
+  Columns 713 through 716
+
+         713         714         715         716
+
+  Columns 717 through 720
+
+         717         718         719         720
+
+  Columns 721 through 724
+
+         721         722         723         724
+
+  Columns 725 through 728
+
+         725         726         727         728
+
+  Columns 729 through 732
+
+         729         730         731         732
+
+  Columns 733 through 736
+
+         733         734         735         736
+
+  Columns 737 through 740
+
+         737         738         739         740
+
+  Columns 741 through 744
+
+         741         742         743         744
+
+  Columns 745 through 748
+
+         745         746         747         748
+
+  Columns 749 through 752
+
+         749         750         751         752
+
+  Columns 753 through 756
+
+         753         754         755         756
+
+  Columns 757 through 760
+
+         757         758         759         760
+
+  Columns 761 through 764
+
+         761         762         763         764
+
+  Columns 765 through 768
+
+         765         766         767         768
+
+  Columns 769 through 772
+
+         769         770         771         772
+
+  Columns 773 through 776
+
+         773         774         775         776
+
+  Columns 777 through 780
+
+         777         778         779         780
+
+  Columns 781 through 784
+
+         781         782         783         784
+
+  Columns 785 through 788
+
+         785         786         787         788
+
+  Columns 789 through 792
+
+         789         790         791         792
+
+  Columns 793 through 796
+
+         793         794         795         796
+
+  Columns 797 through 800
+
+         797         798         799         800
+
+  Columns 801 through 804
+
+         801         802         803         804
+
+  Columns 805 through 808
+
+         805         806         807         808
+
+  Columns 809 through 812
+
+         809         810         811         812
+
+  Columns 813 through 816
+
+         813         814         815         816
+
+  Columns 817 through 820
+
+         817         818         819         820
+
+  Columns 821 through 824
+
+         821         822         823         824
+
+  Columns 825 through 828
+
+         825         826         827         828
+
+  Columns 829 through 832
+
+         829         830         831         832
+
+  Columns 833 through 836
+
+         833         834         835         836
+
+  Columns 837 through 840
+
+         837         838         839         840
+
+  Columns 841 through 844
+
+         841         842         843         844
+
+  Columns 845 through 848
+
+         845         846         847         848
+
+  Columns 849 through 852
+
+         849         850         851         852
+
+  Columns 853 through 856
+
+         853         854         855         856
+
+  Columns 857 through 860
+
+         857         858         859         860
+
+  Columns 861 through 864
+
+         861         862         863         864
+
+  Columns 865 through 868
+
+         865         866         867         868
+
+  Columns 869 through 872
+
+         869         870         871         872
+
+  Columns 873 through 876
+
+         873         874         875         876
+
+  Columns 877 through 880
+
+         877         878         879         880
+
+  Columns 881 through 884
+
+         881         882         883         884
+
+  Columns 885 through 888
+
+         885         886         887         888
+
+  Columns 889 through 892
+
+         889         890         891         892
+
+  Columns 893 through 896
+
+         893         894         895         896
+
+  Columns 897 through 900
+
+         897         898         899         900
+
+  Columns 901 through 904
+
+         901         902         903         904
+
+  Columns 905 through 908
+
+         905         906         907         908
+
+  Columns 909 through 912
+
+         909         910         911         912
+
+  Columns 913 through 916
+
+         913         914         915         916
+
+  Columns 917 through 920
+
+         917         918         919         920
+
+  Columns 921 through 924
+
+         921         922         923         924
+
+  Columns 925 through 928
+
+         925         926         927         928
+
+  Columns 929 through 932
+
+         929         930         931         932
+
+  Columns 933 through 936
+
+         933         934         935         936
+
+  Columns 937 through 940
+
+         937         938         939         940
+
+  Columns 941 through 944
+
+         941         942         943         944
+
+  Columns 945 through 948
+
+         945         946         947         948
+
+  Columns 949 through 952
+
+         949         950         951         952
+
+  Columns 953 through 956
+
+         953         954         955         956
+
+  Columns 957 through 960
+
+         957         958         959         960
+
+  Columns 961 through 964
+
+         961         962         963         964
+
+  Columns 965 through 968
+
+         965         966         967         968
+
+  Columns 969 through 972
+
+         969         970         971         972
+
+  Columns 973 through 976
+
+         973         974         975         976
+
+  Columns 977 through 980
+
+         977         978         979         980
+
+  Columns 981 through 984
+
+         981         982         983         984
+
+  Columns 985 through 988
+
+         985         986         987         988
+
+  Columns 989 through 992
+
+         989         990         991         992
+
+  Columns 993 through 996
+
+         993         994         995         996
+
+  Columns 997 through 1.000
+
+         997         998         999        1000
+
+(1 + 1./n).^n
+
+ans =
+
+  Columns 1 through 5
+
+    2.0000    2.2500    2.3704    2.4414    2.4883
+
+  Columns 6 through 10
+
+    2.5216    2.5465    2.5658    2.5812    2.5937
+
+  Columns 11 through 15
+
+    2.6042    2.6130    2.6206    2.6272    2.6329
+
+  Columns 16 through 20
+
+    2.6379    2.6424    2.6464    2.6500    2.6533
+
+  Columns 21 through 25
+
+    2.6563    2.6590    2.6615    2.6637    2.6658
+
+  Columns 26 through 30
+
+    2.6678    2.6696    2.6713    2.6728    2.6743
+
+  Columns 31 through 35
+
+    2.6757    2.6770    2.6782    2.6794    2.6804
+
+  Columns 36 through 40
+
+    2.6815    2.6824    2.6834    2.6842    2.6851
+
+  Columns 41 through 45
+
+    2.6859    2.6866    2.6873    2.6880    2.6887
+
+  Columns 46 through 50
+
+    2.6893    2.6899    2.6905    2.6911    2.6916
+
+  Columns 51 through 55
+
+    2.6921    2.6926    2.6931    2.6935    2.6940
+
+  Columns 56 through 60
+
+    2.6944    2.6948    2.6952    2.6956    2.6960
+
+  Columns 61 through 65
+
+    2.6963    2.6967    2.6970    2.6973    2.6977
+
+  Columns 66 through 70
+
+    2.6980    2.6983    2.6986    2.6988    2.6991
+
+  Columns 71 through 75
+
+    2.6994    2.6996    2.6999    2.7001    2.7004
+
+  Columns 76 through 80
+
+    2.7006    2.7008    2.7011    2.7013    2.7015
+
+  Columns 81 through 85
+
+    2.7017    2.7019    2.7021    2.7023    2.7025
+
+  Columns 86 through 90
+
+    2.7026    2.7028    2.7030    2.7032    2.7033
+
+  Columns 91 through 95
+
+    2.7035    2.7037    2.7038    2.7040    2.7041
+
+  Columns 96 through 100
+
+    2.7043    2.7044    2.7045    2.7047    2.7048
+
+  Columns 101 through 105
+
+    2.7049    2.7051    2.7052    2.7053    2.7054
+
+  Columns 106 through 110
+
+    2.7056    2.7057    2.7058    2.7059    2.7060
+
+  Columns 111 through 115
+
+    2.7061    2.7062    2.7064    2.7065    2.7066
+
+  Columns 116 through 120
+
+    2.7067    2.7068    2.7069    2.7069    2.7070
+
+  Columns 121 through 125
+
+    2.7071    2.7072    2.7073    2.7074    2.7075
+
+  Columns 126 through 130
+
+    2.7076    2.7077    2.7077    2.7078    2.7079
+
+  Columns 131 through 135
+
+    2.7080    2.7081    2.7081    2.7082    2.7083
+
+  Columns 136 through 140
+
+    2.7084    2.7084    2.7085    2.7086    2.7086
+
+  Columns 141 through 145
+
+    2.7087    2.7088    2.7088    2.7089    2.7090
+
+  Columns 146 through 150
+
+    2.7090    2.7091    2.7092    2.7092    2.7093
+
+  Columns 151 through 155
+
+    2.7093    2.7094    2.7095    2.7095    2.7096
+
+  Columns 156 through 160
+
+    2.7096    2.7097    2.7097    2.7098    2.7098
+
+  Columns 161 through 165
+
+    2.7099    2.7099    2.7100    2.7100    2.7101
+
+  Columns 166 through 170
+
+    2.7101    2.7102    2.7102    2.7103    2.7103
+
+  Columns 171 through 175
+
+    2.7104    2.7104    2.7105    2.7105    2.7106
+
+  Columns 176 through 180
+
+    2.7106    2.7106    2.7107    2.7107    2.7108
+
+  Columns 181 through 185
+
+    2.7108    2.7109    2.7109    2.7109    2.7110
+
+  Columns 186 through 190
+
+    2.7110    2.7110    2.7111    2.7111    2.7112
+
+  Columns 191 through 195
+
+    2.7112    2.7112    2.7113    2.7113    2.7113
+
+  Columns 196 through 200
+
+    2.7114    2.7114    2.7114    2.7115    2.7115
+
+  Columns 201 through 205
+
+    2.7116    2.7116    2.7116    2.7116    2.7117
+
+  Columns 206 through 210
+
+    2.7117    2.7117    2.7118    2.7118    2.7118
+
+  Columns 211 through 215
+
+    2.7119    2.7119    2.7119    2.7120    2.7120
+
+  Columns 216 through 220
+
+    2.7120    2.7120    2.7121    2.7121    2.7121
+
+  Columns 221 through 225
+
+    2.7122    2.7122    2.7122    2.7122    2.7123
+
+  Columns 226 through 230
+
+    2.7123    2.7123    2.7123    2.7124    2.7124
+
+  Columns 231 through 235
+
+    2.7124    2.7124    2.7125    2.7125    2.7125
+
+  Columns 236 through 240
+
+    2.7125    2.7126    2.7126    2.7126    2.7126
+
+  Columns 241 through 245
+
+    2.7127    2.7127    2.7127    2.7127    2.7128
+
+  Columns 246 through 250
+
+    2.7128    2.7128    2.7128    2.7128    2.7129
+
+  Columns 251 through 255
+
+    2.7129    2.7129    2.7129    2.7130    2.7130
+
+  Columns 256 through 260
+
+    2.7130    2.7130    2.7130    2.7131    2.7131
+
+  Columns 261 through 265
+
+    2.7131    2.7131    2.7131    2.7132    2.7132
+
+  Columns 266 through 270
+
+    2.7132    2.7132    2.7132    2.7132    2.7133
+
+  Columns 271 through 275
+
+    2.7133    2.7133    2.7133    2.7133    2.7134
+
+  Columns 276 through 280
+
+    2.7134    2.7134    2.7134    2.7134    2.7134
+
+  Columns 281 through 285
+
+    2.7135    2.7135    2.7135    2.7135    2.7135
+
+  Columns 286 through 290
+
+    2.7135    2.7136    2.7136    2.7136    2.7136
+
+  Columns 291 through 295
+
+    2.7136    2.7136    2.7137    2.7137    2.7137
+
+  Columns 296 through 300
+
+    2.7137    2.7137    2.7137    2.7138    2.7138
+
+  Columns 301 through 305
+
+    2.7138    2.7138    2.7138    2.7138    2.7138
+
+  Columns 306 through 310
+
+    2.7139    2.7139    2.7139    2.7139    2.7139
+
+  Columns 311 through 315
+
+    2.7139    2.7139    2.7140    2.7140    2.7140
+
+  Columns 316 through 320
+
+    2.7140    2.7140    2.7140    2.7140    2.7140
+
+  Columns 321 through 325
+
+    2.7141    2.7141    2.7141    2.7141    2.7141
+
+  Columns 326 through 330
+
+    2.7141    2.7141    2.7141    2.7142    2.7142
+
+  Columns 331 through 335
+
+    2.7142    2.7142    2.7142    2.7142    2.7142
+
+  Columns 336 through 340
+
+    2.7142    2.7143    2.7143    2.7143    2.7143
+
+  Columns 341 through 345
+
+    2.7143    2.7143    2.7143    2.7143    2.7144
+
+  Columns 346 through 350
+
+    2.7144    2.7144    2.7144    2.7144    2.7144
+
+  Columns 351 through 355
+
+    2.7144    2.7144    2.7144    2.7145    2.7145
+
+  Columns 356 through 360
+
+    2.7145    2.7145    2.7145    2.7145    2.7145
+
+  Columns 361 through 365
+
+    2.7145    2.7145    2.7145    2.7146    2.7146
+
+  Columns 366 through 370
+
+    2.7146    2.7146    2.7146    2.7146    2.7146
+
+  Columns 371 through 375
+
+    2.7146    2.7146    2.7146    2.7147    2.7147
+
+  Columns 376 through 380
+
+    2.7147    2.7147    2.7147    2.7147    2.7147
+
+  Columns 381 through 385
+
+    2.7147    2.7147    2.7147    2.7148    2.7148
+
+  Columns 386 through 390
+
+    2.7148    2.7148    2.7148    2.7148    2.7148
+
+  Columns 391 through 395
+
+    2.7148    2.7148    2.7148    2.7148    2.7148
+
+  Columns 396 through 400
+
+    2.7149    2.7149    2.7149    2.7149    2.7149
+
+  Columns 401 through 405
+
+    2.7149    2.7149    2.7149    2.7149    2.7149
+
+  Columns 406 through 410
+
+    2.7149    2.7149    2.7150    2.7150    2.7150
+
+  Columns 411 through 415
+
+    2.7150    2.7150    2.7150    2.7150    2.7150
+
+  Columns 416 through 420
+
+    2.7150    2.7150    2.7150    2.7150    2.7151
+
+  Columns 421 through 425
+
+    2.7151    2.7151    2.7151    2.7151    2.7151
+
+  Columns 426 through 430
+
+    2.7151    2.7151    2.7151    2.7151    2.7151
+
+  Columns 431 through 435
+
+    2.7151    2.7151    2.7151    2.7152    2.7152
+
+  Columns 436 through 440
+
+    2.7152    2.7152    2.7152    2.7152    2.7152
+
+  Columns 441 through 445
+
+    2.7152    2.7152    2.7152    2.7152    2.7152
+
+  Columns 446 through 450
+
+    2.7152    2.7152    2.7153    2.7153    2.7153
+
+  Columns 451 through 455
+
+    2.7153    2.7153    2.7153    2.7153    2.7153
+
+  Columns 456 through 460
+
+    2.7153    2.7153    2.7153    2.7153    2.7153
+
+  Columns 461 through 465
+
+    2.7153    2.7153    2.7154    2.7154    2.7154
+
+  Columns 466 through 470
+
+    2.7154    2.7154    2.7154    2.7154    2.7154
+
+  Columns 471 through 475
+
+    2.7154    2.7154    2.7154    2.7154    2.7154
+
+  Columns 476 through 480
+
+    2.7154    2.7154    2.7154    2.7154    2.7155
+
+  Columns 481 through 485
+
+    2.7155    2.7155    2.7155    2.7155    2.7155
+
+  Columns 486 through 490
+
+    2.7155    2.7155    2.7155    2.7155    2.7155
+
+  Columns 491 through 495
+
+    2.7155    2.7155    2.7155    2.7155    2.7155
+
+  Columns 496 through 500
+
+    2.7155    2.7156    2.7156    2.7156    2.7156
+
+  Columns 501 through 505
+
+    2.7156    2.7156    2.7156    2.7156    2.7156
+
+  Columns 506 through 510
+
+    2.7156    2.7156    2.7156    2.7156    2.7156
+
+  Columns 511 through 515
+
+    2.7156    2.7156    2.7156    2.7156    2.7156
+
+  Columns 516 through 520
+
+    2.7157    2.7157    2.7157    2.7157    2.7157
+
+  Columns 521 through 525
+
+    2.7157    2.7157    2.7157    2.7157    2.7157
+
+  Columns 526 through 530
+
+    2.7157    2.7157    2.7157    2.7157    2.7157
+
+  Columns 531 through 535
+
+    2.7157    2.7157    2.7157    2.7157    2.7157
+
+  Columns 536 through 540
+
+    2.7158    2.7158    2.7158    2.7158    2.7158
+
+  Columns 541 through 545
+
+    2.7158    2.7158    2.7158    2.7158    2.7158
+
+  Columns 546 through 550
+
+    2.7158    2.7158    2.7158    2.7158    2.7158
+
+  Columns 551 through 555
+
+    2.7158    2.7158    2.7158    2.7158    2.7158
+
+  Columns 556 through 560
+
+    2.7158    2.7158    2.7159    2.7159    2.7159
+
+  Columns 561 through 565
+
+    2.7159    2.7159    2.7159    2.7159    2.7159
+
+  Columns 566 through 570
+
+    2.7159    2.7159    2.7159    2.7159    2.7159
+
+  Columns 571 through 575
+
+    2.7159    2.7159    2.7159    2.7159    2.7159
+
+  Columns 576 through 580
+
+    2.7159    2.7159    2.7159    2.7159    2.7159
+
+  Columns 581 through 585
+
+    2.7159    2.7160    2.7160    2.7160    2.7160
+
+  Columns 586 through 590
+
+    2.7160    2.7160    2.7160    2.7160    2.7160
+
+  Columns 591 through 595
+
+    2.7160    2.7160    2.7160    2.7160    2.7160
+
+  Columns 596 through 600
+
+    2.7160    2.7160    2.7160    2.7160    2.7160
+
+  Columns 601 through 605
+
+    2.7160    2.7160    2.7160    2.7160    2.7160
+
+  Columns 606 through 610
+
+    2.7160    2.7160    2.7160    2.7161    2.7161
+
+  Columns 611 through 615
+
+    2.7161    2.7161    2.7161    2.7161    2.7161
+
+  Columns 616 through 620
+
+    2.7161    2.7161    2.7161    2.7161    2.7161
+
+  Columns 621 through 625
+
+    2.7161    2.7161    2.7161    2.7161    2.7161
+
+  Columns 626 through 630
+
+    2.7161    2.7161    2.7161    2.7161    2.7161
+
+  Columns 631 through 635
+
+    2.7161    2.7161    2.7161    2.7161    2.7161
+
+  Columns 636 through 640
+
+    2.7161    2.7162    2.7162    2.7162    2.7162
+
+  Columns 641 through 645
+
+    2.7162    2.7162    2.7162    2.7162    2.7162
+
+  Columns 646 through 650
+
+    2.7162    2.7162    2.7162    2.7162    2.7162
+
+  Columns 651 through 655
+
+    2.7162    2.7162    2.7162    2.7162    2.7162
+
+  Columns 656 through 660
+
+    2.7162    2.7162    2.7162    2.7162    2.7162
+
+  Columns 661 through 665
+
+    2.7162    2.7162    2.7162    2.7162    2.7162
+
+  Columns 666 through 670
+
+    2.7162    2.7162    2.7162    2.7163    2.7163
+
+  Columns 671 through 675
+
+    2.7163    2.7163    2.7163    2.7163    2.7163
+
+  Columns 676 through 680
+
+    2.7163    2.7163    2.7163    2.7163    2.7163
+
+  Columns 681 through 685
+
+    2.7163    2.7163    2.7163    2.7163    2.7163
+
+  Columns 686 through 690
+
+    2.7163    2.7163    2.7163    2.7163    2.7163
+
+  Columns 691 through 695
+
+    2.7163    2.7163    2.7163    2.7163    2.7163
+
+  Columns 696 through 700
+
+    2.7163    2.7163    2.7163    2.7163    2.7163
+
+  Columns 701 through 705
+
+    2.7163    2.7163    2.7164    2.7164    2.7164
+
+  Columns 706 through 710
+
+    2.7164    2.7164    2.7164    2.7164    2.7164
+
+  Columns 711 through 715
+
+    2.7164    2.7164    2.7164    2.7164    2.7164
+
+  Columns 716 through 720
+
+    2.7164    2.7164    2.7164    2.7164    2.7164
+
+  Columns 721 through 725
+
+    2.7164    2.7164    2.7164    2.7164    2.7164
+
+  Columns 726 through 730
+
+    2.7164    2.7164    2.7164    2.7164    2.7164
+
+  Columns 731 through 735
+
+    2.7164    2.7164    2.7164    2.7164    2.7164
+
+  Columns 736 through 740
+
+    2.7164    2.7164    2.7164    2.7164    2.7164
+
+  Columns 741 through 745
+
+    2.7164    2.7165    2.7165    2.7165    2.7165
+
+  Columns 746 through 750
+
+    2.7165    2.7165    2.7165    2.7165    2.7165
+
+  Columns 751 through 755
+
+    2.7165    2.7165    2.7165    2.7165    2.7165
+
+  Columns 756 through 760
+
+    2.7165    2.7165    2.7165    2.7165    2.7165
+
+  Columns 761 through 765
+
+    2.7165    2.7165    2.7165    2.7165    2.7165
+
+  Columns 766 through 770
+
+    2.7165    2.7165    2.7165    2.7165    2.7165
+
+  Columns 771 through 775
+
+    2.7165    2.7165    2.7165    2.7165    2.7165
+
+  Columns 776 through 780
+
+    2.7165    2.7165    2.7165    2.7165    2.7165
+
+  Columns 781 through 785
+
+    2.7165    2.7165    2.7165    2.7166    2.7166
+
+  Columns 786 through 790
+
+    2.7166    2.7166    2.7166    2.7166    2.7166
+
+  Columns 791 through 795
+
+    2.7166    2.7166    2.7166    2.7166    2.7166
+
+  Columns 796 through 800
+
+    2.7166    2.7166    2.7166    2.7166    2.7166
+
+  Columns 801 through 805
+
+    2.7166    2.7166    2.7166    2.7166    2.7166
+
+  Columns 806 through 810
+
+    2.7166    2.7166    2.7166    2.7166    2.7166
+
+  Columns 811 through 815
+
+    2.7166    2.7166    2.7166    2.7166    2.7166
+
+  Columns 816 through 820
+
+    2.7166    2.7166    2.7166    2.7166    2.7166
+
+  Columns 821 through 825
+
+    2.7166    2.7166    2.7166    2.7166    2.7166
+
+  Columns 826 through 830
+
+    2.7166    2.7166    2.7166    2.7166    2.7166
+
+  Columns 831 through 835
+
+    2.7166    2.7167    2.7167    2.7167    2.7167
+
+  Columns 836 through 840
+
+    2.7167    2.7167    2.7167    2.7167    2.7167
+
+  Columns 841 through 845
+
+    2.7167    2.7167    2.7167    2.7167    2.7167
+
+  Columns 846 through 850
+
+    2.7167    2.7167    2.7167    2.7167    2.7167
+
+  Columns 851 through 855
+
+    2.7167    2.7167    2.7167    2.7167    2.7167
+
+  Columns 856 through 860
+
+    2.7167    2.7167    2.7167    2.7167    2.7167
+
+  Columns 861 through 865
+
+    2.7167    2.7167    2.7167    2.7167    2.7167
+
+  Columns 866 through 870
+
+    2.7167    2.7167    2.7167    2.7167    2.7167
+
+  Columns 871 through 875
+
+    2.7167    2.7167    2.7167    2.7167    2.7167
+
+  Columns 876 through 880
+
+    2.7167    2.7167    2.7167    2.7167    2.7167
+
+  Columns 881 through 885
+
+    2.7167    2.7167    2.7167    2.7167    2.7167
+
+  Columns 886 through 890
+
+    2.7167    2.7168    2.7168    2.7168    2.7168
+
+  Columns 891 through 895
+
+    2.7168    2.7168    2.7168    2.7168    2.7168
+
+  Columns 896 through 900
+
+    2.7168    2.7168    2.7168    2.7168    2.7168
+
+  Columns 901 through 905
+
+    2.7168    2.7168    2.7168    2.7168    2.7168
+
+  Columns 906 through 910
+
+    2.7168    2.7168    2.7168    2.7168    2.7168
+
+  Columns 911 through 915
+
+    2.7168    2.7168    2.7168    2.7168    2.7168
+
+  Columns 916 through 920
+
+    2.7168    2.7168    2.7168    2.7168    2.7168
+
+  Columns 921 through 925
+
+    2.7168    2.7168    2.7168    2.7168    2.7168
+
+  Columns 926 through 930
+
+    2.7168    2.7168    2.7168    2.7168    2.7168
+
+  Columns 931 through 935
+
+    2.7168    2.7168    2.7168    2.7168    2.7168
+
+  Columns 936 through 940
+
+    2.7168    2.7168    2.7168    2.7168    2.7168
+
+  Columns 941 through 945
+
+    2.7168    2.7168    2.7168    2.7168    2.7168
+
+  Columns 946 through 950
+
+    2.7168    2.7168    2.7168    2.7169    2.7169
+
+  Columns 951 through 955
+
+    2.7169    2.7169    2.7169    2.7169    2.7169
+
+  Columns 956 through 960
+
+    2.7169    2.7169    2.7169    2.7169    2.7169
+
+  Columns 961 through 965
+
+    2.7169    2.7169    2.7169    2.7169    2.7169
+
+  Columns 966 through 970
+
+    2.7169    2.7169    2.7169    2.7169    2.7169
+
+  Columns 971 through 975
+
+    2.7169    2.7169    2.7169    2.7169    2.7169
+
+  Columns 976 through 980
+
+    2.7169    2.7169    2.7169    2.7169    2.7169
+
+  Columns 981 through 985
+
+    2.7169    2.7169    2.7169    2.7169    2.7169
+
+  Columns 986 through 990
+
+    2.7169    2.7169    2.7169    2.7169    2.7169
+
+  Columns 991 through 995
+
+    2.7169    2.7169    2.7169    2.7169    2.7169
+
+  Columns 996 through 1.000
+
+    2.7169    2.7169    2.7169    2.7169    2.7169
+
+exp(1)
+
+ans =
+
+    2.7183
+
+4.*n./(n+2)
+
+ans =
+
+  Columns 1 through 5
+
+    1.3333    2.0000    2.4000    2.6667    2.8571
+
+  Columns 6 through 10
+
+    3.0000    3.1111    3.2000    3.2727    3.3333
+
+  Columns 11 through 15
+
+    3.3846    3.4286    3.4667    3.5000    3.5294
+
+  Columns 16 through 20
+
+    3.5556    3.5789    3.6000    3.6190    3.6364
+
+  Columns 21 through 25
+
+    3.6522    3.6667    3.6800    3.6923    3.7037
+
+  Columns 26 through 30
+
+    3.7143    3.7241    3.7333    3.7419    3.7500
+
+  Columns 31 through 35
+
+    3.7576    3.7647    3.7714    3.7778    3.7838
+
+  Columns 36 through 40
+
+    3.7895    3.7949    3.8000    3.8049    3.8095
+
+  Columns 41 through 45
+
+    3.8140    3.8182    3.8222    3.8261    3.8298
+
+  Columns 46 through 50
+
+    3.8333    3.8367    3.8400    3.8431    3.8462
+
+  Columns 51 through 55
+
+    3.8491    3.8519    3.8545    3.8571    3.8596
+
+  Columns 56 through 60
+
+    3.8621    3.8644    3.8667    3.8689    3.8710
+
+  Columns 61 through 65
+
+    3.8730    3.8750    3.8769    3.8788    3.8806
+
+  Columns 66 through 70
+
+    3.8824    3.8841    3.8857    3.8873    3.8889
+
+  Columns 71 through 75
+
+    3.8904    3.8919    3.8933    3.8947    3.8961
+
+  Columns 76 through 80
+
+    3.8974    3.8987    3.9000    3.9012    3.9024
+
+  Columns 81 through 85
+
+    3.9036    3.9048    3.9059    3.9070    3.9080
+
+  Columns 86 through 90
+
+    3.9091    3.9101    3.9111    3.9121    3.9130
+
+  Columns 91 through 95
+
+    3.9140    3.9149    3.9158    3.9167    3.9175
+
+  Columns 96 through 100
+
+    3.9184    3.9192    3.9200    3.9208    3.9216
+
+  Columns 101 through 105
+
+    3.9223    3.9231    3.9238    3.9245    3.9252
+
+  Columns 106 through 110
+
+    3.9259    3.9266    3.9273    3.9279    3.9286
+
+  Columns 111 through 115
+
+    3.9292    3.9298    3.9304    3.9310    3.9316
+
+  Columns 116 through 120
+
+    3.9322    3.9328    3.9333    3.9339    3.9344
+
+  Columns 121 through 125
+
+    3.9350    3.9355    3.9360    3.9365    3.9370
+
+  Columns 126 through 130
+
+    3.9375    3.9380    3.9385    3.9389    3.9394
+
+  Columns 131 through 135
+
+    3.9398    3.9403    3.9407    3.9412    3.9416
+
+  Columns 136 through 140
+
+    3.9420    3.9424    3.9429    3.9433    3.9437
+
+  Columns 141 through 145
+
+    3.9441    3.9444    3.9448    3.9452    3.9456
+
+  Columns 146 through 150
+
+    3.9459    3.9463    3.9467    3.9470    3.9474
+
+  Columns 151 through 155
+
+    3.9477    3.9481    3.9484    3.9487    3.9490
+
+  Columns 156 through 160
+
+    3.9494    3.9497    3.9500    3.9503    3.9506
+
+  Columns 161 through 165
+
+    3.9509    3.9512    3.9515    3.9518    3.9521
+
+  Columns 166 through 170
+
+    3.9524    3.9527    3.9529    3.9532    3.9535
+
+  Columns 171 through 175
+
+    3.9538    3.9540    3.9543    3.9545    3.9548
+
+  Columns 176 through 180
+
+    3.9551    3.9553    3.9556    3.9558    3.9560
+
+  Columns 181 through 185
+
+    3.9563    3.9565    3.9568    3.9570    3.9572
+
+  Columns 186 through 190
+
+    3.9574    3.9577    3.9579    3.9581    3.9583
+
+  Columns 191 through 195
+
+    3.9585    3.9588    3.9590    3.9592    3.9594
+
+  Columns 196 through 200
+
+    3.9596    3.9598    3.9600    3.9602    3.9604
+
+  Columns 201 through 205
+
+    3.9606    3.9608    3.9610    3.9612    3.9614
+
+  Columns 206 through 210
+
+    3.9615    3.9617    3.9619    3.9621    3.9623
+
+  Columns 211 through 215
+
+    3.9624    3.9626    3.9628    3.9630    3.9631
+
+  Columns 216 through 220
+
+    3.9633    3.9635    3.9636    3.9638    3.9640
+
+  Columns 221 through 225
+
+    3.9641    3.9643    3.9644    3.9646    3.9648
+
+  Columns 226 through 230
+
+    3.9649    3.9651    3.9652    3.9654    3.9655
+
+  Columns 231 through 235
+
+    3.9657    3.9658    3.9660    3.9661    3.9662
+
+  Columns 236 through 240
+
+    3.9664    3.9665    3.9667    3.9668    3.9669
+
+  Columns 241 through 245
+
+    3.9671    3.9672    3.9673    3.9675    3.9676
+
+  Columns 246 through 250
+
+    3.9677    3.9679    3.9680    3.9681    3.9683
+
+  Columns 251 through 255
+
+    3.9684    3.9685    3.9686    3.9688    3.9689
+
+  Columns 256 through 260
+
+    3.9690    3.9691    3.9692    3.9693    3.9695
+
+  Columns 261 through 265
+
+    3.9696    3.9697    3.9698    3.9699    3.9700
+
+  Columns 266 through 270
+
+    3.9701    3.9703    3.9704    3.9705    3.9706
+
+  Columns 271 through 275
+
+    3.9707    3.9708    3.9709    3.9710    3.9711
+
+  Columns 276 through 280
+
+    3.9712    3.9713    3.9714    3.9715    3.9716
+
+  Columns 281 through 285
+
+    3.9717    3.9718    3.9719    3.9720    3.9721
+
+  Columns 286 through 290
+
+    3.9722    3.9723    3.9724    3.9725    3.9726
+
+  Columns 291 through 295
+
+    3.9727    3.9728    3.9729    3.9730    3.9731
+
+  Columns 296 through 300
+
+    3.9732    3.9732    3.9733    3.9734    3.9735
+
+  Columns 301 through 305
+
+    3.9736    3.9737    3.9738    3.9739    3.9739
+
+  Columns 306 through 310
+
+    3.9740    3.9741    3.9742    3.9743    3.9744
+
+  Columns 311 through 315
+
+    3.9744    3.9745    3.9746    3.9747    3.9748
+
+  Columns 316 through 320
+
+    3.9748    3.9749    3.9750    3.9751    3.9752
+
+  Columns 321 through 325
+
+    3.9752    3.9753    3.9754    3.9755    3.9755
+
+  Columns 326 through 330
+
+    3.9756    3.9757    3.9758    3.9758    3.9759
+
+  Columns 331 through 335
+
+    3.9760    3.9760    3.9761    3.9762    3.9763
+
+  Columns 336 through 340
+
+    3.9763    3.9764    3.9765    3.9765    3.9766
+
+  Columns 341 through 345
+
+    3.9767    3.9767    3.9768    3.9769    3.9769
+
+  Columns 346 through 350
+
+    3.9770    3.9771    3.9771    3.9772    3.9773
+
+  Columns 351 through 355
+
+    3.9773    3.9774    3.9775    3.9775    3.9776
+
+  Columns 356 through 360
+
+    3.9777    3.9777    3.9778    3.9778    3.9779
+
+  Columns 361 through 365
+
+    3.9780    3.9780    3.9781    3.9781    3.9782
+
+  Columns 366 through 370
+
+    3.9783    3.9783    3.9784    3.9784    3.9785
+
+  Columns 371 through 375
+
+    3.9786    3.9786    3.9787    3.9787    3.9788
+
+  Columns 376 through 380
+
+    3.9788    3.9789    3.9789    3.9790    3.9791
+
+  Columns 381 through 385
+
+    3.9791    3.9792    3.9792    3.9793    3.9793
+
+  Columns 386 through 390
+
+    3.9794    3.9794    3.9795    3.9795    3.9796
+
+  Columns 391 through 395
+
+    3.9796    3.9797    3.9797    3.9798    3.9798
+
+  Columns 396 through 400
+
+    3.9799    3.9799    3.9800    3.9800    3.9801
+
+  Columns 401 through 405
+
+    3.9801    3.9802    3.9802    3.9803    3.9803
+
+  Columns 406 through 410
+
+    3.9804    3.9804    3.9805    3.9805    3.9806
+
+  Columns 411 through 415
+
+    3.9806    3.9807    3.9807    3.9808    3.9808
+
+  Columns 416 through 420
+
+    3.9809    3.9809    3.9810    3.9810    3.9810
+
+  Columns 421 through 425
+
+    3.9811    3.9811    3.9812    3.9812    3.9813
+
+  Columns 426 through 430
+
+    3.9813    3.9814    3.9814    3.9814    3.9815
+
+  Columns 431 through 435
+
+    3.9815    3.9816    3.9816    3.9817    3.9817
+
+  Columns 436 through 440
+
+    3.9817    3.9818    3.9818    3.9819    3.9819
+
+  Columns 441 through 445
+
+    3.9819    3.9820    3.9820    3.9821    3.9821
+
+  Columns 446 through 450
+
+    3.9821    3.9822    3.9822    3.9823    3.9823
+
+  Columns 451 through 455
+
+    3.9823    3.9824    3.9824    3.9825    3.9825
+
+  Columns 456 through 460
+
+    3.9825    3.9826    3.9826    3.9826    3.9827
+
+  Columns 461 through 465
+
+    3.9827    3.9828    3.9828    3.9828    3.9829
+
+  Columns 466 through 470
+
+    3.9829    3.9829    3.9830    3.9830    3.9831
+
+  Columns 471 through 475
+
+    3.9831    3.9831    3.9832    3.9832    3.9832
+
+  Columns 476 through 480
+
+    3.9833    3.9833    3.9833    3.9834    3.9834
+
+  Columns 481 through 485
+
+    3.9834    3.9835    3.9835    3.9835    3.9836
+
+  Columns 486 through 490
+
+    3.9836    3.9836    3.9837    3.9837    3.9837
+
+  Columns 491 through 495
+
+    3.9838    3.9838    3.9838    3.9839    3.9839
+
+  Columns 496 through 500
+
+    3.9839    3.9840    3.9840    3.9840    3.9841
+
+  Columns 501 through 505
+
+    3.9841    3.9841    3.9842    3.9842    3.9842
+
+  Columns 506 through 510
+
+    3.9843    3.9843    3.9843    3.9843    3.9844
+
+  Columns 511 through 515
+
+    3.9844    3.9844    3.9845    3.9845    3.9845
+
+  Columns 516 through 520
+
+    3.9846    3.9846    3.9846    3.9846    3.9847
+
+  Columns 521 through 525
+
+    3.9847    3.9847    3.9848    3.9848    3.9848
+
+  Columns 526 through 530
+
+    3.9848    3.9849    3.9849    3.9849    3.9850
+
+  Columns 531 through 535
+
+    3.9850    3.9850    3.9850    3.9851    3.9851
+
+  Columns 536 through 540
+
+    3.9851    3.9852    3.9852    3.9852    3.9852
+
+  Columns 541 through 545
+
+    3.9853    3.9853    3.9853    3.9853    3.9854
+
+  Columns 546 through 550
+
+    3.9854    3.9854    3.9855    3.9855    3.9855
+
+  Columns 551 through 555
+
+    3.9855    3.9856    3.9856    3.9856    3.9856
+
+  Columns 556 through 560
+
+    3.9857    3.9857    3.9857    3.9857    3.9858
+
+  Columns 561 through 565
+
+    3.9858    3.9858    3.9858    3.9859    3.9859
+
+  Columns 566 through 570
+
+    3.9859    3.9859    3.9860    3.9860    3.9860
+
+  Columns 571 through 575
+
+    3.9860    3.9861    3.9861    3.9861    3.9861
+
+  Columns 576 through 580
+
+    3.9862    3.9862    3.9862    3.9862    3.9863
+
+  Columns 581 through 585
+
+    3.9863    3.9863    3.9863    3.9863    3.9864
+
+  Columns 586 through 590
+
+    3.9864    3.9864    3.9864    3.9865    3.9865
+
+  Columns 591 through 595
+
+    3.9865    3.9865    3.9866    3.9866    3.9866
+
+  Columns 596 through 600
+
+    3.9866    3.9866    3.9867    3.9867    3.9867
+
+  Columns 601 through 605
+
+    3.9867    3.9868    3.9868    3.9868    3.9868
+
+  Columns 606 through 610
+
+    3.9868    3.9869    3.9869    3.9869    3.9869
+
+  Columns 611 through 615
+
+    3.9869    3.9870    3.9870    3.9870    3.9870
+
+  Columns 616 through 620
+
+    3.9871    3.9871    3.9871    3.9871    3.9871
+
+  Columns 621 through 625
+
+    3.9872    3.9872    3.9872    3.9872    3.9872
+
+  Columns 626 through 630
+
+    3.9873    3.9873    3.9873    3.9873    3.9873
+
+  Columns 631 through 635
+
+    3.9874    3.9874    3.9874    3.9874    3.9874
+
+  Columns 636 through 640
+
+    3.9875    3.9875    3.9875    3.9875    3.9875
+
+  Columns 641 through 645
+
+    3.9876    3.9876    3.9876    3.9876    3.9876
+
+  Columns 646 through 650
+
+    3.9877    3.9877    3.9877    3.9877    3.9877
+
+  Columns 651 through 655
+
+    3.9877    3.9878    3.9878    3.9878    3.9878
+
+  Columns 656 through 660
+
+    3.9878    3.9879    3.9879    3.9879    3.9879
+
+  Columns 661 through 665
+
+    3.9879    3.9880    3.9880    3.9880    3.9880
+
+  Columns 666 through 670
+
+    3.9880    3.9880    3.9881    3.9881    3.9881
+
+  Columns 671 through 675
+
+    3.9881    3.9881    3.9881    3.9882    3.9882
+
+  Columns 676 through 680
+
+    3.9882    3.9882    3.9882    3.9883    3.9883
+
+  Columns 681 through 685
+
+    3.9883    3.9883    3.9883    3.9883    3.9884
+
+  Columns 686 through 690
+
+    3.9884    3.9884    3.9884    3.9884    3.9884
+
+  Columns 691 through 695
+
+    3.9885    3.9885    3.9885    3.9885    3.9885
+
+  Columns 696 through 700
+
+    3.9885    3.9886    3.9886    3.9886    3.9886
+
+  Columns 701 through 705
+
+    3.9886    3.9886    3.9887    3.9887    3.9887
+
+  Columns 706 through 710
+
+    3.9887    3.9887    3.9887    3.9887    3.9888
+
+  Columns 711 through 715
+
+    3.9888    3.9888    3.9888    3.9888    3.9888
+
+  Columns 716 through 720
+
+    3.9889    3.9889    3.9889    3.9889    3.9889
+
+  Columns 721 through 725
+
+    3.9889    3.9890    3.9890    3.9890    3.9890
+
+  Columns 726 through 730
+
+    3.9890    3.9890    3.9890    3.9891    3.9891
+
+  Columns 731 through 735
+
+    3.9891    3.9891    3.9891    3.9891    3.9891
+
+  Columns 736 through 740
+
+    3.9892    3.9892    3.9892    3.9892    3.9892
+
+  Columns 741 through 745
+
+    3.9892    3.9892    3.9893    3.9893    3.9893
+
+  Columns 746 through 750
+
+    3.9893    3.9893    3.9893    3.9893    3.9894
+
+  Columns 751 through 755
+
+    3.9894    3.9894    3.9894    3.9894    3.9894
+
+  Columns 756 through 760
+
+    3.9894    3.9895    3.9895    3.9895    3.9895
+
+  Columns 761 through 765
+
+    3.9895    3.9895    3.9895    3.9896    3.9896
+
+  Columns 766 through 770
+
+    3.9896    3.9896    3.9896    3.9896    3.9896
+
+  Columns 771 through 775
+
+    3.9897    3.9897    3.9897    3.9897    3.9897
+
+  Columns 776 through 780
+
+    3.9897    3.9897    3.9897    3.9898    3.9898
+
+  Columns 781 through 785
+
+    3.9898    3.9898    3.9898    3.9898    3.9898
+
+  Columns 786 through 790
+
+    3.9898    3.9899    3.9899    3.9899    3.9899
+
+  Columns 791 through 795
+
+    3.9899    3.9899    3.9899    3.9899    3.9900
+
+  Columns 796 through 800
+
+    3.9900    3.9900    3.9900    3.9900    3.9900
+
+  Columns 801 through 805
+
+    3.9900    3.9900    3.9901    3.9901    3.9901
+
+  Columns 806 through 810
+
+    3.9901    3.9901    3.9901    3.9901    3.9901
+
+  Columns 811 through 815
+
+    3.9902    3.9902    3.9902    3.9902    3.9902
+
+  Columns 816 through 820
+
+    3.9902    3.9902    3.9902    3.9903    3.9903
+
+  Columns 821 through 825
+
+    3.9903    3.9903    3.9903    3.9903    3.9903
+
+  Columns 826 through 830
+
+    3.9903    3.9903    3.9904    3.9904    3.9904
+
+  Columns 831 through 835
+
+    3.9904    3.9904    3.9904    3.9904    3.9904
+
+  Columns 836 through 840
+
+    3.9905    3.9905    3.9905    3.9905    3.9905
+
+  Columns 841 through 845
+
+    3.9905    3.9905    3.9905    3.9905    3.9906
+
+  Columns 846 through 850
+
+    3.9906    3.9906    3.9906    3.9906    3.9906
+
+  Columns 851 through 855
+
+    3.9906    3.9906    3.9906    3.9907    3.9907
+
+  Columns 856 through 860
+
+    3.9907    3.9907    3.9907    3.9907    3.9907
+
+  Columns 861 through 865
+
+    3.9907    3.9907    3.9908    3.9908    3.9908
+
+  Columns 866 through 870
+
+    3.9908    3.9908    3.9908    3.9908    3.9908
+
+  Columns 871 through 875
+
+    3.9908    3.9908    3.9909    3.9909    3.9909
+
+  Columns 876 through 880
+
+    3.9909    3.9909    3.9909    3.9909    3.9909
+
+  Columns 881 through 885
+
+    3.9909    3.9910    3.9910    3.9910    3.9910
+
+  Columns 886 through 890
+
+    3.9910    3.9910    3.9910    3.9910    3.9910
+
+  Columns 891 through 895
+
+    3.9910    3.9911    3.9911    3.9911    3.9911
+
+  Columns 896 through 900
+
+    3.9911    3.9911    3.9911    3.9911    3.9911
+
+  Columns 901 through 905
+
+    3.9911    3.9912    3.9912    3.9912    3.9912
+
+  Columns 906 through 910
+
+    3.9912    3.9912    3.9912    3.9912    3.9912
+
+  Columns 911 through 915
+
+    3.9912    3.9912    3.9913    3.9913    3.9913
+
+  Columns 916 through 920
+
+    3.9913    3.9913    3.9913    3.9913    3.9913
+
+  Columns 921 through 925
+
+    3.9913    3.9913    3.9914    3.9914    3.9914
+
+  Columns 926 through 930
+
+    3.9914    3.9914    3.9914    3.9914    3.9914
+
+  Columns 931 through 935
+
+    3.9914    3.9914    3.9914    3.9915    3.9915
+
+  Columns 936 through 940
+
+    3.9915    3.9915    3.9915    3.9915    3.9915
+
+  Columns 941 through 945
+
+    3.9915    3.9915    3.9915    3.9915    3.9916
+
+  Columns 946 through 950
+
+    3.9916    3.9916    3.9916    3.9916    3.9916
+
+  Columns 951 through 955
+
+    3.9916    3.9916    3.9916    3.9916    3.9916
+
+  Columns 956 through 960
+
+    3.9916    3.9917    3.9917    3.9917    3.9917
+
+  Columns 961 through 965
+
+    3.9917    3.9917    3.9917    3.9917    3.9917
+
+  Columns 966 through 970
+
+    3.9917    3.9917    3.9918    3.9918    3.9918
+
+  Columns 971 through 975
+
+    3.9918    3.9918    3.9918    3.9918    3.9918
+
+  Columns 976 through 980
+
+    3.9918    3.9918    3.9918    3.9918    3.9919
+
+  Columns 981 through 985
+
+    3.9919    3.9919    3.9919    3.9919    3.9919
+
+  Columns 986 through 990
+
+    3.9919    3.9919    3.9919    3.9919    3.9919
+
+  Columns 991 through 995
+
+    3.9919    3.9920    3.9920    3.9920    3.9920
+
+  Columns 996 through 1.000
+
+    3.9920    3.9920    3.9920    3.9920    3.9920
+
+%converge a 4
+
+log(1+sqrt(n./(n+1)))
+
+ans =
+
+  Columns 1 through 5
+
+    0.5348    0.5969    0.6238    0.6389    0.6486
+
+  Columns 6 through 10
+
+    0.6554    0.6603    0.6641    0.6672    0.6696
+
+  Columns 11 through 15
+
+    0.6716    0.6733    0.6748    0.6760    0.6771
+
+  Columns 16 through 20
+
+    0.6781    0.6790    0.6797    0.6804    0.6810
+
+  Columns 21 through 25
+
+    0.6816    0.6821    0.6826    0.6830    0.6834
+
+  Columns 26 through 30
+
+    0.6838    0.6841    0.6844    0.6847    0.6850
+
+  Columns 31 through 35
+
+    0.6852    0.6855    0.6857    0.6859    0.6861
+
+  Columns 36 through 40
+
+    0.6863    0.6865    0.6867    0.6868    0.6870
+
+  Columns 41 through 45
+
+    0.6871    0.6873    0.6874    0.6875    0.6877
+
+  Columns 46 through 50
+
+    0.6878    0.6879    0.6880    0.6881    0.6882
+
+  Columns 51 through 55
+
+    0.6883    0.6884    0.6885    0.6886    0.6887
+
+  Columns 56 through 60
+
+    0.6887    0.6888    0.6889    0.6890    0.6890
+
+  Columns 61 through 65
+
+    0.6891    0.6892    0.6892    0.6893    0.6893
+
+  Columns 66 through 70
+
+    0.6894    0.6895    0.6895    0.6896    0.6896
+
+  Columns 71 through 75
+
+    0.6897    0.6897    0.6898    0.6898    0.6898
+
+  Columns 76 through 80
+
+    0.6899    0.6899    0.6900    0.6900    0.6900
+
+  Columns 81 through 85
+
+    0.6901    0.6901    0.6902    0.6902    0.6902
+
+  Columns 86 through 90
+
+    0.6903    0.6903    0.6903    0.6904    0.6904
+
+  Columns 91 through 95
+
+    0.6904    0.6904    0.6905    0.6905    0.6905
+
+  Columns 96 through 100
+
+    0.6906    0.6906    0.6906    0.6906    0.6907
+
+  Columns 101 through 105
+
+    0.6907    0.6907    0.6907    0.6908    0.6908
+
+  Columns 106 through 110
+
+    0.6908    0.6908    0.6908    0.6909    0.6909
+
+  Columns 111 through 115
+
+    0.6909    0.6909    0.6909    0.6910    0.6910
+
+  Columns 116 through 120
+
+    0.6910    0.6910    0.6910    0.6911    0.6911
+
+  Columns 121 through 125
+
+    0.6911    0.6911    0.6911    0.6911    0.6912
+
+  Columns 126 through 130
+
+    0.6912    0.6912    0.6912    0.6912    0.6912
+
+  Columns 131 through 135
+
+    0.6912    0.6913    0.6913    0.6913    0.6913
+
+  Columns 136 through 140
+
+    0.6913    0.6913    0.6913    0.6914    0.6914
+
+  Columns 141 through 145
+
+    0.6914    0.6914    0.6914    0.6914    0.6914
+
+  Columns 146 through 150
+
+    0.6914    0.6915    0.6915    0.6915    0.6915
+
+  Columns 151 through 155
+
+    0.6915    0.6915    0.6915    0.6915    0.6915
+
+  Columns 156 through 160
+
+    0.6916    0.6916    0.6916    0.6916    0.6916
+
+  Columns 161 through 165
+
+    0.6916    0.6916    0.6916    0.6916    0.6916
+
+  Columns 166 through 170
+
+    0.6916    0.6917    0.6917    0.6917    0.6917
+
+  Columns 171 through 175
+
+    0.6917    0.6917    0.6917    0.6917    0.6917
+
+  Columns 176 through 180
+
+    0.6917    0.6917    0.6917    0.6918    0.6918
+
+  Columns 181 through 185
+
+    0.6918    0.6918    0.6918    0.6918    0.6918
+
+  Columns 186 through 190
+
+    0.6918    0.6918    0.6918    0.6918    0.6918
+
+  Columns 191 through 195
+
+    0.6918    0.6918    0.6919    0.6919    0.6919
+
+  Columns 196 through 200
+
+    0.6919    0.6919    0.6919    0.6919    0.6919
+
+  Columns 201 through 205
+
+    0.6919    0.6919    0.6919    0.6919    0.6919
+
+  Columns 206 through 210
+
+    0.6919    0.6919    0.6919    0.6920    0.6920
+
+  Columns 211 through 215
+
+    0.6920    0.6920    0.6920    0.6920    0.6920
+
+  Columns 216 through 220
+
+    0.6920    0.6920    0.6920    0.6920    0.6920
+
+  Columns 221 through 225
+
+    0.6920    0.6920    0.6920    0.6920    0.6920
+
+  Columns 226 through 230
+
+    0.6920    0.6920    0.6921    0.6921    0.6921
+
+  Columns 231 through 235
+
+    0.6921    0.6921    0.6921    0.6921    0.6921
+
+  Columns 236 through 240
+
+    0.6921    0.6921    0.6921    0.6921    0.6921
+
+  Columns 241 through 245
+
+    0.6921    0.6921    0.6921    0.6921    0.6921
+
+  Columns 246 through 250
+
+    0.6921    0.6921    0.6921    0.6921    0.6921
+
+  Columns 251 through 255
+
+    0.6922    0.6922    0.6922    0.6922    0.6922
+
+  Columns 256 through 260
+
+    0.6922    0.6922    0.6922    0.6922    0.6922
+
+  Columns 261 through 265
+
+    0.6922    0.6922    0.6922    0.6922    0.6922
+
+  Columns 266 through 270
+
+    0.6922    0.6922    0.6922    0.6922    0.6922
+
+  Columns 271 through 275
+
+    0.6922    0.6922    0.6922    0.6922    0.6922
+
+  Columns 276 through 280
+
+    0.6922    0.6922    0.6922    0.6923    0.6923
+
+  Columns 281 through 285
+
+    0.6923    0.6923    0.6923    0.6923    0.6923
+
+  Columns 286 through 290
+
+    0.6923    0.6923    0.6923    0.6923    0.6923
+
+  Columns 291 through 295
+
+    0.6923    0.6923    0.6923    0.6923    0.6923
+
+  Columns 296 through 300
+
+    0.6923    0.6923    0.6923    0.6923    0.6923
+
+  Columns 301 through 305
+
+    0.6923    0.6923    0.6923    0.6923    0.6923
+
+  Columns 306 through 310
+
+    0.6923    0.6923    0.6923    0.6923    0.6923
+
+  Columns 311 through 315
+
+    0.6923    0.6923    0.6924    0.6924    0.6924
+
+  Columns 316 through 320
+
+    0.6924    0.6924    0.6924    0.6924    0.6924
+
+  Columns 321 through 325
+
+    0.6924    0.6924    0.6924    0.6924    0.6924
+
+  Columns 326 through 330
+
+    0.6924    0.6924    0.6924    0.6924    0.6924
+
+  Columns 331 through 335
+
+    0.6924    0.6924    0.6924    0.6924    0.6924
+
+  Columns 336 through 340
+
+    0.6924    0.6924    0.6924    0.6924    0.6924
+
+  Columns 341 through 345
+
+    0.6924    0.6924    0.6924    0.6924    0.6924
+
+  Columns 346 through 350
+
+    0.6924    0.6924    0.6924    0.6924    0.6924
+
+  Columns 351 through 355
+
+    0.6924    0.6924    0.6924    0.6924    0.6924
+
+  Columns 356 through 360
+
+    0.6924    0.6924    0.6925    0.6925    0.6925
+
+  Columns 361 through 365
+
+    0.6925    0.6925    0.6925    0.6925    0.6925
+
+  Columns 366 through 370
+
+    0.6925    0.6925    0.6925    0.6925    0.6925
+
+  Columns 371 through 375
+
+    0.6925    0.6925    0.6925    0.6925    0.6925
+
+  Columns 376 through 380
+
+    0.6925    0.6925    0.6925    0.6925    0.6925
+
+  Columns 381 through 385
+
+    0.6925    0.6925    0.6925    0.6925    0.6925
+
+  Columns 386 through 390
+
+    0.6925    0.6925    0.6925    0.6925    0.6925
+
+  Columns 391 through 395
+
+    0.6925    0.6925    0.6925    0.6925    0.6925
+
+  Columns 396 through 400
+
+    0.6925    0.6925    0.6925    0.6925    0.6925
+
+  Columns 401 through 405
+
+    0.6925    0.6925    0.6925    0.6925    0.6925
+
+  Columns 406 through 410
+
+    0.6925    0.6925    0.6925    0.6925    0.6925
+
+  Columns 411 through 415
+
+    0.6925    0.6925    0.6925    0.6925    0.6925
+
+  Columns 416 through 420
+
+    0.6925    0.6925    0.6925    0.6926    0.6926
+
+  Columns 421 through 425
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 426 through 430
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 431 through 435
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 436 through 440
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 441 through 445
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 446 through 450
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 451 through 455
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 456 through 460
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 461 through 465
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 466 through 470
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 471 through 475
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 476 through 480
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 481 through 485
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 486 through 490
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 491 through 495
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 496 through 500
+
+    0.6926    0.6926    0.6926    0.6926    0.6926
+
+  Columns 501 through 505
+
+    0.6926    0.6926    0.6927    0.6927    0.6927
+
+  Columns 506 through 510
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 511 through 515
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 516 through 520
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 521 through 525
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 526 through 530
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 531 through 535
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 536 through 540
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 541 through 545
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 546 through 550
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 551 through 555
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 556 through 560
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 561 through 565
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 566 through 570
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 571 through 575
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 576 through 580
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 581 through 585
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 586 through 590
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 591 through 595
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 596 through 600
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 601 through 605
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 606 through 610
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 611 through 615
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 616 through 620
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 621 through 625
+
+    0.6927    0.6927    0.6927    0.6927    0.6927
+
+  Columns 626 through 630
+
+    0.6927    0.6927    0.6927    0.6928    0.6928
+
+  Columns 631 through 635
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 636 through 640
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 641 through 645
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 646 through 650
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 651 through 655
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 656 through 660
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 661 through 665
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 666 through 670
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 671 through 675
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 676 through 680
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 681 through 685
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 686 through 690
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 691 through 695
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 696 through 700
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 701 through 705
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 706 through 710
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 711 through 715
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 716 through 720
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 721 through 725
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 726 through 730
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 731 through 735
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 736 through 740
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 741 through 745
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 746 through 750
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 751 through 755
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 756 through 760
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 761 through 765
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 766 through 770
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 771 through 775
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 776 through 780
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 781 through 785
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 786 through 790
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 791 through 795
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 796 through 800
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 801 through 805
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 806 through 810
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 811 through 815
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 816 through 820
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 821 through 825
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 826 through 830
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 831 through 835
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 836 through 840
+
+    0.6928    0.6928    0.6928    0.6928    0.6928
+
+  Columns 841 through 845
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 846 through 850
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 851 through 855
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 856 through 860
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 861 through 865
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 866 through 870
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 871 through 875
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 876 through 880
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 881 through 885
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 886 through 890
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 891 through 895
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 896 through 900
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 901 through 905
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 906 through 910
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 911 through 915
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 916 through 920
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 921 through 925
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 926 through 930
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 931 through 935
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 936 through 940
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 941 through 945
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 946 through 950
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 951 through 955
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 956 through 960
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 961 through 965
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 966 through 970
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 971 through 975
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 976 through 980
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 981 through 985
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 986 through 990
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 991 through 995
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+  Columns 996 through 1.000
+
+    0.6929    0.6929    0.6929    0.6929    0.6929
+
+log(2)
+
+ans =
+
+    0.6931
+
+%ESERCIZIO 4 ------------------------------------
+x = 1:1000
+
+x =
+
+  Columns 1 through 4
+
+           1           2           3           4
+
+  Columns 5 through 8
+
+           5           6           7           8
+
+  Columns 9 through 12
+
+           9          10          11          12
+
+  Columns 13 through 16
+
+          13          14          15          16
+
+  Columns 17 through 20
+
+          17          18          19          20
+
+  Columns 21 through 24
+
+          21          22          23          24
+
+  Columns 25 through 28
+
+          25          26          27          28
+
+  Columns 29 through 32
+
+          29          30          31          32
+
+  Columns 33 through 36
+
+          33          34          35          36
+
+  Columns 37 through 40
+
+          37          38          39          40
+
+  Columns 41 through 44
+
+          41          42          43          44
+
+  Columns 45 through 48
+
+          45          46          47          48
+
+  Columns 49 through 52
+
+          49          50          51          52
+
+  Columns 53 through 56
+
+          53          54          55          56
+
+  Columns 57 through 60
+
+          57          58          59          60
+
+  Columns 61 through 64
+
+          61          62          63          64
+
+  Columns 65 through 68
+
+          65          66          67          68
+
+  Columns 69 through 72
+
+          69          70          71          72
+
+  Columns 73 through 76
+
+          73          74          75          76
+
+  Columns 77 through 80
+
+          77          78          79          80
+
+  Columns 81 through 84
+
+          81          82          83          84
+
+  Columns 85 through 88
+
+          85          86          87          88
+
+  Columns 89 through 92
+
+          89          90          91          92
+
+  Columns 93 through 96
+
+          93          94          95          96
+
+  Columns 97 through 100
+
+          97          98          99         100
+
+  Columns 101 through 104
+
+         101         102         103         104
+
+  Columns 105 through 108
+
+         105         106         107         108
+
+  Columns 109 through 112
+
+         109         110         111         112
+
+  Columns 113 through 116
+
+         113         114         115         116
+
+  Columns 117 through 120
+
+         117         118         119         120
+
+  Columns 121 through 124
+
+         121         122         123         124
+
+  Columns 125 through 128
+
+         125         126         127         128
+
+  Columns 129 through 132
+
+         129         130         131         132
+
+  Columns 133 through 136
+
+         133         134         135         136
+
+  Columns 137 through 140
+
+         137         138         139         140
+
+  Columns 141 through 144
+
+         141         142         143         144
+
+  Columns 145 through 148
+
+         145         146         147         148
+
+  Columns 149 through 152
+
+         149         150         151         152
+
+  Columns 153 through 156
+
+         153         154         155         156
+
+  Columns 157 through 160
+
+         157         158         159         160
+
+  Columns 161 through 164
+
+         161         162         163         164
+
+  Columns 165 through 168
+
+         165         166         167         168
+
+  Columns 169 through 172
+
+         169         170         171         172
+
+  Columns 173 through 176
+
+         173         174         175         176
+
+  Columns 177 through 180
+
+         177         178         179         180
+
+  Columns 181 through 184
+
+         181         182         183         184
+
+  Columns 185 through 188
+
+         185         186         187         188
+
+  Columns 189 through 192
+
+         189         190         191         192
+
+  Columns 193 through 196
+
+         193         194         195         196
+
+  Columns 197 through 200
+
+         197         198         199         200
+
+  Columns 201 through 204
+
+         201         202         203         204
+
+  Columns 205 through 208
+
+         205         206         207         208
+
+  Columns 209 through 212
+
+         209         210         211         212
+
+  Columns 213 through 216
+
+         213         214         215         216
+
+  Columns 217 through 220
+
+         217         218         219         220
+
+  Columns 221 through 224
+
+         221         222         223         224
+
+  Columns 225 through 228
+
+         225         226         227         228
+
+  Columns 229 through 232
+
+         229         230         231         232
+
+  Columns 233 through 236
+
+         233         234         235         236
+
+  Columns 237 through 240
+
+         237         238         239         240
+
+  Columns 241 through 244
+
+         241         242         243         244
+
+  Columns 245 through 248
+
+         245         246         247         248
+
+  Columns 249 through 252
+
+         249         250         251         252
+
+  Columns 253 through 256
+
+         253         254         255         256
+
+  Columns 257 through 260
+
+         257         258         259         260
+
+  Columns 261 through 264
+
+         261         262         263         264
+
+  Columns 265 through 268
+
+         265         266         267         268
+
+  Columns 269 through 272
+
+         269         270         271         272
+
+  Columns 273 through 276
+
+         273         274         275         276
+
+  Columns 277 through 280
+
+         277         278         279         280
+
+  Columns 281 through 284
+
+         281         282         283         284
+
+  Columns 285 through 288
+
+         285         286         287         288
+
+  Columns 289 through 292
+
+         289         290         291         292
+
+  Columns 293 through 296
+
+         293         294         295         296
+
+  Columns 297 through 300
+
+         297         298         299         300
+
+  Columns 301 through 304
+
+         301         302         303         304
+
+  Columns 305 through 308
+
+         305         306         307         308
+
+  Columns 309 through 312
+
+         309         310         311         312
+
+  Columns 313 through 316
+
+         313         314         315         316
+
+  Columns 317 through 320
+
+         317         318         319         320
+
+  Columns 321 through 324
+
+         321         322         323         324
+
+  Columns 325 through 328
+
+         325         326         327         328
+
+  Columns 329 through 332
+
+         329         330         331         332
+
+  Columns 333 through 336
+
+         333         334         335         336
+
+  Columns 337 through 340
+
+         337         338         339         340
+
+  Columns 341 through 344
+
+         341         342         343         344
+
+  Columns 345 through 348
+
+         345         346         347         348
+
+  Columns 349 through 352
+
+         349         350         351         352
+
+  Columns 353 through 356
+
+         353         354         355         356
+
+  Columns 357 through 360
+
+         357         358         359         360
+
+  Columns 361 through 364
+
+         361         362         363         364
+
+  Columns 365 through 368
+
+         365         366         367         368
+
+  Columns 369 through 372
+
+         369         370         371         372
+
+  Columns 373 through 376
+
+         373         374         375         376
+
+  Columns 377 through 380
+
+         377         378         379         380
+
+  Columns 381 through 384
+
+         381         382         383         384
+
+  Columns 385 through 388
+
+         385         386         387         388
+
+  Columns 389 through 392
+
+         389         390         391         392
+
+  Columns 393 through 396
+
+         393         394         395         396
+
+  Columns 397 through 400
+
+         397         398         399         400
+
+  Columns 401 through 404
+
+         401         402         403         404
+
+  Columns 405 through 408
+
+         405         406         407         408
+
+  Columns 409 through 412
+
+         409         410         411         412
+
+  Columns 413 through 416
+
+         413         414         415         416
+
+  Columns 417 through 420
+
+         417         418         419         420
+
+  Columns 421 through 424
+
+         421         422         423         424
+
+  Columns 425 through 428
+
+         425         426         427         428
+
+  Columns 429 through 432
+
+         429         430         431         432
+
+  Columns 433 through 436
+
+         433         434         435         436
+
+  Columns 437 through 440
+
+         437         438         439         440
+
+  Columns 441 through 444
+
+         441         442         443         444
+
+  Columns 445 through 448
+
+         445         446         447         448
+
+  Columns 449 through 452
+
+         449         450         451         452
+
+  Columns 453 through 456
+
+         453         454         455         456
+
+  Columns 457 through 460
+
+         457         458         459         460
+
+  Columns 461 through 464
+
+         461         462         463         464
+
+  Columns 465 through 468
+
+         465         466         467         468
+
+  Columns 469 through 472
+
+         469         470         471         472
+
+  Columns 473 through 476
+
+         473         474         475         476
+
+  Columns 477 through 480
+
+         477         478         479         480
+
+  Columns 481 through 484
+
+         481         482         483         484
+
+  Columns 485 through 488
+
+         485         486         487         488
+
+  Columns 489 through 492
+
+         489         490         491         492
+
+  Columns 493 through 496
+
+         493         494         495         496
+
+  Columns 497 through 500
+
+         497         498         499         500
+
+  Columns 501 through 504
+
+         501         502         503         504
+
+  Columns 505 through 508
+
+         505         506         507         508
+
+  Columns 509 through 512
+
+         509         510         511         512
+
+  Columns 513 through 516
+
+         513         514         515         516
+
+  Columns 517 through 520
+
+         517         518         519         520
+
+  Columns 521 through 524
+
+         521         522         523         524
+
+  Columns 525 through 528
+
+         525         526         527         528
+
+  Columns 529 through 532
+
+         529         530         531         532
+
+  Columns 533 through 536
+
+         533         534         535         536
+
+  Columns 537 through 540
+
+         537         538         539         540
+
+  Columns 541 through 544
+
+         541         542         543         544
+
+  Columns 545 through 548
+
+         545         546         547         548
+
+  Columns 549 through 552
+
+         549         550         551         552
+
+  Columns 553 through 556
+
+         553         554         555         556
+
+  Columns 557 through 560
+
+         557         558         559         560
+
+  Columns 561 through 564
+
+         561         562         563         564
+
+  Columns 565 through 568
+
+         565         566         567         568
+
+  Columns 569 through 572
+
+         569         570         571         572
+
+  Columns 573 through 576
+
+         573         574         575         576
+
+  Columns 577 through 580
+
+         577         578         579         580
+
+  Columns 581 through 584
+
+         581         582         583         584
+
+  Columns 585 through 588
+
+         585         586         587         588
+
+  Columns 589 through 592
+
+         589         590         591         592
+
+  Columns 593 through 596
+
+         593         594         595         596
+
+  Columns 597 through 600
+
+         597         598         599         600
+
+  Columns 601 through 604
+
+         601         602         603         604
+
+  Columns 605 through 608
+
+         605         606         607         608
+
+  Columns 609 through 612
+
+         609         610         611         612
+
+  Columns 613 through 616
+
+         613         614         615         616
+
+  Columns 617 through 620
+
+         617         618         619         620
+
+  Columns 621 through 624
+
+         621         622         623         624
+
+  Columns 625 through 628
+
+         625         626         627         628
+
+  Columns 629 through 632
+
+         629         630         631         632
+
+  Columns 633 through 636
+
+         633         634         635         636
+
+  Columns 637 through 640
+
+         637         638         639         640
+
+  Columns 641 through 644
+
+         641         642         643         644
+
+  Columns 645 through 648
+
+         645         646         647         648
+
+  Columns 649 through 652
+
+         649         650         651         652
+
+  Columns 653 through 656
+
+         653         654         655         656
+
+  Columns 657 through 660
+
+         657         658         659         660
+
+  Columns 661 through 664
+
+         661         662         663         664
+
+  Columns 665 through 668
+
+         665         666         667         668
+
+  Columns 669 through 672
+
+         669         670         671         672
+
+  Columns 673 through 676
+
+         673         674         675         676
+
+  Columns 677 through 680
+
+         677         678         679         680
+
+  Columns 681 through 684
+
+         681         682         683         684
+
+  Columns 685 through 688
+
+         685         686         687         688
+
+  Columns 689 through 692
+
+         689         690         691         692
+
+  Columns 693 through 696
+
+         693         694         695         696
+
+  Columns 697 through 700
+
+         697         698         699         700
+
+  Columns 701 through 704
+
+         701         702         703         704
+
+  Columns 705 through 708
+
+         705         706         707         708
+
+  Columns 709 through 712
+
+         709         710         711         712
+
+  Columns 713 through 716
+
+         713         714         715         716
+
+  Columns 717 through 720
+
+         717         718         719         720
+
+  Columns 721 through 724
+
+         721         722         723         724
+
+  Columns 725 through 728
+
+         725         726         727         728
+
+  Columns 729 through 732
+
+         729         730         731         732
+
+  Columns 733 through 736
+
+         733         734         735         736
+
+  Columns 737 through 740
+
+         737         738         739         740
+
+  Columns 741 through 744
+
+         741         742         743         744
+
+  Columns 745 through 748
+
+         745         746         747         748
+
+  Columns 749 through 752
+
+         749         750         751         752
+
+  Columns 753 through 756
+
+         753         754         755         756
+
+  Columns 757 through 760
+
+         757         758         759         760
+
+  Columns 761 through 764
+
+         761         762         763         764
+
+  Columns 765 through 768
+
+         765         766         767         768
+
+  Columns 769 through 772
+
+         769         770         771         772
+
+  Columns 773 through 776
+
+         773         774         775         776
+
+  Columns 777 through 780
+
+         777         778         779         780
+
+  Columns 781 through 784
+
+         781         782         783         784
+
+  Columns 785 through 788
+
+         785         786         787         788
+
+  Columns 789 through 792
+
+         789         790         791         792
+
+  Columns 793 through 796
+
+         793         794         795         796
+
+  Columns 797 through 800
+
+         797         798         799         800
+
+  Columns 801 through 804
+
+         801         802         803         804
+
+  Columns 805 through 808
+
+         805         806         807         808
+
+  Columns 809 through 812
+
+         809         810         811         812
+
+  Columns 813 through 816
+
+         813         814         815         816
+
+  Columns 817 through 820
+
+         817         818         819         820
+
+  Columns 821 through 824
+
+         821         822         823         824
+
+  Columns 825 through 828
+
+         825         826         827         828
+
+  Columns 829 through 832
+
+         829         830         831         832
+
+  Columns 833 through 836
+
+         833         834         835         836
+
+  Columns 837 through 840
+
+         837         838         839         840
+
+  Columns 841 through 844
+
+         841         842         843         844
+
+  Columns 845 through 848
+
+         845         846         847         848
+
+  Columns 849 through 852
+
+         849         850         851         852
+
+  Columns 853 through 856
+
+         853         854         855         856
+
+  Columns 857 through 860
+
+         857         858         859         860
+
+  Columns 861 through 864
+
+         861         862         863         864
+
+  Columns 865 through 868
+
+         865         866         867         868
+
+  Columns 869 through 872
+
+         869         870         871         872
+
+  Columns 873 through 876
+
+         873         874         875         876
+
+  Columns 877 through 880
+
+         877         878         879         880
+
+  Columns 881 through 884
+
+         881         882         883         884
+
+  Columns 885 through 888
+
+         885         886         887         888
+
+  Columns 889 through 892
+
+         889         890         891         892
+
+  Columns 893 through 896
+
+         893         894         895         896
+
+  Columns 897 through 900
+
+         897         898         899         900
+
+  Columns 901 through 904
+
+         901         902         903         904
+
+  Columns 905 through 908
+
+         905         906         907         908
+
+  Columns 909 through 912
+
+         909         910         911         912
+
+  Columns 913 through 916
+
+         913         914         915         916
+
+  Columns 917 through 920
+
+         917         918         919         920
+
+  Columns 921 through 924
+
+         921         922         923         924
+
+  Columns 925 through 928
+
+         925         926         927         928
+
+  Columns 929 through 932
+
+         929         930         931         932
+
+  Columns 933 through 936
+
+         933         934         935         936
+
+  Columns 937 through 940
+
+         937         938         939         940
+
+  Columns 941 through 944
+
+         941         942         943         944
+
+  Columns 945 through 948
+
+         945         946         947         948
+
+  Columns 949 through 952
+
+         949         950         951         952
+
+  Columns 953 through 956
+
+         953         954         955         956
+
+  Columns 957 through 960
+
+         957         958         959         960
+
+  Columns 961 through 964
+
+         961         962         963         964
+
+  Columns 965 through 968
+
+         965         966         967         968
+
+  Columns 969 through 972
+
+         969         970         971         972
+
+  Columns 973 through 976
+
+         973         974         975         976
+
+  Columns 977 through 980
+
+         977         978         979         980
+
+  Columns 981 through 984
+
+         981         982         983         984
+
+  Columns 985 through 988
+
+         985         986         987         988
+
+  Columns 989 through 992
+
+         989         990         991         992
+
+  Columns 993 through 996
+
+         993         994         995         996
+
+  Columns 997 through 1.000
+
+         997         998         999        1000
+
+x.*(sqrt(x.^2+1)-x)
+
+ans =
+
+  Columns 1 through 5
+
+    0.4142    0.4721    0.4868    0.4924    0.4951
+
+  Columns 6 through 10
+
+    0.4966    0.4975    0.4981    0.4985    0.4988
+
+  Columns 11 through 15
+
+    0.4990    0.4991    0.4993    0.4994    0.4994
+
+  Columns 16 through 20
+
+    0.4995    0.4996    0.4996    0.4997    0.4997
+
+  Columns 21 through 25
+
+    0.4997    0.4997    0.4998    0.4998    0.4998
+
+  Columns 26 through 30
+
+    0.4998    0.4998    0.4998    0.4999    0.4999
+
+  Columns 31 through 35
+
+    0.4999    0.4999    0.4999    0.4999    0.4999
+
+  Columns 36 through 40
+
+    0.4999    0.4999    0.4999    0.4999    0.4999
+
+  Columns 41 through 45
+
+    0.4999    0.4999    0.4999    0.4999    0.4999
+
+  Columns 46 through 50
+
+    0.4999    0.4999    0.4999    0.4999    0.5000
+
+  Columns 51 through 55
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 56 through 60
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 61 through 65
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 66 through 70
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 71 through 75
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 76 through 80
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 81 through 85
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 86 through 90
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 91 through 95
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 96 through 100
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 101 through 105
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 106 through 110
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 111 through 115
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 116 through 120
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 121 through 125
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 126 through 130
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 131 through 135
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 136 through 140
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 141 through 145
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 146 through 150
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 151 through 155
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 156 through 160
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 161 through 165
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 166 through 170
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 171 through 175
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 176 through 180
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 181 through 185
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 186 through 190
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 191 through 195
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 196 through 200
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 201 through 205
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 206 through 210
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 211 through 215
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 216 through 220
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 221 through 225
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 226 through 230
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 231 through 235
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 236 through 240
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 241 through 245
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 246 through 250
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 251 through 255
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 256 through 260
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 261 through 265
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 266 through 270
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 271 through 275
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 276 through 280
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 281 through 285
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 286 through 290
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 291 through 295
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 296 through 300
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 301 through 305
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 306 through 310
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 311 through 315
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 316 through 320
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 321 through 325
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 326 through 330
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 331 through 335
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 336 through 340
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 341 through 345
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 346 through 350
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 351 through 355
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 356 through 360
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 361 through 365
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 366 through 370
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 371 through 375
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 376 through 380
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 381 through 385
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 386 through 390
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 391 through 395
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 396 through 400
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 401 through 405
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 406 through 410
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 411 through 415
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 416 through 420
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 421 through 425
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 426 through 430
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 431 through 435
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 436 through 440
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 441 through 445
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 446 through 450
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 451 through 455
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 456 through 460
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 461 through 465
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 466 through 470
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 471 through 475
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 476 through 480
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 481 through 485
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 486 through 490
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 491 through 495
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 496 through 500
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 501 through 505
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 506 through 510
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 511 through 515
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 516 through 520
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 521 through 525
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 526 through 530
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 531 through 535
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 536 through 540
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 541 through 545
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 546 through 550
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 551 through 555
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 556 through 560
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 561 through 565
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 566 through 570
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 571 through 575
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 576 through 580
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 581 through 585
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 586 through 590
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 591 through 595
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 596 through 600
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 601 through 605
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 606 through 610
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 611 through 615
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 616 through 620
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 621 through 625
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 626 through 630
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 631 through 635
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 636 through 640
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 641 through 645
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 646 through 650
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 651 through 655
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 656 through 660
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 661 through 665
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 666 through 670
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 671 through 675
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 676 through 680
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 681 through 685
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 686 through 690
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 691 through 695
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 696 through 700
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 701 through 705
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 706 through 710
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 711 through 715
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 716 through 720
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 721 through 725
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 726 through 730
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 731 through 735
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 736 through 740
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 741 through 745
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 746 through 750
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 751 through 755
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 756 through 760
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 761 through 765
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 766 through 770
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 771 through 775
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 776 through 780
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 781 through 785
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 786 through 790
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 791 through 795
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 796 through 800
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 801 through 805
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 806 through 810
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 811 through 815
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 816 through 820
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 821 through 825
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 826 through 830
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 831 through 835
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 836 through 840
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 841 through 845
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 846 through 850
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 851 through 855
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 856 through 860
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 861 through 865
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 866 through 870
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 871 through 875
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 876 through 880
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 881 through 885
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 886 through 890
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 891 through 895
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 896 through 900
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 901 through 905
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 906 through 910
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 911 through 915
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 916 through 920
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 921 through 925
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 926 through 930
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 931 through 935
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 936 through 940
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 941 through 945
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 946 through 950
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 951 through 955
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 956 through 960
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 961 through 965
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 966 through 970
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 971 through 975
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 976 through 980
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 981 through 985
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 986 through 990
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 991 through 995
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 996 through 1.000
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+x.*sqrt(x.^2+1)-x.^2
+
+ans =
+
+  Columns 1 through 5
+
+    0.4142    0.4721    0.4868    0.4924    0.4951
+
+  Columns 6 through 10
+
+    0.4966    0.4975    0.4981    0.4985    0.4988
+
+  Columns 11 through 15
+
+    0.4990    0.4991    0.4993    0.4994    0.4994
+
+  Columns 16 through 20
+
+    0.4995    0.4996    0.4996    0.4997    0.4997
+
+  Columns 21 through 25
+
+    0.4997    0.4997    0.4998    0.4998    0.4998
+
+  Columns 26 through 30
+
+    0.4998    0.4998    0.4998    0.4999    0.4999
+
+  Columns 31 through 35
+
+    0.4999    0.4999    0.4999    0.4999    0.4999
+
+  Columns 36 through 40
+
+    0.4999    0.4999    0.4999    0.4999    0.4999
+
+  Columns 41 through 45
+
+    0.4999    0.4999    0.4999    0.4999    0.4999
+
+  Columns 46 through 50
+
+    0.4999    0.4999    0.4999    0.4999    0.5000
+
+  Columns 51 through 55
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 56 through 60
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 61 through 65
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 66 through 70
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 71 through 75
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 76 through 80
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 81 through 85
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 86 through 90
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 91 through 95
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 96 through 100
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 101 through 105
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 106 through 110
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 111 through 115
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 116 through 120
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 121 through 125
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 126 through 130
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 131 through 135
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 136 through 140
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 141 through 145
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 146 through 150
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 151 through 155
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 156 through 160
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 161 through 165
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 166 through 170
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 171 through 175
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 176 through 180
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 181 through 185
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 186 through 190
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 191 through 195
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 196 through 200
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 201 through 205
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 206 through 210
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 211 through 215
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 216 through 220
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 221 through 225
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 226 through 230
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 231 through 235
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 236 through 240
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 241 through 245
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 246 through 250
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 251 through 255
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 256 through 260
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 261 through 265
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 266 through 270
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 271 through 275
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 276 through 280
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 281 through 285
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 286 through 290
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 291 through 295
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 296 through 300
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 301 through 305
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 306 through 310
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 311 through 315
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 316 through 320
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 321 through 325
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 326 through 330
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 331 through 335
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 336 through 340
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 341 through 345
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 346 through 350
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 351 through 355
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 356 through 360
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 361 through 365
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 366 through 370
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 371 through 375
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 376 through 380
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 381 through 385
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 386 through 390
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 391 through 395
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 396 through 400
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 401 through 405
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 406 through 410
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 411 through 415
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 416 through 420
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 421 through 425
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 426 through 430
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 431 through 435
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 436 through 440
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 441 through 445
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 446 through 450
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 451 through 455
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 456 through 460
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 461 through 465
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 466 through 470
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 471 through 475
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 476 through 480
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 481 through 485
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 486 through 490
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 491 through 495
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 496 through 500
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 501 through 505
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 506 through 510
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 511 through 515
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 516 through 520
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 521 through 525
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 526 through 530
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 531 through 535
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 536 through 540
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 541 through 545
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 546 through 550
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 551 through 555
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 556 through 560
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 561 through 565
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 566 through 570
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 571 through 575
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 576 through 580
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 581 through 585
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 586 through 590
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 591 through 595
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 596 through 600
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 601 through 605
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 606 through 610
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 611 through 615
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 616 through 620
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 621 through 625
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 626 through 630
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 631 through 635
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 636 through 640
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 641 through 645
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 646 through 650
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 651 through 655
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 656 through 660
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 661 through 665
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 666 through 670
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 671 through 675
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 676 through 680
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 681 through 685
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 686 through 690
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 691 through 695
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 696 through 700
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 701 through 705
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 706 through 710
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 711 through 715
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 716 through 720
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 721 through 725
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 726 through 730
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 731 through 735
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 736 through 740
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 741 through 745
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 746 through 750
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 751 through 755
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 756 through 760
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 761 through 765
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 766 through 770
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 771 through 775
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 776 through 780
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 781 through 785
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 786 through 790
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 791 through 795
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 796 through 800
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 801 through 805
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 806 through 810
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 811 through 815
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 816 through 820
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 821 through 825
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 826 through 830
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 831 through 835
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 836 through 840
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 841 through 845
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 846 through 850
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 851 through 855
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 856 through 860
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 861 through 865
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 866 through 870
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 871 through 875
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 876 through 880
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 881 through 885
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 886 through 890
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 891 through 895
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 896 through 900
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 901 through 905
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 906 through 910
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 911 through 915
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 916 through 920
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 921 through 925
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 926 through 930
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 931 through 935
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 936 through 940
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 941 through 945
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 946 through 950
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 951 through 955
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 956 through 960
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 961 through 965
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 966 through 970
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 971 through 975
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 976 through 980
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 981 through 985
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 986 through 990
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 991 through 995
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 996 through 1.000
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+x./(sqrt(x.^2+1)+x)
+
+ans =
+
+  Columns 1 through 5
+
+    0.4142    0.4721    0.4868    0.4924    0.4951
+
+  Columns 6 through 10
+
+    0.4966    0.4975    0.4981    0.4985    0.4988
+
+  Columns 11 through 15
+
+    0.4990    0.4991    0.4993    0.4994    0.4994
+
+  Columns 16 through 20
+
+    0.4995    0.4996    0.4996    0.4997    0.4997
+
+  Columns 21 through 25
+
+    0.4997    0.4997    0.4998    0.4998    0.4998
+
+  Columns 26 through 30
+
+    0.4998    0.4998    0.4998    0.4999    0.4999
+
+  Columns 31 through 35
+
+    0.4999    0.4999    0.4999    0.4999    0.4999
+
+  Columns 36 through 40
+
+    0.4999    0.4999    0.4999    0.4999    0.4999
+
+  Columns 41 through 45
+
+    0.4999    0.4999    0.4999    0.4999    0.4999
+
+  Columns 46 through 50
+
+    0.4999    0.4999    0.4999    0.4999    0.5000
+
+  Columns 51 through 55
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 56 through 60
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 61 through 65
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 66 through 70
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 71 through 75
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 76 through 80
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 81 through 85
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 86 through 90
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 91 through 95
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 96 through 100
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 101 through 105
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 106 through 110
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 111 through 115
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 116 through 120
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 121 through 125
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 126 through 130
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 131 through 135
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 136 through 140
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 141 through 145
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 146 through 150
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 151 through 155
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 156 through 160
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 161 through 165
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 166 through 170
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 171 through 175
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 176 through 180
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 181 through 185
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 186 through 190
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 191 through 195
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 196 through 200
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 201 through 205
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 206 through 210
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 211 through 215
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 216 through 220
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 221 through 225
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 226 through 230
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 231 through 235
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 236 through 240
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 241 through 245
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 246 through 250
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 251 through 255
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 256 through 260
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 261 through 265
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 266 through 270
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 271 through 275
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 276 through 280
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 281 through 285
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 286 through 290
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 291 through 295
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 296 through 300
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 301 through 305
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 306 through 310
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 311 through 315
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 316 through 320
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 321 through 325
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 326 through 330
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 331 through 335
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 336 through 340
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 341 through 345
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 346 through 350
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 351 through 355
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 356 through 360
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 361 through 365
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 366 through 370
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 371 through 375
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 376 through 380
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 381 through 385
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 386 through 390
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 391 through 395
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 396 through 400
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 401 through 405
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 406 through 410
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 411 through 415
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 416 through 420
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 421 through 425
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 426 through 430
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 431 through 435
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 436 through 440
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 441 through 445
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 446 through 450
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 451 through 455
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 456 through 460
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 461 through 465
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 466 through 470
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 471 through 475
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 476 through 480
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 481 through 485
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 486 through 490
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 491 through 495
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 496 through 500
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 501 through 505
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 506 through 510
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 511 through 515
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 516 through 520
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 521 through 525
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 526 through 530
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 531 through 535
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 536 through 540
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 541 through 545
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 546 through 550
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 551 through 555
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 556 through 560
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 561 through 565
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 566 through 570
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 571 through 575
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 576 through 580
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 581 through 585
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 586 through 590
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 591 through 595
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 596 through 600
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 601 through 605
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 606 through 610
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 611 through 615
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 616 through 620
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 621 through 625
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 626 through 630
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 631 through 635
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 636 through 640
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 641 through 645
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 646 through 650
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 651 through 655
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 656 through 660
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 661 through 665
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 666 through 670
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 671 through 675
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 676 through 680
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 681 through 685
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 686 through 690
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 691 through 695
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 696 through 700
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 701 through 705
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 706 through 710
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 711 through 715
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 716 through 720
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 721 through 725
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 726 through 730
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 731 through 735
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 736 through 740
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 741 through 745
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 746 through 750
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 751 through 755
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 756 through 760
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 761 through 765
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 766 through 770
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 771 through 775
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 776 through 780
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 781 through 785
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 786 through 790
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 791 through 795
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 796 through 800
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 801 through 805
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 806 through 810
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 811 through 815
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 816 through 820
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 821 through 825
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 826 through 830
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 831 through 835
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 836 through 840
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 841 through 845
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 846 through 850
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 851 through 855
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 856 through 860
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 861 through 865
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 866 through 870
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 871 through 875
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 876 through 880
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 881 through 885
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 886 through 890
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 891 through 895
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 896 through 900
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 901 through 905
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 906 through 910
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 911 through 915
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 916 through 920
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 921 through 925
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 926 through 930
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 931 through 935
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 936 through 940
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 941 through 945
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 946 through 950
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 951 through 955
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 956 through 960
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 961 through 965
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 966 through 970
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 971 through 975
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 976 through 980
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 981 through 985
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 986 through 990
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 991 through 995
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+  Columns 996 through 1.000
+
+    0.5000    0.5000    0.5000    0.5000    0.5000
+
+clear
+%ESERCIZIO 5
+vector = -2*ones(9)
+
+vector =
+
+  Columns 1 through 8
+
+    -2    -2    -2    -2    -2    -2    -2    -2
+    -2    -2    -2    -2    -2    -2    -2    -2
+    -2    -2    -2    -2    -2    -2    -2    -2
+    -2    -2    -2    -2    -2    -2    -2    -2
+    -2    -2    -2    -2    -2    -2    -2    -2
+    -2    -2    -2    -2    -2    -2    -2    -2
+    -2    -2    -2    -2    -2    -2    -2    -2
+    -2    -2    -2    -2    -2    -2    -2    -2
+    -2    -2    -2    -2    -2    -2    -2    -2
+
+  Column 9
+
+    -2
+    -2
+    -2
+    -2
+    -2
+    -2
+    -2
+    -2
+    -2
+
+vector = -2*ones(1,9)
+
+vector =
+
+  Columns 1 through 8
+
+    -2    -2    -2    -2    -2    -2    -2    -2
+
+  Column 9
+
+    -2
+
+A = diag(vec)
+{Unrecognized function or variable 'vec'.
+} 
+A = diag(vector)
+
+A =
+
+  Columns 1 through 8
+
+    -2     0     0     0     0     0     0     0
+     0    -2     0     0     0     0     0     0
+     0     0    -2     0     0     0     0     0
+     0     0     0    -2     0     0     0     0
+     0     0     0     0    -2     0     0     0
+     0     0     0     0     0    -2     0     0
+     0     0     0     0     0     0    -2     0
+     0     0     0     0     0     0     0    -2
+     0     0     0     0     0     0     0     0
+
+  Column 9
+
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+    -2
+
+A = A + diag(ones(1,8),1) + diag(ones(1,8),-1)
+
+A =
+
+  Columns 1 through 8
+
+    -2     1     0     0     0     0     0     0
+     1    -2     1     0     0     0     0     0
+     0     1    -2     1     0     0     0     0
+     0     0     1    -2     1     0     0     0
+     0     0     0     1    -2     1     0     0
+     0     0     0     0     1    -2     1     0
+     0     0     0     0     0     1    -2     1
+     0     0     0     0     0     0     1    -2
+     0     0     0     0     0     0     0     1
+
+  Column 9
+
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     1
+    -2
+
+vec = A(3,:)
+
+vec =
+
+  Columns 1 through 8
+
+     0     1    -2     1     0     0     0     0
+
+  Column 9
+
+     0
+
+A(3,:) = A(6,:)
+
+A =
+
+  Columns 1 through 8
+
+    -2     1     0     0     0     0     0     0
+     1    -2     1     0     0     0     0     0
+     0     0     0     0     1    -2     1     0
+     0     0     1    -2     1     0     0     0
+     0     0     0     1    -2     1     0     0
+     0     0     0     0     1    -2     1     0
+     0     0     0     0     0     1    -2     1
+     0     0     0     0     0     0     1    -2
+     0     0     0     0     0     0     0     1
+
+  Column 9
+
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     1
+    -2
+
+A(6,:) = vec
+
+A =
+
+  Columns 1 through 8
+
+    -2     1     0     0     0     0     0     0
+     1    -2     1     0     0     0     0     0
+     0     0     0     0     1    -2     1     0
+     0     0     1    -2     1     0     0     0
+     0     0     0     1    -2     1     0     0
+     0     1    -2     1     0     0     0     0
+     0     0     0     0     0     1    -2     1
+     0     0     0     0     0     0     1    -2
+     0     0     0     0     0     0     0     1
+
+  Column 9
+
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     1
+    -2
+
+vec = A(:,1)
+
+vec =
+
+    -2
+     1
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+
+A(:,1) = A(:,4)
+
+A =
+
+  Columns 1 through 8
+
+     0     1     0     0     0     0     0     0
+     0    -2     1     0     0     0     0     0
+     0     0     0     0     1    -2     1     0
+    -2     0     1    -2     1     0     0     0
+     1     0     0     1    -2     1     0     0
+     1     1    -2     1     0     0     0     0
+     0     0     0     0     0     1    -2     1
+     0     0     0     0     0     0     1    -2
+     0     0     0     0     0     0     0     1
+
+  Column 9
+
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     1
+    -2
+
+A(:,4) = vec
+
+A =
+
+  Columns 1 through 8
+
+     0     1     0    -2     0     0     0     0
+     0    -2     1     1     0     0     0     0
+     0     0     0     0     1    -2     1     0
+    -2     0     1     0     1     0     0     0
+     1     0     0     0    -2     1     0     0
+     1     1    -2     0     0     0     0     0
+     0     0     0     0     0     1    -2     1
+     0     0     0     0     0     0     1    -2
+     0     0     0     0     0     0     0     1
+
+  Column 9
+
+     0
+     0
+     0
+     0
+     0
+     0
+     0
+     1
+    -2
+
+clear
+%ESERCIZIO 6 -----------------------------------
+A = [1:4;5:8;9:12]
+
+A =
+
+     1     2     3     4
+     5     6     7     8
+     9    10    11    12
+
+size(A)
+
+ans =
+
+     3     4
+
+B = A.*A
+
+B =
+
+     1     4     9    16
+    25    36    49    64
+    81   100   121   144
+
+B = A*A
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mtimes')" style="font-weight:bold"> * </a>
+Incorrect dimensions for matrix multiplication. Check
+that the number of columns in the first matrix
+matches the number of rows in the second matrix. To
+operate on each element of the matrix individually,
+use TIMES (.*) for elementwise multiplication.
+
+<a href="matlab:helpview('matlab','error_innerdim')" style="font-weight:bold">Related documentation</a>
+} 
+B = A'*A
+
+B =
+
+   107   122   137   152
+   122   140   158   176
+   137   158   179   200
+   152   176   200   224
+
+A(1:2,4),A(:,3),A(1:2,:),A(:,[2 4]),A([2 3 3])
+
+ans =
+
+     4
+     8
+
+
+ans =
+
+     3
+     7
+    11
+
+
+ans =
+
+     1     2     3     4
+     5     6     7     8
+
+
+ans =
+
+     2     4
+     6     8
+    10    12
+
+
+ans =
+
+     5     9     9
+
+A(3,2) = A(1,1)
+
+A =
+
+     1     2     3     4
+     5     6     7     8
+     9     1    11    12
+
+A(1:2,4) = zeros(2,1)
+
+A =
+
+     1     2     3     0
+     5     6     7     0
+     9     1    11    12
+
+A(2,:) = A(2,:)-A(2,1)/A(1,1)*A(1,:)
+
+A =
+
+     1     2     3     0
+     0    -4    -8     0
+     9     1    11    12
+
+clear
+%ESERCIZIO 7 -----------------------------------
+A = [1:8]+zeros(8,8)
+
+A =
+
+     1     2     3     4     5     6     7     8
+     1     2     3     4     5     6     7     8
+     1     2     3     4     5     6     7     8
+     1     2     3     4     5     6     7     8
+     1     2     3     4     5     6     7     8
+     1     2     3     4     5     6     7     8
+     1     2     3     4     5     6     7     8
+     1     2     3     4     5     6     7     8
+
+A = A'
+
+A =
+
+     1     1     1     1     1     1     1     1
+     2     2     2     2     2     2     2     2
+     3     3     3     3     3     3     3     3
+     4     4     4     4     4     4     4     4
+     5     5     5     5     5     5     5     5
+     6     6     6     6     6     6     6     6
+     7     7     7     7     7     7     7     7
+     8     8     8     8     8     8     8     8
+
+S = triu(A)
+
+S =
+
+     1     1     1     1     1     1     1     1
+     0     2     2     2     2     2     2     2
+     0     0     3     3     3     3     3     3
+     0     0     0     4     4     4     4     4
+     0     0     0     0     5     5     5     5
+     0     0     0     0     0     6     6     6
+     0     0     0     0     0     0     7     7
+     0     0     0     0     0     0     0     8
+
+I = tril(A)
+
+I =
+
+     1     0     0     0     0     0     0     0
+     2     2     0     0     0     0     0     0
+     3     3     3     0     0     0     0     0
+     4     4     4     4     0     0     0     0
+     5     5     5     5     5     0     0     0
+     6     6     6     6     6     6     0     0
+     7     7     7     7     7     7     7     0
+     8     8     8     8     8     8     8     8
+
+vec = 1:8
+
+vec =
+
+     1     2     3     4     5     6     7     8
+
+S = S - diag(1:8)
+
+S =
+
+     0     1     1     1     1     1     1     1
+     0     0     2     2     2     2     2     2
+     0     0     0     3     3     3     3     3
+     0     0     0     0     4     4     4     4
+     0     0     0     0     0     5     5     5
+     0     0     0     0     0     0     6     6
+     0     0     0     0     0     0     0     7
+     0     0     0     0     0     0     0     0
+
+I = I - diag(0:7)
+
+I =
+
+     1     0     0     0     0     0     0     0
+     2     1     0     0     0     0     0     0
+     3     3     1     0     0     0     0     0
+     4     4     4     1     0     0     0     0
+     5     5     5     5     1     0     0     0
+     6     6     6     6     6     1     0     0
+     7     7     7     7     7     7     1     0
+     8     8     8     8     8     8     8     1
+
+B1 = diag(diag(A))
+
+B1 =
+
+     1     0     0     0     0     0     0     0
+     0     2     0     0     0     0     0     0
+     0     0     3     0     0     0     0     0
+     0     0     0     4     0     0     0     0
+     0     0     0     0     5     0     0     0
+     0     0     0     0     0     6     0     0
+     0     0     0     0     0     0     7     0
+     0     0     0     0     0     0     0     8
+
+B1 = diag(diag(A)) + diag(diag(A,1),1) + diag(diag(A,-1),-1)
+
+B1 =
+
+     1     1     0     0     0     0     0     0
+     2     2     2     0     0     0     0     0
+     0     3     3     3     0     0     0     0
+     0     0     4     4     4     0     0     0
+     0     0     0     5     5     5     0     0
+     0     0     0     0     6     6     6     0
+     0     0     0     0     0     7     7     7
+     0     0     0     0     0     0     8     8
+
+B3 = diag(diag(A)) + diag(diag(A,-1),-1)
+
+B3 =
+
+     1     0     0     0     0     0     0     0
+     2     2     0     0     0     0     0     0
+     0     3     3     0     0     0     0     0
+     0     0     4     4     0     0     0     0
+     0     0     0     5     5     0     0     0
+     0     0     0     0     6     6     0     0
+     0     0     0     0     0     7     7     0
+     0     0     0     0     0     0     8     8
+
+B2 = diag(diag(A)) + diag(diag(A,1),1)
+
+B2 =
+
+     1     1     0     0     0     0     0     0
+     0     2     2     0     0     0     0     0
+     0     0     3     3     0     0     0     0
+     0     0     0     4     4     0     0     0
+     0     0     0     0     5     5     0     0
+     0     0     0     0     0     6     6     0
+     0     0     0     0     0     0     7     7
+     0     0     0     0     0     0     0     8
+

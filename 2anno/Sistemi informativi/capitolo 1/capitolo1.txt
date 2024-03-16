@@ -1,0 +1,31 @@
+Domande 
+1. Cos’è un sistema? In che modo la nozione di sistema è utile? 
+2. Cos’è un modello e come aiuta a capire la realtà? 
+3. Cos’è il sistema informativo di un’azienda e quali sono le sue componenti? 
+4. Che differenza esiste tra il sistema informativo e il sistema informatico? 
+5. Cosa significa il concetto di granularità? 
+6. Come può evolvere il sistema informativo? 
+ 
+Risposte 
+
+1) Un sistema è un'insieme di elementi distinti in relazione tra loro attraverso regole precise e che puntano ad uno scopo comune.
+   Questa nozione è importante perchè ci permette di vedere la realtà come un macrosistema che possiede a sua volta tanti sottosistemi al suo interno.
+ 
+2)  Un modello è la semplificazione della realtà, ci permette di considerare solo le caratteristiche migliori al fine di scopo. Un modello è la rappresentazione di un sistema.
+ 
+3)  Un sistema informativo è un' insieme di persone,apparecchiature e procedure aziendali che producono e conservano le informazioni utili per gestire un'impresa.
+    Il sistema informativo è formato da :
+    	- Risorse Umane
+    	- Sistema Informatico
+    	- Risorse Organizzative
+ 
+4) Il sistema informatico rappresenta l'insieme degli aspetti tecnologici all'interno del sistema informativo, invece quest'ultimo rappresenta l'insieme di tutti gli aspetti di un sistema
+   ed è il componente principale cioè il business core.
+
+5) Il concetto di granularità rappresenta il fattore di scala di un componente specifico in tutto l'insieme del sistema informativo, per esempio
+   possiamo confrontare il sistema informatico su tutto il sistema informativo su vari valori di granularità.
+
+6) Il sistema informativo può evolvere in tre modi:
+	-Technological Imperative: una nuova necessità IT impone il cambiamento
+	-Organizational Imperative: una nuova necessitò di tipo organizzativo impone il cambiamento
+	-Emergent Perspective: l'interazione con una nuova tecnologia conduce al cambiamento

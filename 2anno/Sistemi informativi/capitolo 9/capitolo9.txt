@@ -1,0 +1,252 @@
+1. Cos'è la WBS e come può essere usata per scoprire i legami fra gli elementi di un sistema
+informativo?
+2. Cos’è il TCO? Come interviene nelle scelte relative agli acquisti?
+3. Cos’è il ROI? Come deve essere usato per la pianificazione del sistema ICT?
+4. Cosa si intende per Service Level Agreement o SLA?
+5. Cosa si intende per Business Continuity?
+6. Cos'è il Disaster Recovery Plan?
+7. Cosa sono le politiche di gestione?
+8. Cosa è uno standard?
+9. Cos’è una procedura?
+10. Come si può analizzare la necessità di cambiamento?
+11. Quali sono i passi per gestire al meglio un progetto informatico?
+12. Quali sono le tendenze in atto nel mercato odierno dei sistemi informativi?
+
+
+Risposte:
+
+1)Il WBS(Work Breakdown Structure) è una forma dettagliata di quanto visto nell'analisi di
+  processi ed organizzazione, quindi la pianificazione dei dettagli delle attività che compongono
+  i processi richiede un elevato grado di precisione, quindi il processo che si occupa della
+  scomposizione dei processi in elementi sufficientemente piccoli da poter definire per ciascuno
+  di essi le dipendenze di risorse umane e materiali della loro effettuazione prende il nome di
+  WBS.
+  I risultati possono essere espressi con documenti testuali o tabelle simili alla RLC oppure
+  si utilizzano due strumenti grafici:
+  	
+  	-Il diagramma delle dipendenze definisce con simboli simili a quelli usati per le classi
+  	 le attività e le risorse impiegate in esse ed esprime le dipendenze fra le varie entità
+  	 ed attività ed attività coinvolte nel processo.
+  	 Il diagramma può fotografare la situazione in un dato momento e può esprimere 
+  	 lo stato effettivo(IS) e quello desiderato(SHOULD).
+  	 
+  	-PERT:tecniche ideate ed utilizzate per affrontare l'analisi di grandi progetti di
+  	 ricerca,costruzione,programmazione ed organizzazione aziendale, lo scopo principale
+  	 è quello di pianificare e coordinare diverse attività che concorrono al raggiungimento
+  	 dell'obiettivo in oggetto, assegnando nel tempo le risorse disponibili a ciascuna
+  	 attività
+  	 in modo razionale.
+  	 In seguito si passa alla mappatura dei tempi di esecuzione delle attività su un'asse 
+  	 temporale corrispondente al calendario.
+  	 
+  	 
+
+2)Il TCO(Total Cost of Ownership) è uno strumento per valutare i costi, le scelte relative
+  agli acquisti sono effettuate in base ai costi di:
+  	-Acquisizione hardware
+  	-Acquisizione software
+  	-Installazione
+  	-Addestramento
+  	-Supporto
+  	-Manutenzione
+  	-Infrastrutture
+  	-Downtime
+  	-Spazio, infrastrutture, energia necessari per il funzionamento continuativo dei sistemi
+  Bisogna anche considerare il costo del fermo macchine che può essere espresso come:
+  	-O: Operatori
+  	-T: tempo di fermo macchina
+  	-P: percentuale di inattività
+  	-C: costo di una persona nell'unità di tempo
+  	-F: reddito prodotto da una persona nell'unità di tempo
+  quindi il costo è uguale a O * (T * P / 100) *(C+ F)
+
+
+3)Il ROI(Return of Investment) è uno strumento per valutare i ricavi, deve prevedere una
+  valutazione quantitativa e qualitativa dei benefici attesi da un certo investimento in risorse
+  ICT.
+  Fare una valutazione quantitativa significa valutare i benefici dell'investimento e quindi
+  quantificare i benefici tangibili e se possibile quelli intangibili.
+  Il ROI deve essere definito su valori monetizzabili ed integrato con valori quantificati
+  ma non monetizzati.
+  Per fare una valutazione qualitativa bisogna tenere presente che il processo di lavoro è
+  manuale e comprende molti trasferimenti di informazione tra vari formati e anche attività
+  parassite sono inserite nel processo, devono essere considerate anche le potenzialità, come
+  l'automazione dei processi, l'eliminazione di alcuni trasferimenti di informazione e
+  la riduzione delle attività parassite e la conseguente velocizzazione del lavoro e le
+  conseguenti economie di velocità.
+
+
+4)Per SLA(Service Level Agreement) è una garanzia o accordo tra le parti relativo ad un valore
+  di un livello di servizio per il quale il cliente paga.
+
+
+
+5)La Business Continuity è la capacità e insieme di regole atte al garantire il funzionamento
+  normale, oppure l'erogazione di un'insieme di servizi minimi da parte di un sistema informatico
+  in caso di malfunzionamenti.
+
+
+6)La Recovery Plan è l'insieme delle procedure volte a ripristinare, correttamente e nel minor
+  tempo possibile, l'operatività con l'erogazione di uno o tutti i servizi dopo il verificarsi
+  di un danno accidentale e/o un attacco informatico.
+  Deve indicare con precisione le azioni da compiere e le risorse umane cui esse sono assegnate
+  applicando i principi nella LRC e nella WBS.
+
+
+7)Le politiche di gestione sono regole organizzative attraverso cui la gestione viene compiuta,
+  sono divise in tre componenti fondamentali:
+  	-Politiche
+  	-Standard
+  	-Procedure
+
+
+8)Uno standard stabilisce come qualcosa dovrebbe essere o essere configurata, non specificano
+  come qualcosa viene svolto nei dettagli e dovrebbero cambiare seguendo processi e tecnologia.
+  Esempi di standard:
+  	-Standard di configurazione di macchine UNIX o Windows
+  	-Standard di configurazione di un database e di un sito web
+  	-Standard di classificazione dei dati
+  	-Standard di scelta dei nomi degli identificatori dentro un programma
+
+
+9)Una procedura provvedono istruzioni dettagliate su come implementare le politiche e
+  definiscono anche chi è responsabile per ogni azione, passo dopo passo, sono anche create
+  attraverso LRC,WBS,PERT, e Gantt.
+  Le procedure dovrebbere essere aggiornate regolarmente attraverso un processo standardizzato
+  , definito seguendo apposite politiche.
+
+
+10)La necessità di cambiamento può avvenire analizzando la situazione corrente(AS-IS), qualora 
+   non sia soddisfacente bisogna porsi obiettivi chiari a cui si vuole tendere(TO-BE) quindi
+   pianificare il cambiamento, definire per esso un budget il piu possibile preciso e valutare
+   l'impatto che avrà il transitorio sul funzionamento dell'azienda.
+   Bisogna anche analizzare il dilemma make, buy o customize.
+   Buy vuol dire acquistare una soluzione IT presente sul mercato ed eventulmente adattarla.
+   Customize vuol dire adattare una soluzione totale o parziale esistente.
+   Make vuol dire costruire da zero una soluzione ad hoc.
+
+
+11)Per gestire al meglio un progetto informatico ci sono 7 passi:
+	
+	-Capire cosa si vuole ottenere: prima fase del lavoro congiunto con il cliente o 
+	 l'utente finale, partendo dalle sue intezioni iniziali e da ciò che desidera,
+	 si scrive un documento informale che ha le seguenti caratteristiche:
+	 	
+	 	-Indicare chi è il cliente finale
+	 	-Indicare i requisiti che il cliente richiede
+	 	-Definire di che tipo di lavoro si tratta
+	 	-Indicare vincoli imposti da altri software o sistemi o ambienti con cui
+	 	 si debba interpretare o entro cui il risultato del progetto debba operare
+	 	-Descrivere informalmente il lavoro da svolgere.
+	 	
+	-Definire i concetti e le entità del progetto
+	 Si deve definire la terminologia del progetto, identificando le entità coinvolte nel
+	 sistema mondo reale che hanno importanza per il sisetma informatico obiettivo del 
+	 progetto, è necessario per definire meglio ilì loro scenari d'uso.
+	 Il risultato finale è il Glossario che definisce con precisioe tutti i termini
+	 corrispondenti alle entità coinvolte.
+	 
+	-Definire esattamente le funzioni di quanto si vuole ottenere
+	 Si definiscono con precisione gli scenari d'uso del sistema, in particolare gli scenari
+	 di interazione fra il sistema e gli attori, cioè le entità esterne al sistema con cui
+	 esso interagisce e comunica.
+	 Nel diagramma devono essere indicati:
+	 	-tutte le classi entità facenti parte del dominio del problema
+	 	-Gi attributi caratteristici di tali classi, individuazione dei singoli attributi
+	 	 e degli attributi che costituiscono le chiavi
+	 	-Le associazioni che tra le classi intercorrono, in sede implementativa di codice
+	 	 indicheranno la visibilità necessaria tra le classi
+	 	-I versi delle associazioni
+	 	-La molteplicità di tali associcazioni
+	 	-Eventuali rapporti di inclusione legati a tali associazione, suddivisi tra
+	 	 aggregazione e composizione
+	 	-Eventuali rapporti di ereditarietà fra le classi, raccogliendo a fattor comune
+	 	 attributi e metodi o aggiungendone di nuovi
+	 	-da questo diagramma passando anche attraverso un ER allora deriverà anche 
+	 	 la base di dati relazionale
+	 	-I metodi delle classi possono ancora non essere completamente definiti in
+	 	 questa fase
+	 	 
+	 -Scegliere l'architettura del sistema che si vuole realizzare
+	  La scelta dell'architettura oltre a seguire regole generali durante lo svolgimento,
+	  deve anche segnalare limiti e criticità nel sistema che sarà realizzato.
+	  L'Output è rappresentato dai documenti tecnici architetturali.
+	  
+	 -Progettare nei dettagli il sistema
+	  Si definiscono tutte le classi che fanno parte dell'applicazione software da
+	  implementare, il processo che permette di giungere al diagramma delle classi è
+	  iterativo.
+	  Dal diagramma delle classi di analisi devono essere inserite tutte le classi di
+	  servizio che permettono al programma nel suo insieme di operare correttamente ed
+	  in modo efficiente.
+	  Le classi di servizio sono dipendenti dall'architettura scelta e da eventuali 
+	  framework utilizzati nel progetto.
+	  Un diagramma di analisi ben fatto può essere punto di partenza per progetti analoghi
+	  con tecnologie diverse ad oggetti, un programma di progetto è più influenzato dalla
+	  tecnologia usata.
+	  altri diagrammi UML utilizzati nel processo sono i diagrammi di interazione, di
+	  attività e di stato.
+	  L'obiettivo finale è produrre il Class Diagram di Progetto completo di tutte le classi
+	  e che sia leggibile dato che serve come mappa per lo sviluppo.
+	  
+	  -Definire le strutture di contorno: usando i diagrammi relìalizzati nelle fasi
+	   precedenti si definiscono le parti implementative di contorno del progetto che 
+	   devono essere documentate nei seguenti modi:
+	   
+	   	-attraverso un EER corredato dagli script di creazione delle tabelle e vincoli
+	   	 che genera le basi di dati nel DBMS specifico allora si definisce la base di
+	   	 dati.
+	   	
+	   	-Definizione dell'insieme dei singoli componenti software che devono essere
+	   	 prodotti attraverso un Component Diagram
+	   	
+	   	-Definizione della distribuzione dei componenti sulle piattaforme di produzione
+	   	 scelte attraverso Deployment Diagram
+	   	 
+	   	-Stesura di opportuni documenti che corredano il progetto e la installazione, 
+	   	 indicare limiti piattaforma software e hardware utilizzta
+	   	
+	   	-Stesura manuale utente dell'applicazione
+	   	
+	   	-Definizione scadenze e pianificazione dell'esecuzione temporale del progetto
+	   	
+	   	-Definizione dei test e dei singoli casi di test
+	   	
+	   	-Pianificazione del collaudo e dell'entrata in produzione
+	   	
+	   	-Definizione della successiva fase di manutenzione
+
+
+12)Le tendenze in atto nel mercato odierno dei sistemi informativi sono:
+   	
+   	-Spostamento ulteriore verso server con piattaforma x86(Intel o AMD)
+   	-Adozione di Linux come server in crescita
+   	-Uso massiccio di accessi larga banda e VPN/intranet/extranet per collegare sedi
+   	 geograficamente distanti fra loro
+   	-Adozione del desktop remoto o modelli client-server multitier
+   	-Adozione di metodologie di costruzione di interfacce utente basate su descrittori
+   	 XML e facilmente adattabili a tipi diversi di piattaforma client
+   	-Collegamento fra sistemi basato su SOA, con progressiva adozione di ESB come strumenti
+   	 di controlli del workflow
+   	-Uso di macchine virtuali per separare le applicazioni fra loro
+   	-Concentrazione dei data center
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,99 @@
+1. Chi sono gli attori e quali sono le relazioni tra loro durante lo sviluppo di una applicazione
+informatica?
+2. Che ruolo deve svolgere il responsabile acquisti del cliente?
+3. Che ruolo svolge l’analista funzionale?
+4. Che ruolo svolge il capo progetto entro un progetto informatico?
+5. Che ruolo svolge il programmatore entro lo sviluppo informatico?
+6. Che ruolo svolgono gli amministratori di sistema?
+
+
+Risposte:
+
+1)Gli attori sono:
+	-cliente
+	-utente finale del sistema
+	-acquirente
+	-venditore
+	-analista funzionale
+	-analista tecnico
+	-analisi di progetto
+	-progettista di alto livello
+	-progettista di dettaglio
+	-specialista di ERP
+	-programmatore
+	-svilupattore interfacce web
+	-tester
+	-capo area
+	-capo progetto
+	-amministratore di sistema
+	-amministratore di rete
+	-amministratore di DB
+	-responsabile qualità
+	-responsabile sicurezza
+	-consulente agli acquisti
+	-solution provider
+  Gli attori sono divisi in reparti interni ed esterni ad un'azienda dove i vari ruoli si
+  suddividono il lavoro nei vari reparti.
+  
+  
+  
+2)Il responsabile acquisti del cliente tratta commercialmente l'acquisto del programma/
+  sistema software.
+  Quasi mai è un utilizzatore finale del sistema ed è quasi sempre maggiormente attento agli
+  aspetti del costo immediato rispetto all'efficienza che avrà il sistema una volta inserito
+  entro l'organizzazione.
+  
+  
+3)L'analista funzionale scrive le specifiche funzionali di dettaglio che il programma o
+  sistema software deve seguire, esso ha esperienza di analisi di processo ed ha capito il
+  processo specifico del cliente.
+  
+  
+4)Il capo progetto è il responsabile della realizzazione di un progetto informatico, deve
+  condurre a termine il progetto, può essere il superiore dei capi area oppure collaborare
+  con essi contrattando la disponibilità delle risorse umane a disposizione.
+  
+
+5)Il programmatore ha il compito di scrivere e verificare il codice nel linguaggio di sviluppo
+  scelto.
+  In progetti complessi ci possono essere tanti programmatori e a ciascuno dei quali viene
+  affidato lo sviluppo di uno o più moduli software.
+  
+  
+6)Gli amministratore di sistema è lo specialista del sistema operativo della macchina o delle
+  macchine che ospitano il sistema software.
+  Nei progetti di realizzazione deve definire le specifiche tecniche delle macchine, nelle fasi
+  di esercizio deve conttrollare e gestire i sistemi per garantirne il funzionamento ottimale.
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

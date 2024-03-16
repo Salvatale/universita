@@ -1,0 +1,131 @@
+1. Cos’è un ERP? Che ruolo svolge entro l’azienda?
+2. Cos’è un sistema di CRM? Che importanza ha entro l’azienda? Che caratteristiche
+organizzative impone all’azienda per potere massimizzare la sua utilità?
+3. Cos’è un sistema di SCM?
+4. Cosa si intende per Business Intelligence?
+5. Cos’è un Data Warehouse? Come viene normalmente usato entro l’azienda?
+6. Cos'è un Decision Support System (DSS)?
+
+
+Risposte:
+
+1)Con ERP(Enterprise Resource Planning) si intendono identificare i sistemi integrati di
+  gestione, cioè insiemi di applicazioni software integrate, che gestiscono tutte le informazioni
+  rilevanti dell'azienda in un'unica base di dati centralizzata e che consentono di gestire in
+  modo coordinato una molteplicità di attività dell'azienda o tutte.
+  Svolge tutti i processi più importanti nell'azienda:
+  	-Ciclo attivo e passivo
+  	-Contabilità
+  	-Logistica
+  	-Human Resource management
+  	-Produzione
+  	
+ 2)Il sistema CRM è un sistema di interazione con i clienti che integra i dati provenienti dai
+   diversi canali di contatto in un'unica base di dati, condivisa da ogni area dell'azienda
+   preposta al contratto con il cliente.
+   Il CRM è l'insieme di strategia, processi, cultura e tecnologia, che consente alle
+   organizzazioni di incrementare le performance ed aumentare il valore atteso attraverso
+   una migliore comprensione dei bisogni dei clienti.
+   Alla base di un approccio di marketing supportato da un sistema di CRM, c'è un circolo
+   virtuoso che si sviluppa attraverso 4 fasi e due macrocomponenti.
+   Macrocomponenti CRM:
+   	-CRM operativo: mappatura ed integrazione di tutti i canali di contatto con il cliente,
+   	 ed esecuzione materiale di tutte le campagne ed azioni di marketing rivolte al cliente
+   	 
+   	-CRM analitico: analisi dei dati provenienti dalla componente operativa e dai sistemi
+   	 ERP per profilazione, segmentazione e valutazione clienti al fine di ideare le offerte
+   	 ed ideare le campagne di marketing più adeguate.
+   Le fasi sono:
+   	-Identificare e segmentare i propri clienti
+   	-Valutarne il valore attuale e prospettico
+   	-Differenziare le offerte e le campagne di markenting in base al profilo dei clienti
+   	 target, della redditività attesa e del costo delle azioni ideate
+   	-Interagire: esecuzione materiale delle campagne di marketing prescelte, dopo apprendere
+   	 e personalizzare, cioè distingue un qualsiasi sistema di analisi dei clienti da un vero
+   	 e proprio processo in ottca CRM
+   	 
+   	 
+3)Un sistema SCM(Supply Chain Management) si occupa della gestione della catena di
+  approvigionamento, è una metodologia che include tutti quei processi di gestione aziendale
+  che consentono di ottimizzare la consegna di prodotti, servizi ed informazioni dal fornitore
+  al cliente.
+  
+4)La Business Intelligence è un'insieme di applicazioni e tecnologie per l'analisi dei dati.
+  Il compito della Business Intelligence è quello di fornire supporto per estrarre dai dati
+  relativi l'attività quotidiana dell'impresa l'informazione e dopo la conoscenza per guidare
+  l'impresa a livello strategico-decisionale.
+  
+  
+5)Un data warehouse è il magazzino dei dati a livello di impresa, cioè un'insieme di strumenti
+  per convertire un vasto insieme di dati in informazioni utilizzabili dall'utente,
+  con possibilità di accedere a tutti i dati dell'impresa, centralizzati in un solo database,
+  coerenza e consolidamento dei dati, velocità nell'accesso alle informazioni e supporto per
+  l'analisi dei dati.
+  Da un data warehouse si possono ricavare velocemente dei data mart oppure si può costruire
+  una data warehouse unendo più data mart realizzati nel tempo.
+  
+  
+  
+6)I DSS(Decision Support Systems) sono tra livello strategico e manageriale, rispondono alle
+  esigenze del livello manageriali dell'azienda e aiutano a prendere decisioni in contesti non
+  unici o nuovi per l'azienda.
+  Si dividono in:
+  	-Sistemi programmabili
+  	-Sistemi automatici
+  	-Sistemi ibridi
+  possiamo definire:
+  	-Input: Bassi volumi di dati, grandi DB ottimizzati per lo scopo, modelli analitici
+  	 e strumenti di analisi dei dati.
+  	-Elaborazioni svolte: simulazioni, analisi, correlazioni, interattività
+  	-Output: report speciali, proposte, analisi delle decisioni, risposte alle
+  	 interrogazioni
+  	-Utenti tipici: professionisti, manager di staff, middle e top manager
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  

@@ -1,0 +1,5 @@
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\LibCalcolatrice\bin\Debug\LibCalcolatrice.dll
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\LibCalcolatrice\bin\Debug\LibCalcolatrice.pdb
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\LibCalcolatrice\obj\Debug\LibCalcolatrice.dll
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\LibCalcolatrice\obj\Debug\LibCalcolatrice.pdb
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\LibCalcolatrice\obj\Debug\LibCalcolatrice.csprojResolveAssemblyReference.cache

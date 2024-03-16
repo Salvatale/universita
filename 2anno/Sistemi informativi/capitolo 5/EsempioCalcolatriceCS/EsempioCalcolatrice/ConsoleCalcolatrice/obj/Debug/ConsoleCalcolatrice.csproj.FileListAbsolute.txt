@@ -1,0 +1,8 @@
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\ConsoleCalcolatrice\bin\Debug\ConsoleCalcolatrice.exe.config
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\ConsoleCalcolatrice\bin\Debug\ConsoleCalcolatrice.exe
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\ConsoleCalcolatrice\bin\Debug\ConsoleCalcolatrice.pdb
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\ConsoleCalcolatrice\bin\Debug\LibCalcolatrice.dll
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\ConsoleCalcolatrice\bin\Debug\LibCalcolatrice.pdb
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\ConsoleCalcolatrice\obj\Debug\ConsoleCalcolatrice.csprojResolveAssemblyReference.cache
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\ConsoleCalcolatrice\obj\Debug\ConsoleCalcolatrice.exe
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\ConsoleCalcolatrice\obj\Debug\ConsoleCalcolatrice.pdb

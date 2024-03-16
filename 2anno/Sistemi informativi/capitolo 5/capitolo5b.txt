@@ -1,0 +1,158 @@
+1. Quali sono le componenti principali di un'applicazione?
+
+2. Qual'è il ruolo delle reti entro i sistemi informatici odierni?
+
+3. Cos’è il modello client-server? Che importanza ha entro i sistemi informatici moderni?
+
+4. In base a quali criteri si procede alla scelta di un'applicazione entro un sistema
+informatico?
+
+5. Cosa si intende per interfaccia utente di un programma applicativo? Quali problematiche
+sono legate all’interfaccia utente? Come essa interviene nel lavoro quotidiano?
+
+6. Cosa sono le matrici di compatibilità del software? Come condizionano le scelte del
+software stesso?
+
+7. Quali sono i vincoli tecnologici a cui l'inserimento di un nuovo componente informatico è
+soggetto?
+
+8. Cos’è un sistema informatico distribuito? In che situazioni esso si trova? Che
+problematiche di gestione vi sono associate?
+
+9. Cosa si intende per EAI? Che problematiche comporta?
+
+10. Cosa è la SOA? Che vantaggi produce nei sistemi informativi?
+
+
+1)I componenti principali di un'applicazione sono:
+	-Interfaccia utente: presentazione dei dati e interazione con l'utente
+	-Regole funzionali: le procedure che compiono le operazioni in base ai comandi
+	 ricevuti dal livello precedente
+	-Dati: su cui si deve agire e che devono essere memorizzati
+	
+
+2)Le reti permettono un collegamento tra due apparecchiature attraverso un mezzo trasmissivo
+  per effettuare una trasmissione di informazioni.
+  Il collegamento di computer in rete offre maggior affidabilità e minor costo rispetto all'uso
+  di mainframe e terminali.
+  Le reti permettono di:
+  	-condividere risorse
+  	-comunicazione tra persone lontane
+  	-utilizzare servizi
+  	
+3)I client/server vengono utilizzati nelle architetture distribuite, sono utili perchè
+  risulta possibile avere accesso ad una risorsa che è presente su un altro computer 
+  che opera come server, quindi in questo caso un client chiede al serve di ottenere una
+  risorse o effettuare un'operazione tramite rete.
+  Le caratteristiche importanti di un client-server sono:
+  	-Performance e Scalabilità: dipende dal numero di utenti utilizza il sistema
+	 contemporaneamente.
+	 
+	-Complessità: complessità applicazione, cioè il numero di algoritmi, oggetti e
+	 funzionalità.
+	 
+	-Supportabilità: la nuova applicazione deve adattarsi con le altre, quindi o si
+	 scrivono di nuovo le applicazioni oppure si ricostrusce l'applicazione interessata
+	 tenendo presente che supporti la possibilità di avere diverse interfacce.
+	 
+	 
+4)	 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 

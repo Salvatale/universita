@@ -1,0 +1,59 @@
+1. Cos’è un processo business e quali sono le sue caratteristiche?
+2. Quali sono le informazioni necessarie se si vuole conoscere completamente un processo
+business?
+3. Cos’è la catena del Valore di Porter? Perchè è così importante nel contesto di un’azienda?
+4. Cosa si intende per processi primari e processi secondari o ausiliari?
+5. Classificazione gerarchica dei processi: cos’è e come è strutturata la Piramide di Anthony?
+6. Come avviene solitamente la mappatura dei processi sulle strutture aziendali?
+7. Cos’è e a cosa serve la LRC?
+8. Cosa sono il ciclo attivo e il ciclo passivo?
+
+Risposte:
+
+1) Un processo business è un'insieme organizzato di attività che l'organizzazione svolge per fornire al cliente un prodotto o un servizio con un valore aggiunto che permette
+   il raggiungimento della missione dell'impresa.
+   Un processo business è una tupla BC(I,O,A,C) dove:
+   	- A sono tutte le attività di trasformazione degli input
+   	- I sono gli Input cioè le materie prime
+   	- O sono gli output cioè il prodotto finale
+   	- C sono i clienti o cliente a cui è destinato l'output con il valore specifico
+   
+2) Per conoscere meglio un processo business allora bisogna conoscere le sue componenti:
+	-Input: le materie prime fornite per essere trasformate durante tutto il processo
+	-Output: il prodotto derivato dalla trasforrmazione delle materie prime
+	-Risorse ausiliare: si tratta di tutte le risorse che contribuiscono durante tutto il processo
+	 ma che non vengono trasformate
+	 -Risorse umane che eseguono il processo
+	 -Risorse umane direzionali che prendono decisioni sul funzionamento del processo
+	 -Risorse umane sovraintendendi che sono responsabili del funzionamento del processo
+	 -Risorse organizzative che impongono regole e vincoli
+	 -Costo di tutto il processo
+	 -Cliente che è il destinatario dell'output
+	 -Valore aggiunto che è il valore del prodotto finale destinato al cliente
+	 
+3) La catena di Porter è una classificazione dei processi, è importante nel contesto di un'azienda perchè espone
+   un modello di funzionamento di un'azienda come una successione di processi.
+   I processi sono classificati in:
+   	-buy-side: processi il cui input proviene da fornitori, quindi processi di approviggionamento
+   	-inside: processi di trasformazione dell' input in output
+   	-sell-side: processi di vendita che interagiscono con il cliente
+   	
+4)Per processo primario si intendono tutti i processi di trasformazione di un prodotto o servizio destinato al cliente
+  e che aggiungono valore al prodotto o servizio.
+  Per processo secondario sono i processi che collaborano con i processi primari ma producono un beneficio solo indirettamente.
+  
+5)La piramide di Anthony è una classificazione dei processi ed è strutturata in:
+	-Processi direzionali: concorrono alla definizione degli obiettivi strategici
+	-Processi gestionali: trasformano gli obbietivi strategici in obiettivi economici
+	-Processi operativi: concorrono nell'attuazione degli obiettivi
+	
+6)La mappatura dei processi viene effettuata sulle divisioni funzionali dell'azienda, cioè sulle persone che le compongono
+
+7)La LRC è un metodo che specifica i ruoli e le strutture di un processo, attraverso una visione tabellare della responsabilità organizzativa, che integra l'organigramma ed
+  incrocia le attività o fasi del processo con le loro strutture organizzative.
+
+8)Il ciclo attivo è l'insieme di tutte le attività legate alla vendita al cliente.
+  Il ciclo passivo invece sono tutte le attività per il rifornimento delle materie prime.
+
+
+  

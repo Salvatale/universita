@@ -1,0 +1,125 @@
+Si deve realizzare il progetto di massima del sistema informatico di un'azienda che 
+costruisce mobili per ufficio (ad es. scaffali, scrivanie, armadi…) in metallo. L'azienda 
+produce solo per altre aziende (B2B) e non vende a clienti finali. La sede è in provincia di 
+Parma, e riceve gli ordini via Mail o via Web dai clienti. I prodotti sono sia a catalogo, sia 
+costruiti ad hoc per clienti che richiedano quantitativi elevati di merce. In questo caso la 
+vendita avviene tramite gli agenti commerciali dell’azienda. Il sito Web è in hosting in un 
+data center a Milano e presenta soltanto il catalogo. Eventuali progetti di mobili da 
+costruire ad hoc sono realizzati dall’ufficio tecnico dell’azienda dietro specifiche fornite dai 
+clienti attraverso gli agenti commerciali, con pagamento di un anticipo. Per costruire i 
+mobili l’azienda parte dalle lamine metalliche “grezze” di dimensioni opportune e svolge 
+tutte le operazioni di lavorazione e assemblaggio necessarie per la costruzione dei mobili 
+stessi.
+
+1) Il core business dell'azienda è vendere mobili in catalogo oppure vendere mobili progettati ad hoc all'ingrosso alle aziende.
+   Il ciclo attivo è composto da vendita, di progettazione e realizzazione dei mobili fatti ad hoc e di riparazione dei mobili precedentemente comprati dai clienti.
+   Il ciclo passivo è composto da tutte le operazioni di approvigionamenti di metallo e altre materie prime utili per la costruzione da parte degli operai, del canone
+   dei software necessari alla progettazione ed alla realizzazione, corsi di aggiornamento o addestramento degli operai addetti ai macchinari industriali e dei progettisti,
+   manutenzione dei macchinari industriali.
+
+   I processi primari:
+    - Vendite
+    - Vendite custom
+    - Progettazione dei mobili custom e di mobili nuovi da aggiungere al catalogo
+    - Realizzazione mobili
+    - Trasporto mobili al cliente(avremmo un contratto quadro verso un'azienda che funge da vettore logistico)
+    - Gestione magazzino mobili pronti
+    - Gestione magazzino materie prime e metallo
+    - Approvigionamento materie prime e metallo
+
+    I processi ausiliari:
+        - Gestione qualità
+        - Gestione della sicurezza
+        - Corsi di formazione ed aggiornamento del personale
+        - Manutenzione maccchinari industriali
+        - IT interna e gestione sito Web
+        - Direzione Generale
+        - Gestione amministrativa
+        - Controllo di gestione e analisi dati
+        - Marketing
+
+    I ricavi possono essere aumentati incrementando i volumi di vendita fino a saturare la capacità produttiva.
+    Le spese possono essere ridotte ottimizzando la catena di approviggionamento, e producendo su richiesta in modo da non avere
+    mobili stoccati nei magazzini per tanto tempo.
+
+2) I flussi informativi sono:
+        - Il cliente parla con l'agente commerciale per definire le specifiche di un mobile
+        - L'agente commerciale si consulta con l'ufficio tecnico per il preventivo
+        - Il cliente e l'agente commerciale raggiungono un accordo
+        - L'ufficio tecnico si mette all'opera per la progettazione del mobile secondo le specifiche richieste
+        - Creazione di un modello che verrà mostrato al cliente che ne approva il risultato sennò si ritorna al passo precedente
+        - Check sulla disponibilità di materie prime nel magazzino, se non sono sufficienti allora si crea l'ordine di approvigionamento con il fornitore
+        - Indicazioni agli operai ed i macchinari industriali per la produzione di quel mobile.
+        - Mobile prodotto
+        - Invio merci al cliente attraverso un vettore logistico
+        - Il cliente riceve i mobili richiesti, verifica la qualità o eventuali guasti dovuti al trasporto, ed infine paga la restante parte
+
+    Durante le varie attività, le specifiche sono scritte in un documento word che sarà consegnato all'ufficio tecnico, quest'ultimo consegnerà il preventivo in formato pdf,
+    e dopo in caso di approvazione manderà un prototipo.
+    Il preventivo possiamo convertirlo in formato XML così sarà poi caricato automaticamente nel nostro sistema informatico.
+
+3) Applicativi della nostra infrastruttura IT:
+        - Suite office
+        - Posta elettronica
+        - Software di gestione della documentazione
+        - Software per il project management
+        - Anti-virus
+        - ERP: compreso di mobili di gestione produzione, magazzino, dei componenti amministrativi e che coprono tutti gli altri processi produttivi.
+        - SCM : modulo di ERP, gestione della catena di approvigionamento e catena logistica.
+        - CRM : integrato con ERP, gestione delle relazioni con i clienti
+        - Business Intelligence : con l'analisi dei dati possiamo capire quali mobili sono stati più venduti e quindi l'inserimento a catalogo, 
+          migliorare la catena di approvigionamento capendo quali materie prime sono più richiesta in modo da ridurre giacenze in magazzino, ed eventualmente rimuovere
+          dal catalogo mobili non più richiesti
+        - Software progettazione dei mobili
+        - Software integrazione tra ufficio progettazione ed ufficio produzione
+        - Software gestione qualità
+        - Software dei macchinari industriali: firmware delle macchine.
+        - Sistemi di interconnessione con il sistema bancario.
+    
+    Si suppone che sul sito web non sia possibile fare i pagamenti, quindi il pagamento anticipato avviene attraverso bonifico bancario.
+
+4) Architettura dell'infrastuttura IT:
+        Disponiamo di un DMBS contentente la base di dati di SCM,CRM,ERP, matrie prime nel magazzino, mobili nel magazzino, vendite, assistenza ed eventuali reclami da parte
+        dei clienti.
+        Un DBMS dedicato alla base di dati derivata dalla Business Intelligence, con un ETL per aggiornare ogni notte con le vendite del giorno.
+
+        Possiamo integrare CRM ed SCM come moduli di ERP quindi avere un'architettura client-server a due livelli sulle postazioni di lavoro all'interno dell'azienda,
+        disponiamo di un'immagine aziendale per poter fare ripartire le postazioni in caso di guasti.
+
+        Il software di Business Intelligence è un client-server a due livelli disponibile solo su poche postazioni.
+
+        I software di progettazione sono integrati con il  software di gestione della documentazione, stessa cosa per i software per il project management.
+        I software di progettazione sono sulle postazioni dell'ufficio tecnico.
+        I software di produzione sono integrati sui:
+        - PC industriali a bordo macchina.
+        - PLC connessi alle macchine.
+        - Eventuali macchine a controllo numerico.
+
+        Per i PC industriali abbiamo l'immagine aziendale così in caso di guasto allora possiamo prende un PC di riserva, farlo partire con l'immagine industriale e
+        rimpiazzare quello guasto.
+        Invece per i PLC e le macchine a controllo numerico, possiamo stipulare dei contratti di manutenzione periodiche con un fornitore esterno, che esegue anche controlli di
+        verifica.
+
+        Abbiamo un file server che conterrà le cartelle condivise, il domain server contiene i dati dell'utente ed i relativi permessi e programmi.
+        Il server di posta elettronica è presso un fornitore esterno, ha un collegamento cifrato(POPS,IMAPS,ecc..), i collegamenti con i clienti avviene tramite e-mail.
+        La gestione del sito web avviene tramite collegamento SSH in modo da poter aggiornare il catalogo.
+        I server sono virtuali con un cluster a 4 nodi e collegati ad un SAN per memorizzare i dati.
+
+5) Problemi di safety,security ed ecc : 
+        - Interruzione servizio internet: risolvibile con due reti diverse con due provider diversi, rete fissa a banda larga e rete mobile 4-5G.
+        - Interruzione corrente elettrica : predisporre UPS e gruppo elettrogeno
+        - Rottura nodo : abbiamo ridondanza dei nodi quindi possiamo far girare quel servizio su un altro nodo.
+        - Stessa cosa per i SAN.
+        - Rottura server: facciamo regolarmente degli snapshot e quindi ripristiniamo le macchine virtuali e le facciamo ripartire
+        - Protezione dati: dovuto a guasto del sistema di memorizzazione, facciamo frequenti backup in base all'importanza dei dati
+        - Intercettazione : utilizziamo collegamenti cifrati.
+        - Intrusione : disporre di firewall per proteggere il sistema interno
+        - Malware e virus: aggiornamenti frequenti degli anti-virus
+        - Accesso a dati non autorizzato: profilazione e politiche di password complesse e cambi frequenti.
+        - Incendi nel data center: sistemi antincendio
+        - Aumento temperatura nel data center: predisporre sistemi di refrigerazione
+        - Controllo di ordini falsi, ERP genera automaticamente la mail dell'ordine effettuato, il cliente pagherà l'anticipo dopo questa mail,
+          se non arriva nessun pagamento allora l'ordine viene annullato
+        
+
+

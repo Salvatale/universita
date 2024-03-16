@@ -1,0 +1,28 @@
+1. Quali sono i passi necessari per l’analisi di un sistema informativo?
+2. Come si possono individuare i flussi informativi associati ad un “sistema azienda”?
+3. Analizzare il sistema informativo necessario per una media azienda metalmeccanica.
+4. Analizzare il sistema informativo necessario per un piccolo comune.
+
+
+Risposte:
+
+1)I passi necessari per l'analisi di un sistema informativo sono:
+  	-Identificare il sistema impresa ed i suoi confini
+  	-Definire le caratteristiche da evidenziare
+  	-Definire il business e la generazione del valore, identificando il core business,
+  	 cioè l'insieme di prodotti o servizi che maggiormente contibuiscono ai ricavi dell'azienda
+  	 ed intorno alla fornitura dei quali l'attività dell'azienda ruota
+  	-Definire i processi business associati a tale core business e le loro caratteristiche
+  	-Definire i flussi informativi richiesti da tali processi per il loro funzionamento
+  	-Definire i requisiti informativi ed informatici che essi comportano e producono
+  	-Stabilire quali requisiti funzionali sono traducibili in soluzioni informatiche, ossia
+  	 programmi applicativi
+  	-Identificare quali infrastrutture informatiche tali programmi richiedono per il loro
+  	 funzionamento, rispettando i vincoli
+  	-Scegliere se la soluzione da adottare deve essere implementata attraverso make, buy o 
+  	 customize, tenendo presente il ROI, l'insieme di competenze, interne all'azienda o 
+  	 reperibili come servizio sul mercato, necessarie per l'uso e la manutenzione di tale
+  	 soluzione ed infine il TCO
+  	 
+  	 
+ 2)

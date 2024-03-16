@@ -1,0 +1,41 @@
+MACCHINETTA PER LE BEVANDE CALDE
+Le variabili:
+
+INGRESSO
+- Credito inserito (via chiavetta o monete o altri sistemi pagamento...)
+- Selezione bevanda [codice]
+- Selezione zucchero [1-5]
+- Acqua filtrata [litri]
+- Elettricità [Kwh]
+- Polvere di bevanda [grammi]
+- Zucchero [grammi]
+- Bicchieri [quantità]
+- Palette [quantità]
+- Prodotti confezionati [quantità di ciascuno]
+
+STATO INTERNO
+- Credito interno ricevuto [euro]
+- Monete presenti internamente [euro, numero monete singole]
+- Importo del resto da restituire [euro, numero monete necessarie]
+- Temperatura riscaldatore [gradi]
+- Pressione riscaldatore [bar]
+- Quantità polvere di bevanda presente [grammi]
+- Quantità zucchero presente [grammi]
+- Livello acqua nel serbatorio [litri]
+- Tempo impiegato nella preparazione [secondi]
+- Bicchieri presenti [quantità]
+- Palette presenti [quantità]
+- Temperatura interna [gradi]
+- Bevanda ammissibile [si/no]
+- Prodotti confezionati [quantità presente di ciascuno]
+- Stato di funzionamento [normale, ricarica, manutenzione]
+
+USCITA
+- Bicchiere [uno]
+- Paletta [una]
+- Bevanda [ml]
+- Resto [euro, insieme monete necessarie]
+- Zucchero [dose grammi = selezione * unità dose]
+- Messaggio [stato in corso, disponibilità, credito inserito ecc...]
+- Luminosità quadro comandi [unità]
+- Prodotto confezionato prescelto [quantità = 1]

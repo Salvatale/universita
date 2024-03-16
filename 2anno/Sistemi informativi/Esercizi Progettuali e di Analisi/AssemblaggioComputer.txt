@@ -1,0 +1,103 @@
+Si deve realizzare il progetto di massima del sistema informatico di un'azienda che fa 
+assemblaggio di computer (PC desktop, PC portatili e server). L'azienda ha una propria 
+rete di negozi, distribuita in varie città del Nord Italia e un sito web per la vendita on-line. 
+La sede centrale, che comprende amministrazione e reparti operativi di assemblaggio, 
+collaudo, assistenza e riparazione è a Parma. Il sito Web è in hosting in un data center a 
+Milano e consente di stabilire la configurazione personalizzata desiderata dei PC o server 
+da ordinare, con pagamento anticipato. L’ordine può essere fatto anche direttamente 
+presso un negozio. I modelli con le caratteristiche più ricercate vengono anche assemblati 
+in anticipo e possono essere comprati direttamente presso i negozi o selezionati sul sito 
+Web. I computer possono essere ritirati solo presso un negozio, non vengono fatte 
+consegne a domicilio presso i clienti.
+
+
+- Dobbiamo cercare di capire qual'è il core business dell'azienda ed in seguito elencare i processi primari e processi ausiliari.
+  Il core business dell'azienda è vendere computer assemblati.
+  Il ciclo attivo è rappresentato dalle operazioni di vendita, di assistenza e di riparazione dei computer venduti dall'azienda.
+  Il ciclo passivo è rappresentato dalle operazioni di approvigionamento(potremmo avere convenzioni con le aziende che ci forniscono i pezzi), quindi
+  l'azienda potrebbe ordinare tanti pezzi all'ingrosso ed a prezzi scontati, del ciclo passivo potremmo aggiungere anche tutti i corsi di formazione o
+  aggiornamenti dei tecnici.
+
+  I processi primari sono:
+    - Approvigionamento delle componenti.
+    - Gestione dei componenti nel magazzino
+    - Gestione dei computer assemblati nel magazzino(dato che è un servizio build to order allora è un processo che ha poca importanza)
+    - Gestione logistica dei computer assemblati(Dobbiamo valutare se prendere una flotta di camion oppure stipulare accordi con società che ci mettono a disposizione i 
+      loro servizi di trasporto merci).
+    - Vendite
+    - Customer Care
+    - Assemblaggio e collaudo dei computer
+    
+  I processi ausiliari:
+    - Gestione della sicurezza
+    - Analisi dei dati
+    - Gestione qualità
+    - Direzione Generale
+    - IT interna
+    - Gestione sito web
+    - Gestione amministrativa
+    - Gestione del personale e corsi di aggiornamento e formazione
+
+Potremmo incrementare i ricavi facendo analisi sui dati e costruire dei computer già assemblati da proporre ai clienti sul nostro sito web oppure proporre dei computer
+validati dai tecnici con i componenti che sono rimasti nel magazzino in modo da non avere stoccati per tanto tempo dei pezzi che non sceglie nessuno.
+Le spese potremmo ridurle ottimizzando tutta la catena di approvigionamento.
+
+- I flussi informativi riguardano i flussi tra fornitore dei componenti e la nostra azienda.
+  Il flusso formativo:
+    - Richiesta dei componenti da parte dell'azienda al fornitore con cui ha convenzioni e contratti di fornitura.
+    - Ricezione ordine da parte del fornitore che comunica i tempi di invio della merce rchiesta.
+    - Invio della merce richiesta insieme alla bolla di trasporto.
+    - Arrivo della merce e stoccaggio nel magazzino.
+  L'ordine e la bolla devono essere in formato XML in modo che possano essere caricati direttamente nel sistema informatico senza la presenza di una persona.
+  Il fornitore utilizzerà un vettore logistico quindi il documento di accompagnamento sarà veicolato anche verso questa azienda che offre servizi logistici.
+
+Applicativi che si utilizzano all'interno dell'azienda:
+- ERP : applicativo che comprende tutti i moduli per la gestione dei processi.
+- SCM : supponiamo che sia un modulo di ERP, per gestire al meglio la catena di approviggionamento con i fornitori e la logistica delle consegne.
+- CRM : supponiamo che sia un modulo di ERP, per gestire al meglio le relazioni con i clienti.
+- Business Intelligence : valutazione dei dati, analisi di quali componenti acquistare di più, analisi sulle scelte dei clienti, quindi valutazione Generale
+  delle vendite.
+- Posta elettronica.
+- Suite Office.
+- Anti-virus.
+- Software per il project management: gestire progetti e scadenze.
+- Software per la gestione documentale e lavoro condiviso.
+- Software per il collaudo e riparazione dei pc.
+- Software per la progettazione dei pc: simulatori di costruzione di computer.
+
+Disponiamo anche di un POS collegato via rete del negozio con il sistema bancario ed anche un virtualPos sul sito web dove pagare con carta di credito,paypal e 
+carta prepagata. 
+
+- Infrastruttura IT dell'azienda:
+  Dobbiamo avere un DBMs associato a ERP,SCM,CRM, le applicazioni software sono client-server web quindi dobbiamo dedicare un application server condiviso da ERP,SCM o RCM 
+  se supponiamo che SCM e CRM sono integrati con ERP, sennò mettiamo un application server per ERP e SCM ed uno per CRM.
+  Disponiamo di un DBMS per i dati derivati dalla Business Intelligence aggiornati ogni notte con tutte le vendite del giorno.
+  I software di progettazione e gestione progetti sono integrati nel software di gestione deocumenti.
+  Un domain server che contiene i dati degli utenti con i relativi permessi.
+  Un file server che contiene cartelle condiviside dato che la documentazione viene gestita nel software di gestione documenti.
+  La business Intelligence è un'applicazione client-server a due livelli presente solo su alcune postazioni di lavoro nella sede centrale.
+  Disponiamo di un firewall interno che collega le posatzioni in locale con il sistema interno ed un firewall esterno che collega il nostro sistema 
+  con l'esterno.
+  Per la rete mettiamo a disposizione due provider:
+    - Il primo è a rete fissa con banda larga.
+    - Il secondo è di riserva in caso di malfunzionamenti del primo e possiamo metterlo sia fisso che rete mobile 4-5G.
+  Il mail Server è situato in una DMZ della sede centrale.
+  Utilizziamo collegamenti in rete tramite VPN per:
+    - Comunicazione verso e da i fornitori.
+    - Comunicazione tra ogni negozio alla sede centrale.
+    - Comunicazione con il sito web che è provvisto di virtualPos con cui stabiliamo una connessione cifrata HTTPS con il gateway della banca con cui
+      si hanno convenzioni e con Paypal.
+  Dobbiamo disporre di un piccolo magazzino in ogni negozio per lo stoccaggio di pochi giorni di computer che saranno venduti o computer che devono essere riparati.
+  Tutti i server sono virtuali ed operano in un cluster per la virtualizzazione e collegati ad un SAN per la memorizzazione di massa dei dati.
+
+- Problemi di safety e security:
+  - Danni ad un nodo del cluster, abbiamo diversi nodi per favorire ridondanza.
+  - Danni alla rete internet: risolto avendo due provider con due sistemi diversi.
+  - Danni al sistema elettrico, disporre di batterie di riserva, UPS e gruppo elettrogeno.
+  - Danni ai server, facciamo snapshot continui delle macchine virtuali e le facciamo ripartire.
+  - Incendio nel data center: predisporre di sistemi antincendio.
+  - Gestione temperatura con sistemi di refrigerazione per raffreddare le stanze dove sono contenute le apparecchiature informatiche.
+  - Intercettazione tramite rete: non ci sono problemi dato che disponiamo di VPN per i collegamenti verso i negozi e la sede centrale.
+  - Virus o altri tipi di malware, aggiornare costantemente gli antivirus.
+  - Intrusione: utilizziamo firewall a protezione della rete interna.
+  - Accesso a risorse e dati non autorizzati, adottiamo politiche di cambio password costanti e protezione della password degli utenti.

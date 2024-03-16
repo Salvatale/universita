@@ -1,0 +1,248 @@
+1. Quali sono le componenti principali di un'applicazione?
+
+2. Qual'è il ruolo delle reti entro i sistemi informatici odierni?
+
+3. Cos’è il modello client-server? Che importanza ha entro i sistemi informatici moderni?
+
+4. In base a quali criteri si procede alla scelta di un'applicazione entro un sistema
+informatico?
+
+5. Cosa si intende per interfaccia utente di un programma applicativo? Quali problematiche
+sono legate all’interfaccia utente? Come essa interviene nel lavoro quotidiano?
+
+6. Cosa sono le matrici di compatibilità del software? Come condizionano le scelte del
+software stesso?
+
+7. Quali sono i vincoli tecnologici a cui l'inserimento di un nuovo componente informatico è
+soggetto?
+
+8. Cos’è un sistema informatico distribuito? In che situazioni esso si trova? Che
+problematiche di gestione vi sono associate?
+
+9. Cosa si intende per EAI? Che problematiche comporta?
+
+10. Cosa è la SOA? Che vantaggi produce nei sistemi informativi?
+
+Risposte:
+
+1)Le componenti principali di un'applicazione sono:
+	-Livello strategico: tratta l'informazione destinata ai Top Manager.
+	 ESS(Executive Support Systems) rispondono alle necessità di livello strategico
+	 delle aziende e riguardano decisioni non di routine che richiedono valutazioni,
+	 giudizi, conoscenze approfondite, creando un'ambiente generalizzato di calcolo e
+	 comunicazione.
+	 possiamo definire:
+	 	-Input: dati aggregati, iterni ed esterni
+	 	-Elaborazioni svolte: simulazioni, grafici, interattività
+	 	-Output: proiezioni, risposte alle interrogazioni
+	 	-Utenti tipici: senior manager
+	 
+	-Livello manageriale: tratta l'informazione gestita dai Middle Manager.
+	 MIS(Management Information Systems) effettuano principalmente funzioni di 
+	 pianificazione e controllo, supportano le decisioni a livello manageriale e
+	 traggono i dati dalle applicazioni dei livelli più bassi.
+	 possiamo definire:
+	 	-Input: riepilogo dati sulle transazioni, volumi di dati, semplici modelli
+	 	-Elaborazioni svolte: report di routine, modelli semplici, analisi di basso
+	 	 livello
+	 	-Output: riepiloghi, report delle eccezioni
+	 	-Utenti tipici: middle manager
+	 
+	
+	-Livello di gestione e conoscenza: tratta l'informazione gestita dagli Operatori
+	 di gestione conoscenza.
+	 Essi sono suddivisi in due componenti:
+	 	-Sistemi per l'ufficio: aumentano la produttività dei lavoratori su documenti
+	 	 e dati.
+	 	 possiamo definire:
+	 	 	-Input: documenti, programmi, posta elettronica
+	 	 	-Elaborazioni svolte: gestione documenti, programmi, comunicazione
+	 	 	-Output: documenti, programmi, posta elettronica
+	 	 	Utenti tipici: impiegati di ogni livello
+	 	 Esempi: Elaborazione testi, Fogli elettronici, Database personali,
+	 	 ordinati di dati destinati alle esigenze di una sola persona, Minireport,
+	 	 Desktop publishing, Trattamento elettronico documenti.
+	 	 
+	 	 -KWS(Knowledge Working Systems) supportano i lavoratori della conoscenza
+	 	 nella creazione di una nuova conoscenza e chi gestisce i dati ad integrare
+	 	 nuova conoscenza nelle proprie attività.
+	 	 possiamo definire:
+	 	 	-Input: specifiche progettuali, elementi di conoscenza
+	 	 	-Elaborazioni svolte: modellazione, simulazioni
+	 	 	-Output: modelli, progetti, grafici
+	 	 	-Output:modelli, progetti, grafici
+	 	 	-Utenti tipici: professionisti, staff tecnico, progettisti
+	 	 esempi: Sistemi di progetto, archivi di progetti e conoscenza.
+	 
+	-Livello operativo: tratta l'informazione gestita dagli addetti operativi.
+	 Costituiscono il componenente qualitativamente più presente del sisetma
+	 informatico.
+	 Scopo principale è supportare le attività routinarie e registare il flusso
+	 delle transazioni entro l'azienda per esempio : Registrazione ordini, prenotazioni
+	 alberghiere, documentazione spedizioni e calcolo stipendi.
+	 Componente fondamentale è il TPS(Transaction Processing Systems) che hanno queste
+	 caratteristiche:
+	 	-Input: transazioni,eventi
+	 	-Elaborazioni svolte: Aggiornamenti, inserimenti, ordinamenti, unioni,
+	 	 produzione elenchi
+	 	-Output: documenti, report, liste, riepiloghi
+	 	-Utenti tipici: personale operativo, supervisori
+	 	
+  I DSS(Decision Support Systems) sono tra livello strategico e manageriale, rispondono alle
+  esigenze del livello manageriali dell'azienda e aiutano a prendere decisioni in contesti non
+  unici o nuovi per l'azienda.
+  Si dividono in:
+  	-Sistemi programmabili
+  	-Sistemi automatici
+  	-Sistemi ibridi
+  possiamo definire:
+  	-Input: Bassi volumi di dati, grandi DB ottimizzati per lo scopo, modelli analitici
+  	 e strumenti di analisi dei dati.
+  	-Elaborazioni svolte: simulazioni, analisi, correlazioni, interattività
+  	-Output: report speciali, proposte, analisi delle decisioni, risposte alle
+  	 interrogazioni
+  	-Utenti tipici: professionisti, manager di staff, middle e top manager
+  
+
+2)Le reti permettono un collegamento tra due apparecchiature attraverso un mezzo trasmissivo
+  per effettuare una trasmissione di informazioni.
+  Il collegamento di computer in rete offre maggior affidabilità e minor costo rispetto all'uso
+  di mainframe e terminali.
+  Le reti permettono di:
+  	-condividere risorse
+  	-comunicazione tra persone lontane
+  	-utilizzare servizi
+ 
+ 
+3)I client/server vengono utilizzati nelle architetture distribuite, sono utili perchè
+  risulta possibile avere accesso ad una risorsa che è presente su un altro computer 
+  che opera come server, quindi in questo caso un client chiede al serve di ottenere una
+  risorse o effettuare un'operazione tramite rete.
+
+
+4)
+
+
+
+5)L'interfaccia utente rappresenta il presentation layer, si occupa della presentazione
+  dei dati in formato alfanumerico e grafico all'utente e gestisce l'interazione con l'utente
+  stesso, interpreta i comandi emessi dall'utente attraverso le periferiche trasmettendoli
+  allo strato inferiore, ricevendo la risposta e rendere quest'ultima visibile all'utente.
+  L'interfaccia utente può avere alcune problematiche nel Client-Server multitier perchè 
+  se creiamo un'interfaccia grafica che genere delle query dai dati che inserisce l'utente
+  allora in questo caso abbiamo legato il presentation layer al data layer, allora una modifica
+  del livello sottostante prevede anche una modifica del presentatio layer, quindi per non avere
+  eventuali problematiche con le interfacce bisogna rendere indipendenti i livelli l'uno
+  dall'altro.
+ 
+
+6)La matrici di compatibilità del software mostrano le dipendenze degli strati di presentazione
+  rispetto ad hardware e software sottostante, la scelta del software viene compiuta ad un
+  livello funzionale, cioè in base alle esigenze di business cui l'applicativo software deve
+  rispondere in base alle caratteristiche della sua interfaccia utente, sopratutto in relazione
+  alla produttività individuale che essa garantisce.
+  
+  
+7)I vincoli tecnologici a cui un sistema informatico è soggetto sono:
+	-Performance e Scalabilità: dipende dal numero di utenti utilizza il sistema
+	 contemporaneamente.
+	 
+	-Complessità: complessità applicazione, cioè il numero di algoritmi, oggetti e
+	 funzionalità.
+	 
+	-Supportabilità: la nuova applicazione deve adattarsi con le altre, quindi o si
+	 scrivono di nuovo le applicazioni oppure si ricostrusce l'applicazione interessata
+	 tenendo presente che supporti la possibilità di avere diverse interfacce.
+	 
+	 
+8)Un sistema informatico distribuito è una rete di computer che usa un sistema operativo
+  e altri software infrastrutturali in grado di rendere trasparente all'utente l'esistenza
+  di molteplici computer autonomi.
+  Un'esempio di sistema distribuito è il Grid Computing che offre servizi di calcolo 
+  mascherando i dettagli di tali servizi.
+  Esso offre tre categorie di servizi:
+  	-Storage Grid: offre grandi quantità di spazio di memorizzazione permanente, ci sono
+  	 computer dedicati a gestire enormi file service, collegati con il resto della rete
+  	 attraverso supporti di comunicazione dedicati ad altissima velocità.
+  	 
+  	 -CPU Grid: mette a disposizione la CPU di computer connessi tramite rete per usufruire
+  	  di elaborazioni, garantiscono un uso ottimale delle risorse di calcolo e diminuiscono
+  	  i tempi per elaborazioni complesse.
+  	  Un'evoluzione è il virtual computing.
+  	  
+  	 -Application Grid: permette di utilizzare applicativi come sistemi CAD o di simulazione
+  	  attraverso la rete.
+  	  Con questo servizio in combinazione con la struttura della SOA e ESB si possono creare
+  	  sistemi software complessi come simulatori distribuiti di prototipi di auto.
+  	  
+
+9)Per EAI(Enterprise Application Integration) si intende l'integrazione di applicazioni su
+  scala di tutta l'azienda.
+  Il problema è rappresentato dal fatto che la variazione di un'interfaccia non deve forzare
+  al cambiamento dell'applicativo che implementa i servizi.
+  
+10)La SOA(Service Oriented Architecture) è una topologia di applicazioni software formata da
+   servizi e clienti dei servizi in relazione 1 a 1 tra di loro, ma debolmente accoppiati, una
+   variazione di una interfaccua non porta al cambiamento dell'applicativo che implementa i
+   servizi.
+   Il componente fondamentale è l'ESB(Enterprise Service Bus) che permette un ordinamento e
+   coordinamento dei vari flussi di informazioni prevedendo la traduzione dei dati dai formati
+   interni ad ogni componente verso un formato comune.
+   l'ESB considera i singoli Web Service come centri di servizio funzionale che erogano ognuno
+   uno specifico compito di elaborazione, un singolo processo business con le attività che
+   lo formano ed i flussi informativi che lo accompagano viene mappatto direttamente sull'ESB,
+   disegnando flussi informatici fra i vari Web Service.
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+	 
+  	 

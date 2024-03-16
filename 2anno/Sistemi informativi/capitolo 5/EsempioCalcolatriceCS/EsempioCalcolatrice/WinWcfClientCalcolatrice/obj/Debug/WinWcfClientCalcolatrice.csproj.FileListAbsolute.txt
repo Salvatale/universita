@@ -1,0 +1,9 @@
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinWcfClientCalcolatrice\bin\Debug\WinWcfClientCalcolatrice.exe.config
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinWcfClientCalcolatrice\bin\Debug\WinWcfClientCalcolatrice.exe
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinWcfClientCalcolatrice\bin\Debug\WinWcfClientCalcolatrice.pdb
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinWcfClientCalcolatrice\obj\Debug\WinWcfClientCalcolatrice.csprojResolveAssemblyReference.cache
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinWcfClientCalcolatrice\obj\Debug\WinWcfClientCalcolatrice.FormClientCalcolatrice.resources
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinWcfClientCalcolatrice\obj\Debug\WinWcfClientCalcolatrice.Properties.Resources.resources
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinWcfClientCalcolatrice\obj\Debug\WinWcfClientCalcolatrice.csproj.GenerateResource.Cache
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinWcfClientCalcolatrice\obj\Debug\WinWcfClientCalcolatrice.exe
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinWcfClientCalcolatrice\obj\Debug\WinWcfClientCalcolatrice.pdb

@@ -1,0 +1,16 @@
+digraph g
+{ 
+node [shape=none]
+rankdir="LR"
+dfs_1 -> dfs_2[color=gray, label = "0"]
+dfs_2 -> dfs_3[color=gray, label = "1"]
+dfs_3 -> dfs_4[color=gray, label = "2"]
+dfs_4 -> dfs_3[color=gray, label = "3"]
+dfs_4 -> dfs_1[color=gray, label = "4"]
+dfs_3 -> dfs_1[color=gray, label = "5"]
+dfs_2 -> dfs_0[color=gray, label = "6"]
+dfs_0 -> dfs_2[color=gray, label = "7"]
+dfs_0 -> dfs_1[color=gray, label = "8"]
+dfs_1 -> dfs_1[color=gray, label = "9"]
+dfs_1 -> dfs_0[color=gray, label = "10"]
+}

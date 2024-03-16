@@ -1,0 +1,60 @@
+Creare la WBS, la OBS e la Matrice RACI per
+Il processo di un hotel, composto da
+- Prenotazione stanza
+- Check-In
+- Soggiorno (uso stanza)
+- Check-Out con pagamento della stanza
+
+Definire tutte le singole attività, gli attori e fare la mappatura
+nella matrice RACI o RASCI.
+
+Prenotazione stanza:										Cameriere	Servitore	Cliente  Cuoco	 Persona_delle_pulizie	  Receptionist   Barman	
+	-chiamata cliente				risposta al cliente							R		                             RA
+	-raccolta dati cliente				dati cliente           idem sopra
+	-preferenza stanza				tipo di stanza		idem sopra
+	-verifica stanze libere			stanze libere		idem
+	-verifica data					data disponibile	idem
+	-assegnamento stanza				stanza			idem
+	
+	
+Check-In:
+	-controllo dati cliente			dati del cliente							R						RA
+	-assegnamento chiavi				chiavi									R						RA
+	-saluto ai clienti				clienti salutati					   RA		R
+	-accompagnamento cliente reception		cliente accompagnato  idem sopra
+	-accompagnamento cliente in stanza		cliente accompagnato	idem sopra
+
+Soggiorno:
+	-servizio pulizia				camera pulita								R			RA
+	-servizio in camera				cliente servito			R		    R		R	   R			                RA          R
+	-consegna ordine reception			reception informata			
+	-consegna ordine ristorante o bar		barman o cuoco informato
+	-raccolta ordine cibo				ordine cibo
+	-raccolta ordine bevande			ordine bevande
+	-consegna cibo e bevande in camera		consegna al cliente
+	-consegna prodotti per il bagno		prodotti per il bagno
+	
+Check-Out:
+	-restituzione chiavi				chiavi stanza
+	-pagamento cliente				pagamento
+	-consegna resto in contanti			resto
+	-pulizia stanza				pulizia
+	-saluto al cliente				cliente salutato
+	-accompagnamento cliente
+	
+	
+Attori:
+-Receptionist
+-Cuoco
+-Barman
+-Servitore
+-Persona delle pulizie
+-Cameriere
+-Cliente
+
+
+
+
+
+
+ 	

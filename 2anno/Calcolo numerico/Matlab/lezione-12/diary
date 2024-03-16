@@ -1,0 +1,1007 @@
+esercizi
+{Unrecognized function or variable 'x'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('esercizi', 'D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizi.m', 1)" style="font-weight:bold">esercizi</a> (<a href="matlab: opentoline('D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizi.m',1,0)">line 1</a>)
+f1 = (1-(x./24)./ (1+(x./24) + x^2./384))^8
+} 
+esercizi
+{Unrecognized function or variable 'x'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('esercizi', 'D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizi.m', 1)" style="font-weight:bold">esercizi</a> (<a href="matlab: opentoline('D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizi.m',1,0)">line 1</a>)
+f1 = (1-(x./24)./ (1+(x./24) + x^2./384))^8
+} 
+esercizi
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mpower', 'C:\Program Files\MATLAB\R2021b\toolbox\matlab\matfun\mpower.m', 52)" style="font-weight:bold"> ^ </a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2021b\toolbox\matlab\matfun\mpower.m',52,0)">line 52</a>)
+Incorrect dimensions for raising a matrix to a power. Check
+that the matrix is square and the power is a scalar. To perform
+elementwise matrix powers, use '.^'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('esercizi', 'D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizi.m', 2)" style="font-weight:bold">esercizi</a> (<a href="matlab: opentoline('D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizi.m',2,0)">line 2</a>)
+f1 = ((1-x./24)./(1+x./24 + x^2./384))^8
+} 
+esercizi
+
+f1 =
+
+  Columns 1 through 6
+
+    1.0000    0.9934    0.9867    0.9802    0.9737    0.9672
+
+  Columns 7 through 12
+
+    0.9607    0.9543    0.9479    0.9416    0.9353    0.9291
+
+  Columns 13 through 18
+
+    0.9228    0.9167    0.9105    0.9044    0.8983    0.8923
+
+  Columns 19 through 24
+
+    0.8863    0.8804    0.8744    0.8686    0.8627    0.8569
+
+  Columns 25 through 30
+
+    0.8511    0.8454    0.8397    0.8340    0.8284    0.8228
+
+  Columns 31 through 36
+
+    0.8172    0.8117    0.8062    0.8007    0.7953    0.7899
+
+  Columns 37 through 42
+
+    0.7845    0.7792    0.7739    0.7686    0.7634    0.7582
+
+  Columns 43 through 48
+
+    0.7530    0.7479    0.7428    0.7377    0.7327    0.7277
+
+  Columns 49 through 54
+
+    0.7227    0.7178    0.7129    0.7080    0.7031    0.6983
+
+  Columns 55 through 60
+
+    0.6935    0.6887    0.6840    0.6793    0.6746    0.6700
+
+  Columns 61 through 66
+
+    0.6654    0.6608    0.6562    0.6517    0.6472    0.6427
+
+  Columns 67 through 72
+
+    0.6383    0.6339    0.6295    0.6252    0.6208    0.6165
+
+  Columns 73 through 78
+
+    0.6122    0.6080    0.6038    0.5996    0.5954    0.5913
+
+  Columns 79 through 84
+
+    0.5872    0.5831    0.5790    0.5750    0.5710    0.5670
+
+  Columns 85 through 90
+
+    0.5630    0.5591    0.5552    0.5513    0.5475    0.5436
+
+  Columns 91 through 96
+
+    0.5398    0.5360    0.5323    0.5285    0.5248    0.5211
+
+  Columns 97 through 101
+
+    0.5175    0.5138    0.5102    0.5066    0.5031
+
+esercizi
+
+f1 =
+
+  Columns 1 through 6
+
+    1.0000    0.9934    0.9867    0.9802    0.9737    0.9672
+
+  Columns 7 through 12
+
+    0.9607    0.9543    0.9479    0.9416    0.9353    0.9291
+
+  Columns 13 through 18
+
+    0.9228    0.9167    0.9105    0.9044    0.8983    0.8923
+
+  Columns 19 through 24
+
+    0.8863    0.8804    0.8744    0.8686    0.8627    0.8569
+
+  Columns 25 through 30
+
+    0.8511    0.8454    0.8397    0.8340    0.8284    0.8228
+
+  Columns 31 through 36
+
+    0.8172    0.8117    0.8062    0.8007    0.7953    0.7899
+
+  Columns 37 through 42
+
+    0.7845    0.7792    0.7739    0.7686    0.7634    0.7582
+
+  Columns 43 through 48
+
+    0.7530    0.7479    0.7428    0.7377    0.7327    0.7277
+
+  Columns 49 through 54
+
+    0.7227    0.7178    0.7129    0.7080    0.7031    0.6983
+
+  Columns 55 through 60
+
+    0.6935    0.6887    0.6840    0.6793    0.6746    0.6700
+
+  Columns 61 through 66
+
+    0.6654    0.6608    0.6562    0.6517    0.6472    0.6427
+
+  Columns 67 through 72
+
+    0.6383    0.6339    0.6295    0.6252    0.6208    0.6165
+
+  Columns 73 through 78
+
+    0.6122    0.6080    0.6038    0.5996    0.5954    0.5913
+
+  Columns 79 through 84
+
+    0.5872    0.5831    0.5790    0.5750    0.5710    0.5670
+
+  Columns 85 through 90
+
+    0.5630    0.5591    0.5552    0.5513    0.5475    0.5436
+
+  Columns 91 through 96
+
+    0.5398    0.5360    0.5323    0.5285    0.5248    0.5211
+
+  Columns 97 through 101
+
+    0.5175    0.5138    0.5102    0.5066    0.5031
+
+esercizi
+
+f1 =
+
+  Columns 1 through 6
+
+    1.0000    0.9934    0.9867    0.9802    0.9737    0.9672
+
+  Columns 7 through 12
+
+    0.9607    0.9543    0.9479    0.9416    0.9353    0.9291
+
+  Columns 13 through 18
+
+    0.9228    0.9167    0.9105    0.9044    0.8983    0.8923
+
+  Columns 19 through 24
+
+    0.8863    0.8804    0.8744    0.8686    0.8627    0.8569
+
+  Columns 25 through 30
+
+    0.8511    0.8454    0.8397    0.8340    0.8284    0.8228
+
+  Columns 31 through 36
+
+    0.8172    0.8117    0.8062    0.8007    0.7953    0.7899
+
+  Columns 37 through 42
+
+    0.7845    0.7792    0.7739    0.7686    0.7634    0.7582
+
+  Columns 43 through 48
+
+    0.7530    0.7479    0.7428    0.7377    0.7327    0.7277
+
+  Columns 49 through 54
+
+    0.7227    0.7178    0.7129    0.7080    0.7031    0.6983
+
+  Columns 55 through 60
+
+    0.6935    0.6887    0.6840    0.6793    0.6746    0.6700
+
+  Columns 61 through 66
+
+    0.6654    0.6608    0.6562    0.6517    0.6472    0.6427
+
+  Columns 67 through 72
+
+    0.6383    0.6339    0.6295    0.6252    0.6208    0.6165
+
+  Columns 73 through 78
+
+    0.6122    0.6080    0.6038    0.5996    0.5954    0.5913
+
+  Columns 79 through 84
+
+    0.5872    0.5831    0.5790    0.5750    0.5710    0.5670
+
+  Columns 85 through 90
+
+    0.5630    0.5591    0.5552    0.5513    0.5475    0.5436
+
+  Columns 91 through 96
+
+    0.5398    0.5360    0.5323    0.5285    0.5248    0.5211
+
+  Columns 97 through 101
+
+    0.5175    0.5138    0.5102    0.5066    0.5031
+
+esercizi
+
+f1 =
+
+  Columns 1 through 6
+
+    1.0000    0.9934    0.9867    0.9802    0.9737    0.9672
+
+  Columns 7 through 12
+
+    0.9607    0.9543    0.9479    0.9416    0.9353    0.9291
+
+  Columns 13 through 18
+
+    0.9228    0.9167    0.9105    0.9044    0.8983    0.8923
+
+  Columns 19 through 24
+
+    0.8863    0.8804    0.8744    0.8686    0.8627    0.8569
+
+  Columns 25 through 30
+
+    0.8511    0.8454    0.8397    0.8340    0.8284    0.8228
+
+  Columns 31 through 36
+
+    0.8172    0.8117    0.8062    0.8007    0.7953    0.7899
+
+  Columns 37 through 42
+
+    0.7845    0.7792    0.7739    0.7686    0.7634    0.7582
+
+  Columns 43 through 48
+
+    0.7530    0.7479    0.7428    0.7377    0.7327    0.7277
+
+  Columns 49 through 54
+
+    0.7227    0.7178    0.7129    0.7080    0.7031    0.6983
+
+  Columns 55 through 60
+
+    0.6935    0.6887    0.6840    0.6793    0.6746    0.6700
+
+  Columns 61 through 66
+
+    0.6654    0.6608    0.6562    0.6517    0.6472    0.6427
+
+  Columns 67 through 72
+
+    0.6383    0.6339    0.6295    0.6252    0.6208    0.6165
+
+  Columns 73 through 78
+
+    0.6122    0.6080    0.6038    0.5996    0.5954    0.5913
+
+  Columns 79 through 84
+
+    0.5872    0.5831    0.5790    0.5750    0.5710    0.5670
+
+  Columns 85 through 90
+
+    0.5630    0.5591    0.5552    0.5513    0.5475    0.5436
+
+  Columns 91 through 96
+
+    0.5398    0.5360    0.5323    0.5285    0.5248    0.5211
+
+  Columns 97 through 101
+
+    0.5175    0.5138    0.5102    0.5066    0.5031
+
+esercizi
+
+f1 =
+
+  Columns 1 through 6
+
+    1.0000    0.9934    0.9867    0.9802    0.9737    0.9672
+
+  Columns 7 through 12
+
+    0.9607    0.9543    0.9479    0.9416    0.9353    0.9291
+
+  Columns 13 through 18
+
+    0.9228    0.9167    0.9105    0.9044    0.8983    0.8923
+
+  Columns 19 through 24
+
+    0.8863    0.8804    0.8744    0.8686    0.8627    0.8569
+
+  Columns 25 through 30
+
+    0.8511    0.8454    0.8397    0.8340    0.8284    0.8228
+
+  Columns 31 through 36
+
+    0.8172    0.8117    0.8062    0.8007    0.7953    0.7899
+
+  Columns 37 through 42
+
+    0.7845    0.7792    0.7739    0.7686    0.7634    0.7582
+
+  Columns 43 through 48
+
+    0.7530    0.7479    0.7428    0.7377    0.7327    0.7277
+
+  Columns 49 through 54
+
+    0.7227    0.7178    0.7129    0.7080    0.7031    0.6983
+
+  Columns 55 through 60
+
+    0.6935    0.6887    0.6840    0.6793    0.6746    0.6700
+
+  Columns 61 through 66
+
+    0.6654    0.6608    0.6562    0.6517    0.6472    0.6427
+
+  Columns 67 through 72
+
+    0.6383    0.6339    0.6295    0.6252    0.6208    0.6165
+
+  Columns 73 through 78
+
+    0.6122    0.6080    0.6038    0.5996    0.5954    0.5913
+
+  Columns 79 through 84
+
+    0.5872    0.5831    0.5790    0.5750    0.5710    0.5670
+
+  Columns 85 through 90
+
+    0.5630    0.5591    0.5552    0.5513    0.5475    0.5436
+
+  Columns 91 through 96
+
+    0.5398    0.5360    0.5323    0.5285    0.5248    0.5211
+
+  Columns 97 through 101
+
+    0.5175    0.5138    0.5102    0.5066    0.5031
+
+esercizi
+
+f1 =
+
+  Columns 1 through 6
+
+    1.0000    0.9934    0.9867    0.9802    0.9737    0.9672
+
+  Columns 7 through 12
+
+    0.9607    0.9543    0.9479    0.9416    0.9353    0.9291
+
+  Columns 13 through 18
+
+    0.9228    0.9167    0.9105    0.9044    0.8983    0.8923
+
+  Columns 19 through 24
+
+    0.8863    0.8804    0.8744    0.8686    0.8627    0.8569
+
+  Columns 25 through 30
+
+    0.8511    0.8454    0.8397    0.8340    0.8284    0.8228
+
+  Columns 31 through 36
+
+    0.8172    0.8117    0.8062    0.8007    0.7953    0.7899
+
+  Columns 37 through 42
+
+    0.7845    0.7792    0.7739    0.7686    0.7634    0.7582
+
+  Columns 43 through 48
+
+    0.7530    0.7479    0.7428    0.7377    0.7327    0.7277
+
+  Columns 49 through 54
+
+    0.7227    0.7178    0.7129    0.7080    0.7031    0.6983
+
+  Columns 55 through 60
+
+    0.6935    0.6887    0.6840    0.6793    0.6746    0.6700
+
+  Columns 61 through 66
+
+    0.6654    0.6608    0.6562    0.6517    0.6472    0.6427
+
+  Columns 67 through 72
+
+    0.6383    0.6339    0.6295    0.6252    0.6208    0.6165
+
+  Columns 73 through 78
+
+    0.6122    0.6080    0.6038    0.5996    0.5954    0.5913
+
+  Columns 79 through 84
+
+    0.5872    0.5831    0.5790    0.5750    0.5710    0.5670
+
+  Columns 85 through 90
+
+    0.5630    0.5591    0.5552    0.5513    0.5475    0.5436
+
+  Columns 91 through 96
+
+    0.5398    0.5360    0.5323    0.5285    0.5248    0.5211
+
+  Columns 97 through 101
+
+    0.5175    0.5138    0.5102    0.5066    0.5031
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mpower', 'C:\Program Files\MATLAB\R2021b\toolbox\matlab\matfun\mpower.m', 52)" style="font-weight:bold"> ^ </a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2021b\toolbox\matlab\matfun\mpower.m',52,0)">line 52</a>)
+Incorrect dimensions for raising a matrix to a power. Check
+that the matrix is square and the power is a scalar. To perform
+elementwise matrix powers, use '.^'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('esercizi', 'D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizi.m', 8)" style="font-weight:bold">esercizi</a> (<a href="matlab: opentoline('D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizi.m',8,0)">line 8</a>)
+f2 = exp(-x1^2);
+} 
+plot(A)
+{Unrecognized function or variable 'A'.
+} 
+esercizi
+
+f1 =
+
+  Columns 1 through 6
+
+    1.0000    0.9934    0.9867    0.9802    0.9737    0.9672
+
+  Columns 7 through 12
+
+    0.9607    0.9543    0.9479    0.9416    0.9353    0.9291
+
+  Columns 13 through 18
+
+    0.9228    0.9167    0.9105    0.9044    0.8983    0.8923
+
+  Columns 19 through 24
+
+    0.8863    0.8804    0.8744    0.8686    0.8627    0.8569
+
+  Columns 25 through 30
+
+    0.8511    0.8454    0.8397    0.8340    0.8284    0.8228
+
+  Columns 31 through 36
+
+    0.8172    0.8117    0.8062    0.8007    0.7953    0.7899
+
+  Columns 37 through 42
+
+    0.7845    0.7792    0.7739    0.7686    0.7634    0.7582
+
+  Columns 43 through 48
+
+    0.7530    0.7479    0.7428    0.7377    0.7327    0.7277
+
+  Columns 49 through 54
+
+    0.7227    0.7178    0.7129    0.7080    0.7031    0.6983
+
+  Columns 55 through 60
+
+    0.6935    0.6887    0.6840    0.6793    0.6746    0.6700
+
+  Columns 61 through 66
+
+    0.6654    0.6608    0.6562    0.6517    0.6472    0.6427
+
+  Columns 67 through 72
+
+    0.6383    0.6339    0.6295    0.6252    0.6208    0.6165
+
+  Columns 73 through 78
+
+    0.6122    0.6080    0.6038    0.5996    0.5954    0.5913
+
+  Columns 79 through 84
+
+    0.5872    0.5831    0.5790    0.5750    0.5710    0.5670
+
+  Columns 85 through 90
+
+    0.5630    0.5591    0.5552    0.5513    0.5475    0.5436
+
+  Columns 91 through 96
+
+    0.5398    0.5360    0.5323    0.5285    0.5248    0.5211
+
+  Columns 97 through 101
+
+    0.5175    0.5138    0.5102    0.5066    0.5031
+
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('mpower', 'C:\Program Files\MATLAB\R2021b\toolbox\matlab\matfun\mpower.m', 52)" style="font-weight:bold"> ^ </a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2021b\toolbox\matlab\matfun\mpower.m',52,0)">line 52</a>)
+Incorrect dimensions for raising a matrix to a power. Check
+that the matrix is square and the power is a scalar. To perform
+elementwise matrix powers, use '.^'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('esercizi', 'D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizi.m', 8)" style="font-weight:bold">esercizi</a> (<a href="matlab: opentoline('D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizi.m',8,0)">line 8</a>)
+f2 = exp(-x1^2);
+} 
+esercizi
+
+f1 =
+
+  Columns 1 through 6
+
+    1.0000    0.9934    0.9867    0.9802    0.9737    0.9672
+
+  Columns 7 through 12
+
+    0.9607    0.9543    0.9479    0.9416    0.9353    0.9291
+
+  Columns 13 through 18
+
+    0.9228    0.9167    0.9105    0.9044    0.8983    0.8923
+
+  Columns 19 through 24
+
+    0.8863    0.8804    0.8744    0.8686    0.8627    0.8569
+
+  Columns 25 through 30
+
+    0.8511    0.8454    0.8397    0.8340    0.8284    0.8228
+
+  Columns 31 through 36
+
+    0.8172    0.8117    0.8062    0.8007    0.7953    0.7899
+
+  Columns 37 through 42
+
+    0.7845    0.7792    0.7739    0.7686    0.7634    0.7582
+
+  Columns 43 through 48
+
+    0.7530    0.7479    0.7428    0.7377    0.7327    0.7277
+
+  Columns 49 through 54
+
+    0.7227    0.7178    0.7129    0.7080    0.7031    0.6983
+
+  Columns 55 through 60
+
+    0.6935    0.6887    0.6840    0.6793    0.6746    0.6700
+
+  Columns 61 through 66
+
+    0.6654    0.6608    0.6562    0.6517    0.6472    0.6427
+
+  Columns 67 through 72
+
+    0.6383    0.6339    0.6295    0.6252    0.6208    0.6165
+
+  Columns 73 through 78
+
+    0.6122    0.6080    0.6038    0.5996    0.5954    0.5913
+
+  Columns 79 through 84
+
+    0.5872    0.5831    0.5790    0.5750    0.5710    0.5670
+
+  Columns 85 through 90
+
+    0.5630    0.5591    0.5552    0.5513    0.5475    0.5436
+
+  Columns 91 through 96
+
+    0.5398    0.5360    0.5323    0.5285    0.5248    0.5211
+
+  Columns 97 through 101
+
+    0.5175    0.5138    0.5102    0.5066    0.5031
+
+esercizi
+
+f1 =
+
+  Columns 1 through 6
+
+    1.0000    0.9934    0.9867    0.9802    0.9737    0.9672
+
+  Columns 7 through 12
+
+    0.9607    0.9543    0.9479    0.9416    0.9353    0.9291
+
+  Columns 13 through 18
+
+    0.9228    0.9167    0.9105    0.9044    0.8983    0.8923
+
+  Columns 19 through 24
+
+    0.8863    0.8804    0.8744    0.8686    0.8627    0.8569
+
+  Columns 25 through 30
+
+    0.8511    0.8454    0.8397    0.8340    0.8284    0.8228
+
+  Columns 31 through 36
+
+    0.8172    0.8117    0.8062    0.8007    0.7953    0.7899
+
+  Columns 37 through 42
+
+    0.7845    0.7792    0.7739    0.7686    0.7634    0.7582
+
+  Columns 43 through 48
+
+    0.7530    0.7479    0.7428    0.7377    0.7327    0.7277
+
+  Columns 49 through 54
+
+    0.7227    0.7178    0.7129    0.7080    0.7031    0.6983
+
+  Columns 55 through 60
+
+    0.6935    0.6887    0.6840    0.6793    0.6746    0.6700
+
+  Columns 61 through 66
+
+    0.6654    0.6608    0.6562    0.6517    0.6472    0.6427
+
+  Columns 67 through 72
+
+    0.6383    0.6339    0.6295    0.6252    0.6208    0.6165
+
+  Columns 73 through 78
+
+    0.6122    0.6080    0.6038    0.5996    0.5954    0.5913
+
+  Columns 79 through 84
+
+    0.5872    0.5831    0.5790    0.5750    0.5710    0.5670
+
+  Columns 85 through 90
+
+    0.5630    0.5591    0.5552    0.5513    0.5475    0.5436
+
+  Columns 91 through 96
+
+    0.5398    0.5360    0.5323    0.5285    0.5248    0.5211
+
+  Columns 97 through 101
+
+    0.5175    0.5138    0.5102    0.5066    0.5031
+
+esercizi
+
+f1 =
+
+  Columns 1 through 6
+
+    1.0000    0.9934    0.9867    0.9802    0.9737    0.9672
+
+  Columns 7 through 12
+
+    0.9607    0.9543    0.9479    0.9416    0.9353    0.9291
+
+  Columns 13 through 18
+
+    0.9228    0.9167    0.9105    0.9044    0.8983    0.8923
+
+  Columns 19 through 24
+
+    0.8863    0.8804    0.8744    0.8686    0.8627    0.8569
+
+  Columns 25 through 30
+
+    0.8511    0.8454    0.8397    0.8340    0.8284    0.8228
+
+  Columns 31 through 36
+
+    0.8172    0.8117    0.8062    0.8007    0.7953    0.7899
+
+  Columns 37 through 42
+
+    0.7845    0.7792    0.7739    0.7686    0.7634    0.7582
+
+  Columns 43 through 48
+
+    0.7530    0.7479    0.7428    0.7377    0.7327    0.7277
+
+  Columns 49 through 54
+
+    0.7227    0.7178    0.7129    0.7080    0.7031    0.6983
+
+  Columns 55 through 60
+
+    0.6935    0.6887    0.6840    0.6793    0.6746    0.6700
+
+  Columns 61 through 66
+
+    0.6654    0.6608    0.6562    0.6517    0.6472    0.6427
+
+  Columns 67 through 72
+
+    0.6383    0.6339    0.6295    0.6252    0.6208    0.6165
+
+  Columns 73 through 78
+
+    0.6122    0.6080    0.6038    0.5996    0.5954    0.5913
+
+  Columns 79 through 84
+
+    0.5872    0.5831    0.5790    0.5750    0.5710    0.5670
+
+  Columns 85 through 90
+
+    0.5630    0.5591    0.5552    0.5513    0.5475    0.5436
+
+  Columns 91 through 96
+
+    0.5398    0.5360    0.5323    0.5285    0.5248    0.5211
+
+  Columns 97 through 101
+
+    0.5175    0.5138    0.5102    0.5066    0.5031
+
+esercizi
+
+f1 =
+
+  Columns 1 through 6
+
+    1.0000    0.9934    0.9867    0.9802    0.9737    0.9672
+
+  Columns 7 through 12
+
+    0.9607    0.9543    0.9479    0.9416    0.9353    0.9291
+
+  Columns 13 through 18
+
+    0.9228    0.9167    0.9105    0.9044    0.8983    0.8923
+
+  Columns 19 through 24
+
+    0.8863    0.8804    0.8744    0.8686    0.8627    0.8569
+
+  Columns 25 through 30
+
+    0.8511    0.8454    0.8397    0.8340    0.8284    0.8228
+
+  Columns 31 through 36
+
+    0.8172    0.8117    0.8062    0.8007    0.7953    0.7899
+
+  Columns 37 through 42
+
+    0.7845    0.7792    0.7739    0.7686    0.7634    0.7582
+
+  Columns 43 through 48
+
+    0.7530    0.7479    0.7428    0.7377    0.7327    0.7277
+
+  Columns 49 through 54
+
+    0.7227    0.7178    0.7129    0.7080    0.7031    0.6983
+
+  Columns 55 through 60
+
+    0.6935    0.6887    0.6840    0.6793    0.6746    0.6700
+
+  Columns 61 through 66
+
+    0.6654    0.6608    0.6562    0.6517    0.6472    0.6427
+
+  Columns 67 through 72
+
+    0.6383    0.6339    0.6295    0.6252    0.6208    0.6165
+
+  Columns 73 through 78
+
+    0.6122    0.6080    0.6038    0.5996    0.5954    0.5913
+
+  Columns 79 through 84
+
+    0.5872    0.5831    0.5790    0.5750    0.5710    0.5670
+
+  Columns 85 through 90
+
+    0.5630    0.5591    0.5552    0.5513    0.5475    0.5436
+
+  Columns 91 through 96
+
+    0.5398    0.5360    0.5323    0.5285    0.5248    0.5211
+
+  Columns 97 through 101
+
+    0.5175    0.5138    0.5102    0.5066    0.5031
+
+clc
+clear
+clc
+esercizio_2
+{Unrecognized function or variable 'x'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('esercizio_2', 'D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizio_2.m', 4)" style="font-weight:bold">esercizio_2</a> (<a href="matlab: opentoline('D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizio_2.m',4,0)">line 4</a>)
+    f1 = (m-x.^2/m).^m;
+} 
+esercizio_2
+esercizio_2
+esercizio_2
+esercizio_2
+clc
+clear
+clc
+esercizio_3
+esercizio_3
+esercizio_2_while
+{Unrecognized function or variable 'm'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('esercizio_2_while', 'D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizio_2_while.m', 4)" style="font-weight:bold">esercizio_2_while</a> (<a href="matlab: opentoline('D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\esercizio_2_while.m',4,0)">line 4</a>)
+while m < 7
+} 
+esercizio_2_while
+es1
+
+r1 =
+
+    3.0000
+    2.0000
+    1.0000
+
+es1
+
+r1 =
+
+     3.000000000000002e+00
+     1.999999999999998e+00
+     1.000000000000000e+00
+
+es1
+
+r1 =
+
+     3.000000000000002e+00
+     1.999999999999998e+00
+     1.000000000000000e+00
+
+{Unrecognized function or variable 'C'.
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('es1', 'D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\scheda_radici\es1.m', 10)" style="font-weight:bold">es1</a> (<a href="matlab: opentoline('D:\universita\2 anno\Calcolo numerico\Matlab\lezione-12\scheda_radici\es1.m',10,0)">line 10</a>)
+polyval(C,X)
+} 
+es1
+
+r1 =
+
+     3.000000000000002e+00
+     1.999999999999998e+00
+     1.000000000000000e+00
+
+
+ans =
+
+  Columns 1 through 10
+
+  -504  -336  -210  -120   -60   -24    -6     0     0     0
+
+  Columns 11 through 13
+
+     6    24    60
+
+es1
+
+r1 =
+
+     3.000000000000002e+00
+     1.999999999999998e+00
+     1.000000000000000e+00
+
+es1
+
+r1 =
+
+     3.000000000000002e+00
+     1.999999999999998e+00
+     1.000000000000000e+00
+
+es1
+
+r1 =
+
+     3.000000000000002e+00
+     1.999999999999998e+00
+     1.000000000000000e+00
+
+
+z1 =
+
+     3.000000000000004e+00
+
+es1
+
+r1 =
+
+     3.000000000000002e+00
+     1.999999999999998e+00
+     1.000000000000000e+00
+
+
+z1 =
+
+     2
+
+es1
+
+r1 =
+
+     3.000000000000002e+00
+     1.999999999999998e+00
+     1.000000000000000e+00
+
+
+z4 =
+
+     1
+     1
+
+
+z5 =
+
+      4.000000000000005e+00 + 0.000000000000000e+00i
+      1.000005756568607e+00 + 9.970789554639972e-06i
+      1.000005756568607e+00 - 9.970789554639972e-06i
+      9.999884868627845e-01 + 0.000000000000000e+00i
+
+
+ans =
+
+     0
+
+
+C4 =
+
+  Columns 1 through 2
+
+     1.000000000000000e+00    -2.999999999999995e+00
+
+  Columns 3 through 4
+
+     3.000000000000005e+00    -9.999999999999627e-01
+
+
+R =
+
+  Columns 1 through 2
+
+                         0                         0
+
+  Columns 3 through 4
+
+                         0                         0
+
+  Column 5
+
+     1.438849039914203e-13
+
+
+ans =
+
+      1.000018112159706e+00 + 3.137143940348800e-05i
+      1.000018112159706e+00 - 3.137143940348800e-05i
+      9.999637756805816e-01 + 0.000000000000000e+00i
+

@@ -1,0 +1,11 @@
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinCalcolatrice\bin\Debug\WinCalcolatrice.exe.config
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinCalcolatrice\bin\Debug\WinCalcolatrice.exe
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinCalcolatrice\bin\Debug\WinCalcolatrice.pdb
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinCalcolatrice\bin\Debug\LibCalcolatrice.dll
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinCalcolatrice\bin\Debug\LibCalcolatrice.pdb
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinCalcolatrice\obj\Debug\WinCalcolatrice.csprojResolveAssemblyReference.cache
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinCalcolatrice\obj\Debug\WinCalcolatrice.FormCalcolatrice.resources
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinCalcolatrice\obj\Debug\WinCalcolatrice.Properties.Resources.resources
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinCalcolatrice\obj\Debug\WinCalcolatrice.csproj.GenerateResource.Cache
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinCalcolatrice\obj\Debug\WinCalcolatrice.exe
+c:\users\gdestri\documents\visual studio 2015\Projects\EsempioCalcolatrice\WinCalcolatrice\obj\Debug\WinCalcolatrice.pdb

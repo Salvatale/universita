@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="regista" type="xs:string"/>
+	<xs:element name="titolo" type="xs:string"/>
+	<xs:element name="anno" type="xs:int"/>
+	<xs:element name="genere" type="xs:string"/>
+	<xs:element name="attore_protagonista" type="xs:string"/>
+	<xs:element name="attrice_protagonista" type="xs:string"/>
+	<xs:element name="attori">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="attore" type="xs:string"/>			
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element name="attori">
+	<xs:element name="film">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="regista" />
+				<xs:element ref="titolo" />
+				<xs:element ref="anno" minOccurs="0"/>
+				<xs:element ref="genere" minOccurs="0"/>
+				<xs:element ref="attore_protagonista/" />
+				<xs:element ref="attrice_protagonista/" />
+				<xs:element ref="attori/" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<film xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:noNamespaceSchemaLocation="FilmXSD.txt">
+  <regista>Jean-Jacques Annaud</regista>
+  <titolo>Il nome della rosa</titolo>
+  <anno>1986</anno>
+  <genere>Thriller Storico</genere>
+  <attore_protagonista>Sean Connery</attore_protagonista>
+  <attrice_protagonista>Valentina Vargas</attrice_protagonista>
+  <attori>
+	<attore>Christian Slater</attore>
+	<attore>Helmut Qualtinger</attore>
+	<attore>Micheal Lonsdale</attore>
+  </attori>
+</film>

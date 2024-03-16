@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="autore" type="xs:string"/>
+	<xs:element name="titolo" type="xs:string"/>
+	<xs:element name="anno" type="xs:int"/>
+	<xs:element name="genere" type="xs:string"/>
+	<xs:element name="libro">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="autore" />
+				<xs:element ref="titolo" />
+				<xs:element ref="anno" minOccurs="0"/>
+				<xs:element ref="genere" minOccurs="0"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<libro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:noNamespaceSchemaLocation="LibroXSD.txt">
+  <autore>Giulio Destri</autore>
+  <titolo>Sistemi Informativi</titolo>
+  <anno>2013</anno>
+  <genere>Testo Universitario</genere>
+</libro>
