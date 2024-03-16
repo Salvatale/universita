@@ -1,0 +1,7 @@
+Vogliamo utilizzare gli oggetti per descrivere le operazioni da compiere su un oggetto generico
+che viene chiamata receiver.
+Di solito viene fatta per descrivere all'utente i command delle interfacce grafiche ed
+associare il comando a piu eventi della GUI.
+
+Interpreter è un modo per realizzare degli interpreti per i linguaggi di programmazione,
+una volta trasformato la sintassi concreta, esso genera oggetti in memoria

@@ -1,0 +1,124 @@
+OMG è l'Object Management Group, è un'iniziativa internazionale no-profit ed ha l'obiettivo
+di trasferire l'idea della programmazione orientata agli oggetti nello sviluppo di software di tipo
+mainstream.
+L'associazione voleva promuovere la programmazione orientata agli oggetti per produrre sistemi
+software complessi, essa cerca di rendere accessibili i vecchi sistemi software ,che non 
+erano sviluppati orientati agli oggetti, tramite interfacce che avessere la tecnologia
+orientata agli oggetti.
+Se si possiede un sistema bancario scritto in COBOL dove sono memorizzate tantissime cose e
+quindi non si vuole cambiarlo, il costo delle procedure di modernizzazione che è mostruoso,
+OMG propone di prendere il sistema in COBOL e rivestirlo con un'interfaccia orientata agli
+oggetti, per poterlo fare si può inserire un'interfaccia remota, definiamo un oggetto remoto
+che per i client sarà un oggetto per inviare messaggi, invece nella realizzazione sarà usato
+come dialogo tra  la nuova interfaccia e il sistema vecchio scritto in COBOL, per poterlo fare
+bisogna fare uso della rete che svincola l'onere di fare chiamate sulla stessa macchina.
+OMG introduce un linguaggio per definire le interfacce, specifica cosa ci va dentro
+le interfacce, quindi è un linguaggio per descrivere le interfacce.
+Si può utilizzare per generare codice nel linguaggio target, quindi si definisce il linguaggio
+per le interfacce, dopo si realizzano dei compilatori che generino codice per i client con 
+codici di linguaggi di programmazione diversi, dopo si generano gli Skeleton che sono 
+infrastrutture in C++,Java,Fortran,COBOL,C.
+Il programmatore COBOL unirà questo Skeleton alla vecchia procedura legacy, fornisce il risultato
+allo Skeleton ed esso lo rimanda indietro.
+XML era una sorta di HTML per definire interfacce.
+XML è stato sostituito da Json.
+UML(Unified Modeling Language) è un linguaggio grafico di descrizione unificato, è 
+standardizzata da un organismo politico, ma non fino in fondo, quindi esiste come idea
+ma non è mai stata finalizzata.
+
+Class Diagram è quello piu utilizzato. è un rettangolo su un foglio di carta con elementi
+grafici che rappresentano l'architettura statica del sistema software.
+Si può descrivere classi ed interfacce unendole in un grafo.
+Una classe è sempre descritta da un rettangolo divisa da almeno uno,due o tre parti.
+In alto c'è il nome della classe, sotto ci sono gli attributi, sotto ci sono le operazioni,
+e l'ultima parte è extra dove si scrive il contratto per la parte invariante,pre e post condizioni.
+Gli attributi sono identificati da un simbolo che indica la visibilità:
+- publica : +
+- privata : -
+- protetta : #
+
++ menuBar : MenuBar
++ indica che è pubblico, menubar è il nome dell'attributo e MenuBar è il tipo dell'attributo.
+Le operazioni sono descritte dal nome, dal tipo degli argomenti, se l'operazione ritorna un
+valore allora scriviamo : resultype.
+Le responsabilità invece le si scrivono come si vuole, come una sorta di commento semplice.
+Se il nome è scritto in italico allora classe è astratta, stessa cosa vale per le operazioni.
+
+L'interfaccia è rappresentata da una classe astratta in UML.
+Una classe è in relazione con un'altra classe se per qualche motivo è legata a questa altra
+classe, ci sono tanti tipi di relazioni e sono descritte da diversi simboli grafici.
+La freccia aperta a triangolo che punta da una classe ad un'altra classe ci dice che la classe puntata è una 
+classe base della classe che punta, è una relazione di specializzazione, quindi la classe Frame
+specializza la classa Window. come se fosse Frame extends Window, di solito la specializzazione
+la si disegna dall'alto verso il basso, con quelle generiche in alto e quelle piu specializzanti
+si disegnano in basso.
+Una classe dipende da un'altra classe se per qualche motivo ne menziona il nome, per esempio
+in Window viene nominato Event, quindi da qualche parte viene nominato Event, quindi dobbiamo
+includere anche la classe Event.
+La relazione di dipendenza vincola Window ed Event a vivere insieme.
+La composizione è una relazione molto legata all'associazione, si identifica con un rombino,
+una classe è in relazione di composizione con un'altra classe se all'interno della classe
+ci sono elementi quindi oggetti di questa classe.
+Quindi il contenitore è dopo si mette il rombo ed il contenuto è la classe puntata dalla freccia,
+il contenitore crea il contenuto e distrugge il contenuto.
+Esempio: EventQmgr crea e distrugge Event, ovviamente la sua collezione di Event, ma
+non significa che è l'unico modo per creare Event, ci vuole una lista per contenere gli
+Event che non viene identificata negli attributi ma dalla relazione di composizione.
+Se il rombo è colorato di nero allora solo quella classe può creare e distruggere quei elementi.
+In questo caso solo EventQmgr può creare e distruggere Event.
+La MenuBar contiene una lista di MenuItem, ma non è la MenuBar che gestisce la vita degli
+elementi di MenuItem, ma gli verranno forniti e qualcun altro potrà tenere un riferimento.
+Se la relazione non è di nessuna di queste tipologia allora si chiama associazione, quindi 
+è piu di una dipendenza ma meno di un'aggregazione, l'associazione si risolve in un attributo,
+Frame avrà un attributo di tipo MenuBar che descrive questa associazione, quando metto un nome
+all'associazione, allora sto costruendo un attributo privato che descrive quest'associazione,
+nel momento che metto un nome all'aggregazione allora sto mettendo all'interno di MenuBar 
+un attributo che descrive la composizione.
+Con un * vuol dire che la parte puntata assume cardinalità 0-infinito, quindi MenuBar avrà
+un'aggregazione di MenuItem tra 0 a +infinito, quindi sarà una lista concatenata o un'array
+list con quantità illimitata.
+Se invece scriviamo una notazione tipo 1..10 allora diciamo che il MenuBar ha almeno 1 
+MenuItem e non piu di 10 MenuItem, quindi dobbiamo costruire un'array con capienza limitata.
+Se invece si scrive 1.. o  1..* stiamo dicendo che ci deve essere almeno uno.
+Il Class Diagram è uno strumento di generazione di codice.
+
+I Sequence Diagram sono varianti dei diagrammi di flusso, si è in grado di decidere cosa
+succede nel tempo nel nostro sistema con i diagrammi di sequenza.
+Il tempo viene descritto dall'alto verso il basso tramite linee tratteggiate, in alto si
+ha un oggetto che se ha il nome si indica, dopo si mettono : va la classe o l'interfaccia
+per descrivere l'oggetto.
+a: AppCtrl : oggetto chiamato a che e di classe o interfaccia AppCtrl.
+Quando la linea tratteggiata diventa spessa e bianca vuol dire che l'oggetto in quella linea
+dei tempi allora sta elaborando.
+
+Gli Activity Diagram permettono di avere condizioni di scelta quindi dei brench, ed anche
+condizioni di sincronizzazione e concorrenza.
+Le frecce che collegano delle attività, ogni box un po tondi prende il nome di attività
+che sono sequenziali tra di loro a meno che esse vengono messe tutte insieme in un box
+di attività chiamato swim lane, ognuna di essa ha a disposizione un thread che fa andare 
+avanti il processo in un modo indipendente da tutto il resto.
+Non esiste un'unico asse del tempo, si identificano le swim lane cioè processi concorrenti 
+tra di loro e le attvità.
+C'è sempre uno stato iniziale rappresentato da un pallino nero, c'è sempre uno stato
+finale.
+La fork è rappresentata da un segmento nero marcato che spezza la linea di esecuzione.
+La join è un segmento orizzontale marcato che significa che si va avanti quando tutte le 
+attività concorrenti sono terminate e dopo si va avanti.
+Il rombo rappresenta il brench.
+
+Gli State Diagram descrivono automi a stati finiti, ed in piu inseriscono azioni corrispondenti
+a transizioni, cioè l'esecuzione delle azioni fa cambiare stato al sistema.
+C'è uno stato iniziale, un evento on che porta in uno stato Time keeping, con l'evento off
+ci porta in uno stat finale.
+Oltre all'evento c'è l'azione, dopo che viene eseguito l'evento off, c'è l'azione Reset 
+che ci porta nello stato finale.
+In Time keeping arriva l'evento mode che ci fa finire in un macrostato Time editing che
+ha un punto d'ingresso quando viene innescato l'evento mode che porta ad uno stato iniziale
+Hour editing se la condizione TimeOk è soddisfatta allora scatena l'evento set che ci 
+porta nello stato Minute editing dopo può uscire dal macrostato con l'evento set che esegue
+setTime() e ci porta nello stato Time keeping.
+Le transizioni interne sono transizioni che sono autoanelli, cioè se c'è un evento come
+per esempio watchdog che esegue check() ma resta nello stato Time keeping.
+Le applicazioni modali chiamano il loro stato modalità.
+
+

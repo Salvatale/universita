@@ -1,0 +1,30 @@
+@CHARSET "ISO-8859-1";
+
+html {
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #e0e0e0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.testo_rosso {
+	background-color: red;
+}
+
+.tabella {
+	width : 80%;
+	margin-left: 10px;
+}
+
+td.intestazione {
+	font-style: italic;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;	
+}

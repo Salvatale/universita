@@ -1,0 +1,23 @@
+Un oggetto persistente è un oggetto che dura nel tempo, cioè il cui stato sopravvive alla
+chiusura dell'applicazione, esso rimane vivo, cioè finisce da qualche parte finchè l'applicazione
+non riparte allora viene ripreso.
+Si costruisce un oggetto e li assoceremo a dei file, nel momento in cui l'elemeno va salvato
+allora chiameremo commit(), rollback() invece è per buttare qualsiasi modifica fatta dopo 
+l'ultima commit.
+Noi costruiamo un oggetto, attacchiamo l'aspetto persistente e quando vorremmo, in modo
+esplicito faremo commit che prende lo stato dell'oggetto e lo mette in un file, una volta che riparte
+il programma, chiediamo di darci un nuovo oggetto, se esso c'è nel file allora lo ripeschiamo
+sennò crea uno nuovo.
+Utilizzeremo l'interfaccia Serializable che offre di trasformare un oggetto in un array di
+byte e viceversa, utile per effettuare le operazioni di salvataggio e caricamento.
+Con la commit noi chiamiamo il metodo che converte l'oggetto in un'array di byte e noi
+lo inseriamo nel file.
+Per verificare che una volta scritto l'array di byte e una volta che andremo a rileggere dal
+file e che i due oggetti prima dell'inserimento del file e dopo la lettura dal file
+siano la stessa classe, dobbiamo inserire il versionUniqueID che ci garantisce che stiamo
+leggendo qualcosa della stessa versione di quello che abbiamo scritto, questo è il primo check
+ma ovviamente ce ne sono altri.
+In questo caso lo facciamo senza proxy, ci può servire se vogliamo fare un supporto alla 
+serializzazione trasparente, cioè se tutte le volte che viene toccata la lista degli amici
+in scrittura ed in automatico deve essere riserializzato e messo nel file, dobbiamo garantire 
+che tutti i messaggi che arrivino, c'è stato un cambiamento nel file.

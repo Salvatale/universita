@@ -1,0 +1,195 @@
+ssh root@127.0.0.1 -p 2222
+
+
+COMANDI:
+date : comando per la data, se inseriamo +%qualcosa ci fornisce informazioni parziali sulla data.
+passwd : permette di cambiare la password di uno user.
+file : ci fornisce il tipo di un file.
+head and tail : consentono di vedere le prime/ultime righe di qualcosa. head -2 prime due righe.
+wc : permette di contare il numero d caratteri(-c), di linee(-l), e di parole(-w).
+history : mostra gli ultimi comandi digitati.
+pwd : fornisce percorso assoluto.
+ls : lista file e driectory nella directory corrente, -l(lista lunga), -a(include anche hidden file), -R(stampa la lista del contenuto delle directory dentro la directory corrente)
+mv : muovi file o directory.
+cp : copia file in, cp -r : copia directory in.
+mkdir : crea directory, -p per creare più directory.
+touch : update a file o crea se non c'è nessun file con quel nome.
+rm : rimuove file. -f per rimuovere più file.
+rmdir : cancella directory vuota, -p per cancellare più directory.
+rmdir -r: cancella directory con tutti i file o directory contenuti. -f per cancellare più directory.
+id user : fornisce informazioni sullo user. il nome dello user è facoltativo se corrisponde con lo user corrente.
+ps : visualizza a schermo i processi di quella shell, a(i processi con un terminale), u(processi utente).
+echo $HOME : stampa la directory home dello user.
+echo $PATH : stampa a schermo il percorso dove vengono cercaati i file eseguibili per configurare quello user.
+useradd : crea utente e inserisce tutti i campi di /etc/passwd di default.
+usermod : modifica uno user esistente.
+userdel : cancella l'utente, -r cancella anche la home directory.
+groupadd : crea gruppo che prende il prossimo GID disponibile in /etc/login. -g specifica un GID. -r lo sceglie in un range dei sistemi validi
+	   in /etc/login.
+groupmod : modifica il gruppo.
+groupdel : elimina gruppo.
+chage : imposta policy sulla password. -m numero minimo di giorni. -M dopo quanti giorni bisogna aggiornare la password.
+chage -d 0 : forza lo user a cambiare la password a prossimo login.
+chage -l: lista le impostazioni di uno user.
+chage -E data : scadenza della passorwd di quell'accont.
+chmod : per settare i permesse di un file o directory. -R concede permessi a tutti i file di una directory.
+chown : cambia proprietario di una directory o file. -R su tutta la directory cambia la proprietà a tutti i file. : fa cambiare la proprietà al
+	gruppo.
+ps : stampa a schermo i processi in esecuzione. aux stampa tutti i processi con il relativo user e anche i processi in esecuzione non su un
+     terminale.
+& : alla fine del comando permette di lanciarlo in background.
+fg %1 : un processo, in questo caso l'1, che era in background, viene lanciato in foreground.
+bg %1 :riattiva un processo che è stato fermato, in questo caso l'1.
+jobs : fa vedere a schermo i processi attivi nella mia bash.
+CTRL+z : sospendi processo in foreground.
+CTRL+c : sospendi ed elimina il processo.
+top : vista dinamica dei processi attivi nel sistema.
+systemctl status nome.service : controlla lo stato di un servizio.
+cut : taglia i caratteri di una parola,-b 2 ci estrapola solo i primi due caratteri della linea.
+tr "" "" : sostituisce il pattern nei primi punti con quello dei secondi. transform.
+alias : crea alias.
+unalias : elimina alias.
+
+
+SYSTEMCTL: 
+status <service> : ci mostra lo stato del servizio.
+list-units : mostra tutte le unità di quel servizio.
+--type=<tipo-unità> : specifica il tipo del daemon.
+is-enabled : se è abilitato a partire al boot.
+is-active : se è attiva quell'unità in quel momento.
+ps -p PID : mostra il processo di quell'unità con quel PID. Serve a verficare se in running.
+disable : disabilita l'unità.
+enable : attiva l'unita.
+stop : ferma un'unita.
+start : fa cominciare un'unità.
+restart : esegue stop e start in un unico comando.
+reload : fornisce istruzioni, chiede all'unità di leggere e ricaricare il file di configurazione.
+list-dependecies : fornisce l'albero delle dipendenze delle unità.
+grep : cerca il pattern tra '' nel file. -i è case insensitive. -v mostra le linee che non contengono il pattern. -e per ricercare più pattern.
+       -c fa un conto di tutte le volte che trova il pattern.
+rpm : permette di visualizzare i packages installati. -qa list tutti i packages,
+       		
+
+SIGNAL :
+formati da number e short nome.
+HUP : forza il processo ad un rinizializzazione senza una terminazione.
+INT : keyboard interrupt, CTRL+c per esempio.
+QUIT : sempre tramite tastiera, es CTRL+d che fa il logout dello user.
+KILL : abort, non può essere ignorato o gestito, causa l'immediato arresto al processo.
+TERM : causa lo stop pulito di un processo. Può essere bloccato.
+kill -l : lista tutti i segnali.
+killall : non installato sempre di default,manda un segnale a tutti i processi.
+pkill : permette di inviare segnali aggiungendo informazioni al comando.
+w : fa vedere tutti gli user loggati al momento nel sistema.
+
+SHORTCUT:
+Ctrl+a : vai all'inizio della command line.
+Ctrl+e : vai alla fine della command line.
+Ctrl+u : cancella tutto ciò che c'è prima del cursore.
+Ctrl+k : cancela tutto ciò dopo il cursore.
+Ctrl+left-arrow : salta all'inizio della parola precedente
+Ctrl+right-arrow : salta alla fine della parola.
+Ctrl+r: cerca nella history list il comando che stiamo digitando.
+
+
+STDOUT E STDERR:
+> : overwrite STDOUT in un file.
+>> : append STDOUT in un file.
+2> : overwrite su un file gli errori STDERR.
+2>/dev/null: scarta gli errori, mandandoli in null.
+2>file 2>&1 : manda STDOUT e STDERR nello stesso file. &>file ha lo stesso significato.
+>>file 2>&1 : fa append di STDOUT e STDERR nello stesso file.  &>>file stesso significato.
+
+
+VIM:
+muovere il cursore: K(su), h(left), l(right), j(giu).
+uscire e scartare le modifiche: ESC, dopo digitare nella barra in basso q!, :q!
+x : cancellare caratteri dopo il cursore.
+i: inserire testo.
+a : permette di inserire dopo i carattere in cui si schiaccia A, fa append.
+salvare il file e uscire: :wq
+dw : elimina una parola fino all'inizio del primo carattere della prossima parola escluso.
+d$ : elimina fino in fono alla linea. incluso ultimo carattere.
+de : elimina fino all'ultimo carattere della parola corrente incluso.
+2w : muovi il cursore due parole avanti. il numero è variabile.
+3e : muove il cursore fino alla fine della terza parola avanti. il numero è variabile.
+0 : vai all'inzio della linea.
+2dw : elimina due uppercase words, il numero è variabile.
+2dd : elimina due righe, il numero è variabile.
+u : undo dell'ultimo comando.
+CTRL-r : redo dell'ultimo comando.
+p : inserisce ,nella linea sotto il cursore, la linea cancellata con dd.
+r : se schiacciato su un carattere, digiti il carattere con cui sostituirlo.
+ce : elimina il carattere sotto al cursore fino alla fine della parola e chiede di inserire la parola corretta.
+cc : uguale ma per l'intera linea.
+c$ : cancella dal punto del cursore fino alla fine della linea e fa inserire il testo.
+
+BASH SCRIPT:
+0 : è la variabile che contiene il nome del file. $0 per stamparlo
+1 : è la variabile che contiene il primo parametro passato da command line. $1.
+2 : è la variabile che contiene il secondo parametro passato da command line. $2.
+$* : permette di stampare gli argomenti passati tramite command line come unico argomento.
+$@ : permette di stampare gli argomenti passati tramite command line come argomenti diversi.
+$# : conta il numero di argomenti passati a command line.
+$? : digitato a command line specifica il valore di uscita del bash script, se è diverso da 0 allora è in stato insuccessful.
+Operatori binari:
+-eq : equal.
+-ne :not equal.
+-gt : greaater than.
+-ge : greater or equal than.
+-lt : less than.
+-le : less or equal than.
+-ef : i due file hanno lo stesso device ed inode number.
+-nt : il primo file ha data di modifica più giovane.
+-ot : il primo file ha data di modifica più vecchia.
+
+Operatori unari:
+-z : stringa ha lunghezza 0.
+-n : la stringa non è nulla.
+-b : file esiste ed è un blocco speciale.
+-c : file esiste ed è un caratter speciale.
+-d : file esiste ed è una directory.
+-e : file esiste.
+-f : esiste ed è un file regolare.
+-L : esiste ed è un file link simbolico.
+-r : esiste ed ha permessi in lettura.
+-s : esiste ed ha un grandezza maggiore di 0.
+-w : esiste ed ha permessi in scrittura.
+-x : esiste ed ha permessi in esecuzione.
+
+FIREWALL-CMD:
+--get-default-zone : stampa la default zone.
+--set-default-zone= : setta la zona di default passata dopo l'uguale.
+--get-zones : listaa tutte le zone disponibili
+--get-services : lista tutti i servizi predefiniti.
+--get-active-zones : lista tutte le zone a momento in uso.
+--add-source=.....[--zone=....] : fa migrare tutto il traffico in arrivo in quell'IP address o netmask (source) verso una zona che se non
+				  specificata è quella di default.
+--remove-source=.....[--zone=....] : rimuove la regola specificata con il comando sopra.
+--add-interface=.....[--zone=....] : fa migrare il traffico che arriva a quell'interfaccia verso una zona.
+--change-interface=....[--zone=....] : associa a quell'interfaccia una nuova zona.
+--list-all[--zone=....] : lista tutte le interfacce, source, servizi e porte di quella zona.
+--list-all-zones : ottiene tutte le informazioni di tutte le zone.
+--add-service=.... : consente il traffico a quel servizio, se --zone= allora la zona è di default.
+--add-port=.... : consente il traffico a quella/e porta/e.
+--remove-service=.... : rimuove il servizio dalla zona specificata.
+--remove-port=.... : rimuove la/e porta/e dalla zona specificata.
+--reload = scarta le configurazioni di runtime ed applica le nuove. 
+
+DOCKER:
+run: cerca l'immagine sul computer, se è presente diventa un container, sennò la cerca in Docker Hub e la carica sul computer.
+help : mostra tutti i comandi disponibili.
+help <comando> : mostra i pattern per quel comando.
+--detach o -d : fa la run del programma in background.
+ps : mostra tutti i container running con le loro info e stato.
+rename : rinomina container.
+stop : ferma il container.
+rm : rimuove container.
+restart : il container si riavvia.
+logs : mostra i log del container.
+
+
+
+
+
+

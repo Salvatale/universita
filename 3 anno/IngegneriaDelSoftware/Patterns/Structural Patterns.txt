@@ -1,0 +1,59 @@
+Problemi di organizzazione delle classi nel sistema.
+
+Wrapper è un nome alternativo del Design Pattern Adapter, l'Adapter esiste in due varianti,
+La classe per costruire l'oggetto viene chiamata Adaptee, che mette a disposizione 
+specificRequest(), ma ci interesserebbe utilizzare request() di una TargetInterface che non
+viene implementata da Adaptee.
+Creiamo un'interfaccia Adapter che estende TargetInterface e che offre request()
+request(){
+    adaptee.specificRequest();
+}
+
+Pero in questo caso si costruisce una dipendenza tra TargetInterface e Adaptee.
+Quindi per risolvere possiamo sfruttare l'ereditarietà che massimizza il riusa.
+L'object Adapter prevede che il Client parli con una TargetInterface, la classe Adapter
+implementa la TargetInterface che definisce request().
+Questo request() lo vogliamo girare ad un specificRequest(), l'Adapter costruisce un Adaptee,
+e quando arriva una request(), esso delega all'Adaptee tramite specificRequest().
+
+Nella seconda soluzione l'Adapter è una sottoclasse di Adaptee ed implementa TargetInterface
+nel momento in cui Client fa la chiamata request(), essa gira la chiamata a specificRequest()
+su this.
+request(){
+    specificRequest();
+}
+Il Class Adapter solitamente è piu utilizzato, invece di utilizzare la delega specifica,
+si utilizza l'ereditarietà, non è detto che si possa sempre fare per esempio TargetInterface
+è una classe oppure Adaptee è una classe final.
+
+Se abbiamo un'interfaccia che vogliamo utilizzare per accedere ad un'implementazione, ma
+essa non implementa l'interfaccia.
+Nel caso del Bridge vogliamo avere un'interfaccia che mette a disposizione un'operazione,
+ed identifica un'astrazione.
+Utilizziamo la delega per realizzare l'astrazione, quindi mettiamo un riferimento che funzione
+da implementazione.
+
+Il Pattern Composite ci offre un'architettura di classi che può essere utilizzata per memorizzare
+alberi o grafi diretti aciclici.
+Il Composite contiene n children che sono tutti Component che possono essere altri Composite
+e quindi ricorsivamente ricostruiamo l'albero oppure dei Leaf quindi delle foglie.
+
+Il Decorator permette di associare delle proprietà agli elementi di una struttura dati
+aggregata, tipicamente un albero.
+Il punto di accesso che è Aggregate che ha una sua operation(), nel momento della chiamata
+possiamo finire su un ConcreteComponent che la implementa oppure sul Decorator che prende
+il componente in generale che contiene e dargli delle proprietà, chiamiamo l'operazione
+direttamente sul Decorator e non sul ConcreteComponent.
+Un caso tipico è prendere tipo la lista e decorarla dando la proprietà undoable cioè la
+possibilità di tornare indietro sulle modifiche fatte agli elementi della lista.
+Quindi che ogni put o add nella lista venga tracciata, cosi ci permette di smontare tutte le
+add o put fatte.
+
+Se abbiamo un'interfaccia chiamata SubjectInterface e abbiamo un RealSubject che effettivamente
+realizza l'interfaccia, il Proxy si limita a ricevere la chiamata, veicolarla verso RealSubject,
+prendere il risultato ed eventuali eccezzioni e ritornarle al chiamante.
+Permette di mettere un Proxy a difesa del RealSubject, quindi per esempio possono essere usati
+per mettere i dati sulla rete ed aspettare i risultati e rendere la chiamata remota
+del tutto trasparente oppure possono essere usati per forzare delle politiche come quelle 
+di accesso quindi di sicurezza, cioè se l'utente che vuole fare l'accesso abbia le credenziali
+per poter far accesso.

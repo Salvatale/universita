@@ -1,0 +1,50 @@
+Un oggetto è attivo se i suoi metodo vengono eseguiti in thread che non sono necessariamente
+il thread del chiamante.
+Quando chiediamo l'esecuzione di un metodo quindi inviamo un messaggio, ci mettiamo sempre
+in attesa che il messaggio venga elaborato completamente e quindi fornito un risultato.
+Ci ritornerà quindi sia il thread che il risultato nel caso piu semplice.
+Possiamo effettuare chiamate asincrone utilizzando Future e Callback.
+L'oggetto shared ha la stessa interfaccia dell'oggetto da cui parte.
+In questo caso dobbiamo dare un'interfaccia alternativa chiamata active interface,
+la convenzione dice che se partiamo da un'interfaccia identificata da certi messaggi,
+nell'interfaccia attiva andremo a mettere i messaggi con stessi argomenti, 
+ma con valore di ritorno di tipo Future<T> al posto di un valore di tipo T,
+seconda cosa che andiamo a mettere è un messaggio che ha un numero di argomenti n + 1 al numero
+di argomenti del messaggio originale, i primi n uguali hanno lo stesso tipo, l'ultimo
+argomento, se T era il tipo di ritorno, diventa Callback<T>, diventa un messaggio in cui
+vogliamo calcolare il risultato tramite Callback.
+Mettiamo mano al compilatore per specificare che questa è un'interfaccia attiva dell'interfaccia k,
+il compilatore può verificare che per ogni messaggio di k ce ne siano due e che le condizioni
+di Future e Callback siano rispettate, quindi l'interfaccia attiva viene marcata come corretta.
+Java mette a disposizione una soluzione per inserire codice all'interno del processo di compilazione.
+I punti in cui il compilatore Java chiede aiuto all'esterno sono quelli che cominciano con
+@, insieme al Framework degli oggetti attivi viene fornito un modulo aggiuntivo che agganciandosi
+al compilatore tramite @atActive permette di fare le verifiche descritte sopra.
+@Override riceve una visione astratta del sorgente e poi lo interroga per verificare 
+che il metodo chiamato sotto risponde ad uno dei messaggi dell'interfaccia oppure va a fare
+l'override di un metodo della classe base.
+Le @ permettono di aggiungere codice di controllo al compilatore, se non va a buon fine, il
+codice di gestione di @Override segnala il problema ed Eclipse lo riceve e sottolinea l'errore.
+
+Se viene lanciata un'eccezione, essa finisce nel Future, anche nel caso Callback.
+
+la nostra interfaccia attiva per DownloadManager sarà:
+
+public interface ActiveDownloadManager extends Active<DownloadManager> {
+    public Future<ResourceContent> download(String url);
+
+    public void download(String url, Callback<ResourceContent> callback);
+}
+
+l'interfaccia di ActiveHandler
+
+public interface ActiveHandler<T extends Active<?>> {
+    public T get();
+
+    public void shutdown();
+}
+
+Oggetto che permette di accedere alla variante attiva dell'oggetto target da cui siamo partiti
+e ci permette di fare shutdown().
+T estende Active di qualcosa che non ci interessa e quindi ?
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Ingegneria Software/Laboratorio/Esami Svolti/Esami Svolti/Esame 1  (GUI login)/Esame1/src"/>
+	<classpathentry kind="src" path="Ingegneria Software/Laboratorio/Esami Svolti/Esami Svolti/Esame 2  (GUI DB)/Esame2/src"/>
+	<classpathentry kind="src" path="Ingegneria Software/Laboratorio/Esami Svolti/Esami Svolti/Esame 3  (WEB DB)/Esame3/src"/>
+	<classpathentry kind="src" path="Ingegneria Software/Laboratorio/Esami Svolti/Esami Svolti/Esame 4  (WEB gestione DB)/Esame4/src"/>
+	<classpathentry kind="src" path="Ingegneria Software/Laboratorio/Esercizi Svolti/Esercizi Svolti - con spiegazioni/Esercizio 0 - GUI base/Prova/src"/>
+	<classpathentry kind="src" path="Ingegneria Software/Pratica/Pattern UML/Pattern/Esercizio Composite/Codice Esercizio/src"/>
+	<classpathentry kind="lib" path="Ingegneria Software/Laboratorio/Esami Svolti/Esami Svolti/Esame 1  (GUI login)/Esame1/libs/derbyclient.jar"/>
+	<classpathentry kind="lib" path="Ingegneria Software/Laboratorio/Esami Svolti/Esami Svolti/Esame 2  (GUI DB)/Esame2/libs/derbyclient.jar"/>
+	<classpathentry kind="lib" path="Ingegneria Software/Laboratorio/Esami Svolti/Esami Svolti/Esame 3  (WEB DB)/Esame3/WebContent/WEB-INF/lib/derbyclient.jar"/>
+	<classpathentry kind="lib" path="Ingegneria Software/Laboratorio/Esami Svolti/Esami Svolti/Esame 4  (WEB gestione DB)/Esame4/WebContent/WEB-INF/lib/derbyclient.jar"/>
+	<classpathentry kind="lib" path="Ingegneria Software/Laboratorio/Esercizi Svolti/Esercizi Svolti - con spiegazioni/Esercizio 1 - Creare DB, aprire sessione con SQL/Esercizio1/libs/derbyclient.jar"/>
+	<classpathentry kind="lib" path="Ingegneria Software/Laboratorio/Esercizi Svolti/Esercizi Svolti - con spiegazioni/Esercizio 2 - Applicazione base per DB/Esercizio2/libs/derbyclient.jar"/>
+	<classpathentry kind="lib" path="Ingegneria Software/Laboratorio/Esercizi Svolti/Esercizi Svolti - con spiegazioni/Esercizio 3 - Es 2) con aggiunte/Esercizio3/libs/derbyclient.jar"/>
+	<classpathentry kind="lib" path="Ingegneria Software/Laboratorio/Esercizi Svolti/Esercizi Svolti - con spiegazioni/Esercizio 5 - Es 3) in web application/Esercizio5/WebContent/WEB-INF/lib/derbyclient.jar"/>
+	<classpathentry kind="lib" path="Ingegneria Software/Laboratorio/Esercizi Svolti/Esercizi Svolti - con spiegazioni/Esercizio 6 - Es 5) con javascript/Esercizio6/WebContent/WEB-INF/lib/derbyclient.jar"/>
+	<classpathentry kind="lib" path="Ingegneria Software/Laboratorio/Esercizi Svolti/Esercizi Svolti - con spiegazioni/Esercizio 7 - Es 6) con ajax e json/Esercizio7/WebContent/WEB-INF/lib/derbyclient.jar"/>
+	<classpathentry kind="output" path="Ingegneria Software/Laboratorio/Esami Svolti/Esami Svolti/Esame 1  (GUI login)/Esame1/bin"/>
+</classpath>

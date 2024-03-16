@@ -1,0 +1,21 @@
+Aspect è un aggettivo legato agli oggetti, creare un oggetto persistente cioè che ogni volta
+che cambia stato lo voglio salvare in un DB, l'Aspect sarebbe persistente, quindi creare 
+il codice per realizzare quell'aggettivo e attaccarlo a qualsiasi oggetto.
+Gli aggettivi aggiungono funzionalità agli oggetti indipendentemente dalla loro classe.
+Gli Aspect devono essere al meglio che si riesce, possono essere componibili tra loro,
+cioè possiamo mischiarli tra loro, bisogna tenere conto però che un Aspect non deve interferire
+con un altro.
+Gli Aspect non devono implementare caratteristiche funzionali.
+Un oggetto shared è un oggetto che può essere acceduto da tanti thread e deve garantire che
+il calcolo dell'esecuzione avvenga in mutua esclusione.
+Vogliamo applicare l Aspect shared per garantire ciò sull oggetto.
+
+L'operazione di logging serve a tracciare tutto ciò che viene fatto dai sistemi,è un modo per
+tracciare in modo permanente il comportamento di un sistema.
+In caso di anomalia si guarda il file di log, oppure per permettere di seguire l'operatività
+del sistema mentre sta funzionando.
+Il nostro sistema deve scrivere tutto ciò che sta succedendo da qualche altra parte per differenti
+necessità.
+Tutte le volte che viene modificato lo stato, costruisci il codice sql che fa le insert e le
+update e mette lo stato dell'oggetto nel database.
+Un oggetto è remoto se riesce a ricevere messaggi anche attraverso la rete.

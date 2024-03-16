@@ -1,0 +1,31 @@
+La Blocking queue ha una politica FIFO, serve a poter creare delle code che vengono manipolate
+tramite interfaccia.
+Se si riempie, il prossimo inserimento verrà messo in attesa e si sveglia solo quando si
+svuota un posto.
+Abbiamo i seguenti metodi:
+- put(E e) : inserisce elementi
+- take() : rimuove elementi
+- remainingCapacity() : ci dice quanti elementi possiamo ancora inserire
+- altri metodi su Java API
+
+example
+
+public interface BlockingQueue<T> {
+    //Inserisce elementi
+    public void put(E e) throws InterruptedException;
+
+    //Rimuove elementi
+    public T take() throws InterruptedException;
+
+    //Specifica quanti posti vuoti ci sono nella coda
+    public int remainingCapacity();
+
+    //Specifica se la coda è vuota
+    public boolean isEmpty();
+
+    //Rimuove tutti gli elementi
+    public void clear();
+}
+
+
+

@@ -1,0 +1,19 @@
+Se abbiamo un gruppo di risorse equivalenti nel loro utilizzo e vengono condivise in un certo
+numero di flussi di esecuzione allora abbiamo il Pools delle risorse.
+Se garantiamo l'accesso condiviso alle risorse allora dobbiamo indicare quale si vuole utilizzare,
+ma in questo caso non sarebbero piu equivalenti, perchè devonono essere indistinguibili.
+Un flusso di esecuzione acquisisce la risorsa e la toglierà dal pools, quando viene rilasciata
+allora ritornerà nel pools.
+Se non ci sono piu risorse nel pools allora mette in attesa il richiedente finchè non viene
+rilasciata una risorsa.
+I thread di esecuzione sono risorse che vanno gestite con cautela, sono oggetti che vengono
+usati dal flusso di esecuzione per fare della computazione.
+Se la virtual machine utilizza un phtread per ogni thread allora avrà al massimo 1024 di solito
+per un processo linux.
+In alcune situazioni mettiamo un pools di thread per capire quanti thread sono utilizzati al
+massimo, dobbiamo essere nelle condizioni di richiedere l'esecuzione appena un thread nel
+pools è disponibile.
+Bisogna essere cauti con i problemi di sincronizzazione.
+Un executor è un oggetto a cui vengono fornite le task e secondo le sue politiche interne
+cerca di garantire l'esecuzione quando vuole, le task vengono accodate e scodate.
+

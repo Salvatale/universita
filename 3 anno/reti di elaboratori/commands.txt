@@ -1,0 +1,37 @@
+ifconfig: consente di visualizzare o modificare le impostazioni delle interfacce di rete.
+	ifconfig <iterface_name> <ip address> netmask <netmask> up : modifica ip address e netmask
+
+route: modifica o visualizza le entry della tabella di routing di un host.
+	route add default gw <IP address> : inserisce il router di default.
+arp: consente di visualizzare e modificare le entry della tabella dei neighbour vicini.
+	arp -a: visualizza tutti i neighbour
+
+ip
+ip link: configurazione del device, MACaddress e flag
+ip addr: inidirizzi ip associati al device
+ip route: tabelle di routing
+ip neigh: elenco dei neighbours noti
+
+netstat: visualizza le connessioni attive e Socket attivi
+netstat -r: Route impostate
+netstat -i: interfacce
+netstat -s: le statistiche
+netstat -l: le connessioni in listening
+netstat -p: il PID del processo che sta utilizzando il socket
+netstat -tulpn : tcp,udp,listen,program,numeric
+
+curl ifconfig.me: determina il proprio indirizzo IP su server HTTP in internet
+
+traceroute: traccia tutti i router attraversati per raggiungere una destinazione e misure il rtt.
+
+dig: interroga i server DNS
+dig +trace: query fatta in modo iterativo, quindi contatta tutti i server DNS coinvolti
+dig -x: risoluzione inversa partendo dall'indirizzo IP
+
+whois: serve ad interrogare i database, sopratutto per i nomi di dominio e gli indirizzi IP
+
+nmap: cerca di connetersi ad un intervallo di numeri di porta o indirizzi Ip, per determinare quali sistemi o servizi sono presenti
+
+telnet: permette di connettere tramite TCP/IP alla porta di un host
+
+tcpdump: visualizza le informazioni essenziali di ogni pacchetto dell'interfaccia di default

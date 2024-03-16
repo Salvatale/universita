@@ -1,0 +1,46 @@
+I costi di un software:
+- Costi diretti: sono imputabili direttamente al prodotto realizzato, per esempio costo
+                 del personale, degli strumenti di sviluppo
+- Costi indiretti:  non sono legati direttamente alla realizzazione del prodotto, esempio è
+                    il consulente amministrativo o legale.
+
+La manutenzione correttiva è a carico del produttore e serve a risolvere le anomalie, cioè 
+che viene definito bug, cioè un malfunzionamento per qualche problema tecnico.
+La manutenzione adattativa è quando l'ambiente cambia, cioè il processo di produzione cambia
+e bisogna modificare il sistema software ed è a carico di chi ha commissionato il sistema,
+cioè il commitente, le necessità cambiano nel tempo, cerchiamo di semplificare la realtà del
+sistema per garantire la correttezza ed l'adattabilità del sistema.
+
+Unit testing è il testing delle unità atomiche piu piccole del nostro sistema, nel nostro caso
+potrebbero essere tranquillamente le classi dato che lavoriamo ad oggetti, quindi un
+testing di tutti i metodi della classe e dopo tutti i test allora si può fare la push
+della repository, cioè pronta per essere utilizzata.
+Le dipendenze però potrebbero far salire il livello di complessità quindi strutturiamo la 
+cosa in moduli, cioè package e sottopackage.
+Quindi si effettua il module testing sull'intero package e testa anche quando le varie unità
+si relazionano tra di loro. Una volta pronto il modulo si esegue sempre il solito push e 
+commit dell'intero modulo.
+Sub-system testing si occupa del testing di un'insieme di moduli che non rappresenta il
+sistema definitivo su cui stiamo lavorando, tipico sottosistema è il DBMS, che vive da solo
+ma non serve a nulla se non si ha tutto il resto, come anche il web-server.
+Il System-testing è il testing del sistema completo, ciò che ha commissionato il mittente,
+prevede il sistema delle interfacce con gli utenti.
+
+Il testing in the small viene sempre fatto e il programmatore non può proprio fare commit
+se non ha fatto il testing in the small.
+Abbiamo tre approcci, quello piu di base è il Statement Testing, uno statement non può essere
+testato se non è stato eseguito almeno una volta, bisogna scrivere una linea di codice
+con l'avvenuta esecuzione dello statement.
+Il Brench testing è il secondo approccio, si effettua il path coverage testing che permette
+di dire che un brench è stato verificato solo se siamo entrati almeno una volta in entrambi
+le parti, quindi bisogna verificare che se la prima è vera allora la seconda è falsa cosi 
+da verificare entrambi i brench.
+
+JUnit è uno strumento che mette a disposizione i test(cases), che sono metodi che utilizziamo
+per fare il test dei metodi di una classe e quando raggruppiamo tanti test in tante classi di
+test, allora possiamo fare i test suites cioè blocchi di test cases che devono essere verificati
+tutti insieme, cosa scrivere nei test cases è a carico nostro ed anche quali fare.
+Eclipse danno vesti grafiche che fanno scatenare i test e danno una lista di quali sono 
+andati bene e quali no.
+
+

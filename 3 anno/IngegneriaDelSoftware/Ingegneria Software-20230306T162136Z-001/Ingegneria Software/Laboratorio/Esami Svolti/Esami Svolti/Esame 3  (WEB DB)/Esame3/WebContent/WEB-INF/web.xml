@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>Esame3</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>CaricaStudentiServlet</display-name>
+    <servlet-name>CaricaStudentiServlet</servlet-name>
+    <servlet-class>esame3.web.CaricaStudentiServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CaricaStudentiServlet</servlet-name>
+    <url-pattern>/CaricaStudentiServlet</url-pattern>
+    <url-pattern>/carica_studenti</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CambiaStudenteServlet</display-name>
+    <servlet-name>CambiaStudenteServlet</servlet-name>
+    <servlet-class>esame3.web.CambiaStudenteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CambiaStudenteServlet</servlet-name>
+    <url-pattern>/CambiaStudenteServlet</url-pattern>
+    <url-pattern>/cambia_studente</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LinguaSitoServlet</display-name>
+    <servlet-name>LinguaSitoServlet</servlet-name>
+    <servlet-class>esame3.web.LinguaSitoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LinguaSitoServlet</servlet-name>
+    <url-pattern>/LinguaSitoServlet</url-pattern>
+    <url-pattern>/lingua_sito</url-pattern>
+  </servlet-mapping>
+</web-app>

@@ -1,0 +1,12 @@
+Per applicazioni user, gli aggornamenti vengono scaricati appena disponibili e raramente
+chiede il riavvio come invece fa il sistema operativo.
+Con java è possibile scaricare parti di codice per caricarle mentre il servizio è attivo
+e non riavviarlo.
+Java è stato pensato per dispositivi collegati ad una rete, tipo quella satellitare, digitale
+terrestre e on demand.
+La Virtual Machine rende l'hardware astratto, quindi svincola il codice dall'hardware che
+lo sta eseguendo, ci permette di scaricare da remoto pezzi di codice, quindi eventuali
+aggiornamenti.
+Utilizziamo la classe e costruimao oggetti, nel momento in cui essa viene aggiornata, i 
+nuovi oggetti di questa classe saranno nella versione aggiornata, invece i vecchi 
+rimaranno nella versione vecchia finchè saranno raggiungibili sennò ci pensa il garabge collector.

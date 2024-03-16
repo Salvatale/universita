@@ -1,0 +1,132 @@
+Class Executors
+Rappresenta un punto di accesso principale per tutte le attività che hanno a che fare con
+l'esecutore.
+Tutte le volte che abbiamo una classe che si presenta come punto di accesso principale, la
+classe prende il nome di façade.
+Questa classe permette unicamente di costruire oggetti, e prende il nome di AbstractFactory,
+cioè costruisce oggetti secondo le richieste degli utenti.
+
+Executors è sia façade che AbstractFactory.
+Tutti i metodi che iniziano per new servono per la costruzione di oggetti che ritornano
+ExecutorService o sue sottoclassi, che è un'interfaccia che prende Executor, sono modi per
+costruire degli esecutori ed una volta creato potremmo risolvere delle task.
+ExecutorService ha alcuni metodi importanti che non ha Executors.
+Gli Executor sono interfacce che ricevono un Runnable che deve essere eseguito e con una loro
+politica interna arbitraria decidono quando attivare questi task, cioè i Runnable.
+RejectedExecutionException è una runtime exception di java.util.concurrent.
+
+ExecutorService è un'interfaccia che estende Executors.
+
+La ricostruzione dell'oggetto originale prende il nome di serializzazione degli oggetti, una
+classe di oggetti è serializzabile se implementa la classe di oggetti serializable di java.util,
+RuntimeException è serializable, quindi tutte le sue sottoclassi sono serializzabili,
+quindi anche la classe RejectedExecutionException, quindi prendiamo l'array di byte e possiamo
+ricostruire l'oggetto, utile quando dobbiamo mandarlo attraverso la rete.
+Permette alla virtual machine di costruire l'oggetto nella versione corretta e per farlo si mette
+un'identificativo univoco privato e final della classe che viene generato come un hash del contenuto
+della classe, non indichiamo la versione della classe ma lo decide la virtual machine, generiamo
+un numero hash a 64 bit e lo piazziamo come campo e quindi essendo un campo della classe, allora
+finisce nel array di byte e quando qualcuno lo riceve allora riesce a capire l'identificativo 
+univoco che non scegliamo noi anche se si potrebbe fare.
+Per generare questo identificativo allora andiamo su RejectedExecutionException si schiaccia
+su add generated serial versione ID.
+
+private static final long serialVersionUID = <serialVersionUID>
+L'unico scopo di questo numero è capire la versione della classe, se si cambia il sorgente
+tipo un metodo, un costruttore ed etc, allora bisogna rigenerare un altro numero hash.
+
+Una classe che ha un unico costruttore privato può essere instanziato solo dai suoi metodi statici,
+
+Codice:
+
+L'interfacia Executor ha un unico metodo execute che riceve un Runnable, una volta ricevuto,
+esso viene messo in coda e prima o poi verrà eseguito.
+Lancia un'eccezione, la RejectedExecutionException che non viene dichiarata perchè è una RuntimeException,
+la dichiariamo in RejectedExecutionException.
+
+public interface Executor {
+    public void execute(Runnable command);
+}
+
+Poi avremo la classe RejectedExecutionException che estende RuntimeException, quindi
+può essere lanciata durante un metodo ma non dichiarata e non necessariamente dichiarata,
+come division by zero e null pointer exception.
+
+public class RejectedExecutionException extends RuntimeException {
+    public RejectedExecutionException(String message){
+        super(message);
+    }
+}
+
+Il costruttore prende un messaggio che contiene il messaggio dell'errore.
+Questa classe deve contenere un'identificativo.
+
+public class RejectedExecutionException extends RuntimeException {
+    private static final long serialVersionUID = -6729536139102L;
+    public RejectedExecutionException(String message){
+        super(message);
+    }
+}
+Va rigenerato ogni volta che facciamo modifiche sostanziali al codice.
+
+public interface ExecutorService extends Executor {
+    public void shutdown();
+}
+Un ExecutorService è un Executor con un metodo aggiunto chiamato shutdown.
+
+La factory sarà Executors
+
+public class Executors {
+    public static ExecutorService newFixedThreadPool(int count){
+        return new SimpleThreadPoolExecutorService(count);
+    }
+
+    private Executors() {
+        // Blank
+    }
+}
+
+Questa factory Executors è una classe che contiene solo metodi statici, una classe che ha
+un unico costruttore privato non può essere istanziata ma solo dall'interno nei suoi metodi
+statici.
+Mettiamo un unico metodo statico che crea un'istanza di SimpleThreadPoolExecutorService che 
+realizza un pool di thread.
+SimpleThreadPoolExecutorService è una classe che metteremo esterna ma package scope in modo
+che non sia visibile all'esterno del package e quindi l'utente non può fare direttamente
+la new di SimpleThreadPoolExecutorService.
+Questa classe non deve esser un problema dell'utente.
+Quando viene costruito, costruiamo n thread passati al costruttore, aggiungiamo una coda
+contenente i tasks che vogliamo far partire, una volta che i thread partono fanno take o get
+su questa coda facendo da consumatori, il producer invece è il codice utente che chiama 
+execute passando quindi il Runnable.
+Quando viene attivato shutdown, le richieste di accodamento vengono bloccate, viene lanciata
+un'eccezione.
+Facciamo un'array di thread chiamato workers nel costruttore.
+
+Il worker è una inner class perchè deve accedere alla coda, lo start dei worker si limita
+a fare un ciclo forever che si sincronizza sul thread, se è shutdown allora termina.
+throwable.printStackTrace();
+Questa istruzione stampa lo StackTrace dell'eccezione, cioè la stampa delle chiamate, da dove
+si è originata e dove viene gestita.
+
+Il DownloadManager è un oggetto che riceve una serie di richieste di download e poi le accoda,
+piano piano scarica dati dalla rete e li consegna ai client e poi termina.
+Il DownloadManager contiene l'ExecutorService.
+
+Il Future è un oggetto che viene ritornato subito appena si esegue la submit(Runnable task, T result)
+è un modo per avere un oggetto in mano, continuare a fare i calcoli, lasciare agli thread di
+andare avanti e dopo fare un rendez vous, cioè il primo che arriva aspetta l'altro.
+Il rendez vous viene fatto sul risultato, anche l'eccezione è un risultato.
+
+L'interfaccia Callable specifice due cose rispetto alla Runnable, può lanciare eccezioni checked,
+callable ha un argomento generico T che identifica il tipo dato di valore t.
+
+submit(Callable<T> task)
+
+L'interfaccia Callable ha un unico metodo call() invece di run ed ha un valore di ritorno, che 
+sarebbe il tipo generico T.
+
+Future è un'interfaccia con un metodo get() per leggere il contenuto del Future, un metodo
+isDone() che permette di sapere se il risultato è stato prodotto e quindi ci permette di
+capire anche se la prossima get() è bloccante o no.
+Se è true allora la get() non si blocca.

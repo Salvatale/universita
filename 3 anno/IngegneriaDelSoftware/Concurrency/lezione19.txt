@@ -1,0 +1,106 @@
+@SuppressWarnings("unchecked")
+Il compilatore toglie il warning, il problema non sparisce ma indichiamo al compilatore
+di non segnalare piu l'errore.
+
+I Lock sono strumenti di sincronizzazione di piu basso livello, vengono utilizzati con le
+conditions, sono espliciti perchè viene chiamato un metodo e servono per fare mutua 
+esclusione.
+Le sezioni critiche hanno una limitazione perchè vogliamo che siano sezioni contigua
+di codice, quindi si utilizzano i lock per questo motivo, però è molto rischioso rispetto
+ad utilizzare la sezione critica con syncronized.
+
+Il lock può essere bloccato e rilasciato, solo un thread alla volta può avere acqisito il
+lock e nel momento in cui non riesce perchè è bloccato, esso si blocca.
+Appena viene rilasciato, uno dei thread bloccati viene svegliato.
+
+I lock hanno un'interfaccia :
+
+public interface Lock {
+    public void lock() throws InterruptedExption;
+
+    public void unlock();
+}
+
+Se un thread decide di prendere un lock che già possiede si può:
+- Se è gia preso allora vado avanti : lock rientrante
+- lock non rientrante : se cerco di prendere di nuovo il lock allora mi blocco, quindi
+                        deadlock sicuro. Si utilizzano se si hanno altri metodi per fare
+                        ripartire il thread bloccato.
+
+Inseriamo anche un private int counter per incrementarlo quando viene fatta una lock e
+decrementato quando viene fatta la unlock, dopo abbiamo bisogno di sapere chi è l'owner del
+lock, perchè si può entrare nella zona critica solo se il thread che vuole entrare è l'owner.
+Se il counter scende sotto 0 allora viene segnalato un'errore.
+
+Il metodo lock crea una sezione critica su mutex, verifichiamo se l'oggetto Thread.currentThread()
+è uguale al thread che detiene il lock quindi l'owner, se è diverso allora il thread si blocca
+con una mutex.wait(); 
+Se l'owner è null o l'owner è uguale thread che effettua il controllo allora andiamo avanti
+ad eseguire il codice.
+
+Il metodo unlock apre una sezione critica con mutex, se l'owner è diverso dal currentThread
+allora si lancia un'errore perchè si vuole fare la unlock non essendo owner del lock.
+
+Interfaccia Lock con conditions:
+
+public interface Lock {
+    public void lock();
+
+    public void unlock();
+
+    public Condition newCondition();
+}
+
+Interfaccia della Condition:
+
+public interface Condition {
+    public void await() throws InterruptedException;
+
+    public void signal();
+
+    public void signalAll();
+}
+
+Il metodo await fa la stessa cosa di wait(), signal invece notify() e signalAll come notifyAll()
+La condizione è legata alle regioni critiche, con await viene liberata la sezione critica
+e messo in attesa il thread, con signal vengono svegliati ma non si attivano finchè non 
+viene liberato il lock.
+Quindi realizziamo le classi che implementano condition solo tramite lock, se non chiamiamo
+newCondition allora avremo dei lock senza condizioni.
+Nel metodo await eseguiamo un unlock per smettere di bloccare il lock, dopo entriamo
+in sezione critica di condition ed eseguiamo una condition.wait cosi il thread si mette in attesa,
+dopo quando verrà risvegliato provvederà a fare il lock.
+
+public void await() throws InterruptedException {
+    unlock();
+
+    syncronized (condition) {
+        condition.wait();
+    }
+
+    lock();
+}
+
+Si chiama signal se in quel momento il thread è l'owner del lock che ha generato la 
+condition.
+Con le condizioni allora la remaining capacity acquisisce il lock che serve per manipolare
+lo stato dell'oggetto in mutua esclusione.
+Il blocco finally serve a permettere ad un blocco try catch di avere una parte che venga
+eseguita sia se viene lanciata un'eccezione che invece no.
+
+try {
+    lock.lock();
+
+} finally {
+    lock.unlock();
+}
+
+La clear() prima cerca di acquisire il lock per poter modificare la queue in mutua esclusione,
+dopo resetta in,out e count, crea un nuovo oggetto queue in modo che il garbage collector
+può deallocare risorse ed infine invia il segnale che non è piu piena perchè magari prima
+della clear poteva essere piena e qualche thread era in attesa di inserire oggetti nella coda.
+
+Non è possibile effettuare questa operazione:
+this.queue = new T[size];
+
+Non si possono dichiarare array di tipo generico T.

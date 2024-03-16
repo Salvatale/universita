@@ -1,0 +1,181 @@
+Alcuni metodi di Thread come la sleep possono lanciare eccezioni da gestire come InterruptedException, possiamo catturarla e 
+gestirla con un blocco try-catch, per gestire eccezioni generali possiamo utilizzare l'interfaccia Throwable
+
+catch (Throwable throwable){
+	//Blank
+}
+
+per convenzione se vogliamo lasciare qualcosa vuoto allora scriviamo un commento //Blank.
+Tutte le volte che mettiamo un thread in attesa allora verrà lanciata sempre un InterruptedException.
+Ovviamente la classe Notifier è solo dal punto di vista didattico dato che non conviene costruire una classe Notifier che fa solo
+quello.
+Quindi la possiamo spostare dentro la classe che contiene il main.
+
+public class Example01 {
+	.....
+	public static void main(String[] args){
+		.....
+	}
+
+	private class Notifier extends Thread {
+		@Override
+		public void run() {
+			System.out.println("Started");
+			
+			try {
+				Thread.sleep(2000);
+			} catch (Throwable throwable) {
+				// Blank
+			}
+			System.out.println("Terminated");
+		}
+	}
+}
+
+Adesso dentro la classe Notifier è presente lo stato di Example01 in modo da poterlo manipolare.
+Queste classi sono chiamate inner cioè classi interne che quindi condividono lo stato.
+Possono essere anche anonime e vengono utilizzate semplicemente per fare new di un'oggetto senza dovergli dare un nome.
+In questo caso potremmo rendere notifier anonima.
+
+public class Example01 {
+	.....
+
+	public void go() {
+		Thread notifier = new Thread() {
+		@Override
+		public void run() {
+			System.out.println("Started");
+			
+			try {
+				Thread.sleep(2000);
+			} catch (Throwable throwable) {
+				// Blank
+			}
+			System.out.println("Terminated");
+		};
+		
+		notifier.start();
+	}
+
+	public static void main(String[] args){
+		.....
+	}
+}
+
+Di solito si passano argomenti quando facciamo new Thread() quindi per questo mettiamo le parentesi e poi il punto
+e virgola finale perchè stiamo definendo una variabile.
+E possibile effettuare questa operazione anche con le interfacce, le interfacce non hanno uno stato e quindi non è
+possibile fare una new.
+
+public class Example01 {
+	.....
+
+	public void go() {
+		Runnable runnable = new Runnable() {
+		@Override
+		public void run() {
+			System.out.println("Started");
+			
+			try {
+				Thread.sleep(2000);
+			} catch (Throwable throwable) {
+				// Blank
+			}
+			System.out.println("Terminated");
+		};
+		
+		Thread notifier = new Thread(runnable);
+		notifier.start();
+	}
+
+	public static void main(String[] args){
+		.....
+	}
+}
+Si costruisce un inner class anonima definendo il corpo all'interno della graffa ed avendo come unico metodo astratto
+che è run allora dopo lo passiamo a thread.
+É utile utilizzare le classi anonime al posto di una classe con nome quando dobbiamo chiamarla solo una volta.
+
+WAITER AND NOTIFIER 
+
+public class Example01 {
+	.....
+	private Object mutex = new Object();
+
+	public void go() {
+		Runnable runnable = new Runnable() {
+			@Override
+			public void run() {
+				System.out.println("Notifier started");
+			
+				try {
+					Thread.sleep(2000);
+				} catch (Throwable throwable) {
+					// Blank
+				}
+				syncronized (mutex) {
+					mutex.notifyAll();
+				}
+				
+				System.out.println("Notifier terminated");
+			}
+		};
+		
+		Thread notifier = new Thread(runnable);
+		runnable = new Runnable() {
+			@Override
+			public void run() {
+				System.out.println("Waiter started");
+				// Attende la notifica per terminare
+				
+				syncronized (mutex) {
+					try{
+						mutex.wait();
+					} catch(Throwable throwable){
+						// Blank
+					}
+				}
+
+				System.out.println("Waiter terminated");
+			}
+		};
+		Thread waiter = new Thread(runnable);
+
+		notifier.start();
+		
+		waiter.start();
+	}
+
+	public static void main(String[] args){
+		.....
+	}
+}
+
+Dobbiame fare in modo che il waiter attenda la notifica quando si mette in attesa per farlo svegliare.
+Il waiter si mette in attesa su un oggetto che venga protetto in modo che non sia visibile da fuori.
+In questo casp private Object mutex = new Object(); è l'oggetto di sincronizzazione.
+Con mutex.notifyAll() accediamo allo stato della classe esterna cioè quella contenitrice, essa però deve
+essere chiamata su una regione critica, il compilatore non segnala errore ma la java virtual machine si.
+Possiamo quindi mettere il blocco syncronized.
+Il problema è che la notifier potrebbe fare la notifica prima che il waiter si metta in attesa, i problemi di
+sincronizzazione difficilmente si risolvono impostando del tempo come in questo caso la sleep.
+Potremmo mettere un booleano che ci indica quando il waiter è entrato in stato di wait e quindi avvisa il
+notifier che adesso può eseguire la notifica.
+Un'altra soluzione è semplicemente dire che il waiter è entrato in stato wait e la notifier 
+Possiamo anche inserire un metodo quando facciamo new Runnable che fa la wait, per esempio private void doWait() {...}
+Per costruire un'interfaccia con un unico metodo si può fare cosi.
+
+Thread notifier = new Thread(() -> {
+	doNotify();
+});
+Questa è una lambda expression, cioè un modo per poter l'implementazione di un 'interfaccia, costruire un oggetto di 
+quell'interfaccia e costruire l'unico metodo dell'interfaccia funzionale.
+
+Thread notifier = new Thread(this::doNotify); è una lambda expression che lancia un thread ed esegue doNotify()
+
+
+
+
+
+
+

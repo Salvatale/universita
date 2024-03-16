@@ -1,0 +1,61 @@
+Un reference in java può essere letto e scritto e se vogliamo che si tenga conto della
+sincronizzazione, allora bisogna fare le seguenti operazioni:
+- Lettura del reference in modo atomico, cioè acquisendo e rilasciando un mutex.
+- Scrittura nel reference, assegnamento della variabile che contiene il riferimento , acquisiamo
+  il mutex, scriviamo e poi usciamo
+- Operazioni atomiche che vengano svolte contemporaneamente durante la sezione critica, 
+  permettere a chi chiama il metodo di leggere e cambiare il valore del reference ad un altro
+  in modo atomica.
+  Dato un reference R si calcola una funzione f.
+
+Class AtomicReference<V>
+
+La classe avrà:
+- private T value : valore che sarà letto o scritto.
+- private Object lock : un oggetto lock che permette di fare la sincronizzazione per 
+                        le letture e scritture.
+
+La get() si sincronizza su lock e poi ritorna il value.
+La set() si sincronizza e scrive nel reference.
+La getAndSet() si sincronizza, restituisce il valore di value, sovvrascrive il valore di value.
+La getAndUpdate riceve come argomento UnaryOperator<T> update che è un'interafaccia funzionale
+standard che ha come un'unico metodo apply() che genera un oggetto dall'insieme T e la applica.
+T result = update.apply(value);
+Questa interfaccia permette di effettuare i metodi getAndUpdate() e updateAndGet().
+Nel java.util.function contiene tutte le interafface funzionali che vengono ereditate 
+dall'interfaccia function.
+Un'interfaccia funzionale spesso viene arricchita con l'annotazione @FuncionalInterface che
+serve solo a scopo di documentazione, che permette a chi utlizza l'interfaccia di sapere
+che essa viene utilizzata con interfaccia funzionale e quindi potremmo mettere delle lambda
+expression.
+La UnaryOperation permette di stabilire l'identità che prende un argomento dell'apply e lo
+ritorna uguale.
+
+Example04 farà un contatore atomico.
+counter.set(counter.get() + 1);
+Se facessimo cosi allora non avremo l'operazione in modo atomico.
+quindi la soluzione sarebbe:
+counter.updateAndGet(new Incremeter());
+Come UnaryOperator abbiamo bisogno di una classe che può essere statica come per esempio:
+- private static class Increment implements UnaryOperator {
+    @Override
+    public Integer apply(Integer value) {
+        return value + 1;
+    }
+}
+- oppure una inner class
+UnaryOperator<Integer> operator = new UnaryOperator<Integer>() {
+    @Override
+    public Integer apply(Integer value) {
+        return value + 1;
+    }
+};
+- lambda expression: essa evita la costruzione di un oggetto che poi deve essere liberato
+  dal garbage collector.
+i = counter.updateAndGet((x) -> {
+    return x +1;
+});
+- i = counter.updateAndGet((x) -> x+1);
+se vogliamo utilizzare una lambda expressione per realizzare una inner class allora dobbiamo
+ragionare come se la inner class fosse statica, quindi non manipola lo stato della classe
+contenitrice.

@@ -1,0 +1,30 @@
+Un oggetto condiviso è un oggetto dove i metodi delle interfacce implementate vengono eseguiti
+in mutua esclusione.
+Un metodo publico nella classe viene messo solo se fa parte di un'interfaccia.
+
+Si costruisce una public class SharedAspect che è publica ed ha un metodo statico pubblico
+che permette di attaccare l'oggetto cioe public static <T> T attach(T target).
+Questa classe deve offrire il metodo statico attach per la costruzione di questi oggetti, allora 
+non vogliamo che questa classe venga instanziata e quindi aggiungiamo un costruttore senza
+parametri privato.
+Il risultato di attach sarà dello stesso tipo di target, partiamo da target passato come argomento
+se target è nullo allora lanciamo un'eccezione dato che non possiamo attaccare niente, sennò
+prendiamo la classe dell'oggetto target per conoscere tutte le interfacce che implementa,
+quindi ci facciamo dare tutte le interfacce come array e costruiamo un proxy che ha bisogno
+di un class Loader cioè quello che ha caricato la classe che ha caricato target in questo caso,
+poi prendiamo l'array delle interfacce implementate con targetClass.getInterfaces() ed infine
+prendiamo un oggetto new InnerInvocationHandler(target) che implementa InvocationHandler,
+una volta ottenuto il proxy, facciamo il cast per ritornare un oggetto di tipo T e poi lo 
+ritorniamo.
+
+Quando L'InvocationHandler viene utilizzato e chiesto di produrre una risposta allora si
+fa un try-catch, si entra in sezione critica con il lock, invochiamo l'esecuzione del metodo
+sull'oggetto target utilizzando gli stessi argomenti e se non viene lanciata un'eccezione allora
+si restituisce il risultato, sennò darà due tipi di eccezioni.
+InvocationTargetException che sono eccezioni lanciate InvocationHandler, quindi se il metodo
+lancia l'eccezione, la otteniamo andando a prendere la getCause().
+Per tutte le altre eccezioni allora lanciamo un Throwable.
+
+Se il tipo del target non è interamente composto da interfacce allora non è detto che il tipo
+del proxy sia quivalente al tipo del target, perchè l'oggetto viene costruito su n interfacce
+ed esso cattura il messaggio su quelle n interfacce.

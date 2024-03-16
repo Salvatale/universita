@@ -1,0 +1,55 @@
+E un oggetto dove i suoi servizi possono essere usati da oggetti che vivono su altre macchine nella rete, possiamo passare informazioni tra due macchine collegati tramite la rete, l'invio dei messaggi può avvenire tra due oggetti su macchine diverse, una volta finita la comunicazione verrà mandato un messaggio con il risultato.
+Ci serve un meccanismo per spostare dati sulla rete, uno strumento utile è la Serializzazione, perchè possiamo trasformare un oggetto in un array di byte e poi spedirlo nella rete.
+I socket sono dei file descriptor dove è possibile fare read e write, a seconda del tipo
+ci sono caratteristiche diverse.
+Utilizziamo un Socket TCP per ottenere un canale di comunicazione in cui inviamo o riceviamo l'array di byte.
+Una volta che il destinatario ha gli argomenti allora saprà che metodo invocare e otterrà un risultato, l'oggetto ritorna e deserializzato e ottenuto il risultato come se fosse una chiamata locale.
+Costruiremo dei proxy che mascherano la chiamata remota, prendono gli argomenti, li impacchettano e li inviano e una volta ottenuto il risultato si sbloccano.
+Per ottenere un Socket TCP dobbiamo fare una scelta, se siamo dal lato Server allora aspettiamo una richiesta di connessione e quando arriva la dobbiamo rifiutare ed accettare, oppure ci troviamo dal lato Client e allora dobbiamo inviare la richiesta di connessione.
+Il Server utilizza una classe che è Java.net.ServerSocket, mediante la chiamata accept() possiamo metterci in attesa di richieste di comunicazione.
+Il Client utilizza la classe Java.net.Socket , si crea un oggetto Socket per chiedere la connessione ad un server.
+Se la connessione va a buon fine allora dopo ci sono InputStream e OutputStream per leggere e scrivere su questo canale di comunicazione.
+Tutte le volte che si costruisce un Socket IP in modalità server è importante stabilire una porta che è in attesa di connessioni, una porta è un numero tra 0 e 64.000, che stabilisce un numero convenzionale che è noto a chi riceve e chi invia.
+Server e Client si incontrano sulla porta, bisogna scegliere una porta non utilizzata, di solito è vietato utilizzare dal 1024 in giu.
+
+Per la richiesta creiamo un'interfaccia:
+
+public interface RemoteRequest extends Serializable{
+    public String getMethodName();
+
+    public String[] getParameterTypeNames();
+
+    public Object[] getArguments();
+}
+L'interfaccia ci permette di avere richieste e risposte da classi diverse.
+Ci serve il nome del metodo dopo il punto, gli argomenti passati al metodo e mettiamo anche il tipo degli argomenti in modo che se abbiamo un metodo con lo stesso nome con lo stesso numero di argomenti, allora andiamo a vedere il tipo degli argomenti.
+
+Una volta costruita ed elaborata la richiesta, si costruisce la risposta
+
+public interface RemoteResponse extends Serializable {
+    public Object getResult();
+
+    public Throwable getException();
+}
+
+La risposta ci permetterà di sapere se il risultato è un oggetto o un'eccezione.
+Ci sono tutta una serie di eccezioni nuove che sono ordinarie per la rete.
+
+Remote Exception è una RuntimeException che ingloba tutte le eccezioni che hanno orgine dalla chiamata remota, per esempio il socket clienn che non riesce a collegarsi perchè la rete è down allora lanceremo questa eccezione.
+
+public class RemoteException extends RuntimeException {
+    private static final long serialVersionUID = -7133278372318239218L;
+
+    public RemoteException(Throwable cause){
+        super(cause);
+    }
+}
+Dato che potremmo volere di non svelare che l'eccezione proviene da oggetti remoti, allora lanceremo una RuntimeException, sistemi distribuiti delle volte svelano questa cosa, mascherare se la chiamata a metodo è remota allora non è detto che la mascherano.
+
+RemoteHandler permette di aggiungere tutte le funzionalità che sono tipiche dell'aspetto.
+Viene costruito sul Server che costruisce il Pools di Thread e fa la bind della porta TCP/IP, quindi ci serve qualcosa che faccia shutdown per chiudere tutto.
+
+public interface RemoteHandler<T> {
+    public void shutdown();
+}
+Lato Client l'Handler non serve perchè avremo un proxy del tutto trasparente, se noi costruiamo un proxy verso un oggetto che implementa un'interfaccia T allora lo utilizziamo come oggetto locale dal lato Client.

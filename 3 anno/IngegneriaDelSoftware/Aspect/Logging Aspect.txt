@@ -1,0 +1,10 @@
+Si costruisce un proxy, l'invio di un messaggio all'oggetto viene raccolto dal proxy che 
+stampa il log sto per fare la chiamata ed alla fine stampa chiamata effettuata, in questo caso
+su std output per semplicità.
+Solo i messaggi inviati al proxy scatenano il log.
+TreeSet è un albero binario che organizza le sue foglie a profondita minima con sottoalbero
+sinistro piu piccolo del sottoalbero desto.
+Per le comparazioni in modo da fare le comparazioni sulla base della mia scelta, prendiamo
+gli oggetti Comparator, TreeSet lo utilizza per decidere se proseguire sul sottoalbero 
+sinistro o destro per l'inserimento del nuovo oggetto.
+Vogliamo che il comparator ogni volta che fa un'operazione ce lo segnali.

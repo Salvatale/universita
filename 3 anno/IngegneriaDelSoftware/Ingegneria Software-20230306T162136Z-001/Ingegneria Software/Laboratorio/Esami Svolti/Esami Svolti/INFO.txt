@@ -1,0 +1,3 @@
+Tutti gli esercizi di questa cartella sono stati svolti da Aldo Tragni.
+
+Negli esami riguardanti le Web Application (Esame 3 e 4), ho gestito tutte le funzioni usando le Servlet anche se in certi casi avrei dovuto usare JSON o Javascript.

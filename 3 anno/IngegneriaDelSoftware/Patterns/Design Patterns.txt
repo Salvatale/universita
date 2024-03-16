@@ -1,0 +1,24 @@
+I Design Patterns sono uno strumento che vanno a prendere dei problemi di progetto e 
+andare a generalizzarli, quindi scrivendo soluzioni che vadano bene a scatola chiusa,
+è un'idea che viene dalla progettazione architettonica.
+Se ci sono dei problemi ricorrenti, allora bisogna identificarli, idenitificare soluzioni 
+ritenute valide, dare nomi e cognomi ed utilizzarle senza pensarci.
+Forniscono quindi soluzioni che migliorano la riusabilità e quindi minimizza anche i costi
+di manutenzione.
+Si utilizza una soluzione che vanno poi calate nel progetto, cioè con le varie modifiche
+relative al sistema che si vuole ottenere.
+Con un design pattern significa avere un problema e una o piu soluzioni proposte per il 
+problema che sono generali e non specifiche, le mettiamo nel progetto e la qualità del
+risultato che otteniamo sarà piu elevata.
+
+Ci sono problemi legati alla creazione degli oggetti, non ci limitiamo a creare gli oggetti
+con new perchè se modifichiamo il nome della classe allora dovremmo cambiare il codice 
+quando vengono fatte le new ma si vuole evitare di modificare codice già scritto.
+Quindi esistono creational patterns che risolvono questi tipi di problemi.
+Problemi su come le classi vengono collegate l'una con l'altra.
+Come creare le dipendenze tra le classe, i structural pattern risolvono questi problemi.
+I behavioral patterns descrivono comportamenti di sottoparti del sistema che sono comuni, è
+comune attraversare una struttura lineare, cioè come comportarsi per attraversarla, esempio
+di utilizzo è l'iteratore oppure le visite per un albero binario, ma potrebbero non essere
+utili per risolvere quei problemi.
+

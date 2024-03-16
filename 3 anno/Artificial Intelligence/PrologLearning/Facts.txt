@@ -1,0 +1,8 @@
+Noi leggiamo i fatti in questo modo:
+
+likes(john,mary).  :john likes mary, john and mary sono objects uniti da una relazione.
+
+female(mary).       : mary è femmina
+
+play(john,mary,football).  : john e mary giocano a football.
+

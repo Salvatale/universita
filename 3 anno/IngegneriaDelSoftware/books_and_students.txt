@@ -1,0 +1,61 @@
+public interface Book extends Bean {
+    public int getID();
+
+    public String getAuthor();
+
+    public String getTitle();
+}
+
+public interface Student extends Bean {
+    public int getID();
+
+    public String getName();
+
+    public String getSurname();
+}
+
+In queste interfacce mettiamo solo le get() perchè le letture sono sempre concesse, invece
+non mettiamo sempre set() perchè le scritture non sono sempre consentite.
+in java le struct le chiamiamo Bean, quindi facendo un Bean vuol dire costruire un oggetto 
+che costruisce dati che sicuramente li farà sempre leggere ma non sempre scrivere.
+Spesso l'interfaccia Bean risulta vuota.
+
+public interface Bean {
+}
+essa ci permetterà di dichirare che books e students sono i dati della nostra struttura.
+SimpleBook è un tipo di dato che in java viene definito oggetto valore, cioè si comporta
+come un valore di un tipo primitivo. String è un oggetto valore.
+Escludiamo le set nell'interfaccia ma le inseriamo nella classe dove facciamo l'implementazioni,
+cioè nel SimpleBook.
+Clonable è un'interfaccia che fa capire che vogliamo fare una copia profonda del nostro oggetto,
+quindi facciamo un override pubblico del metodo clone().
+
+Il BeanLoader ha l'unico scopo di caricare i dati da un file csv fornendo il nome del file 
+e specificare la classe e coscere i metodi per scrivere dentro la classe.
+Ci serve un costruttore senza argomenti perchè nel momento in cui l'oggetto viene costruito,
+non abbiamo ancora i dati, i Bean mettono a disposizione un costruttore senza argomenti 
+proprio per questo anche se è in uno stato incosistente ma non ci interessa perchè lo utilizziamo
+solo per questo motivo.
+Con una singola classe BeanLoader possiamo scrivere qualsiasi cosa seguendo le convenzioni.
+
+<T extends Bean> il tipo deve essere convertibile a Bean, se Bean avesse qualche metodo
+questo mi garantisce l'invocazione del metodo senza effettuare cast, questo è un vincolo.
+il tipo T estende Bean, vincolo sul tipo dell'argomento del generico per escludere alcune
+cose ed includerne altre.
+
+inputStream è uno stream di input che viene costruito partendo dal nome di un file, utilizziamo
+una Scanner che garantisce metodi di lettura.
+Lo Scanner segue le convenzioni del Os.
+scanner.useLocale(Locale.US) si imposta lo scanner con gli standard americani.
+Una volta che si legge la linea la spezziamo sui TAB, si costruisce un'array di classi corrispondenti
+ai nome che troviamo nell'array di property, quindi gli passiamo la classe clazz e questo array
+di stringhe contenenti le proprietà come per esempio: ID,Name ed etc.
+scanner.hasNext() chiede se c'è altro da leggere.
+Per ognuna delle colonne lette, ci facciamo dare dalla classe il metodo "set" + "propertyNames[i],"
+
+La funzione split prende una stringa e la spezza quando incontra un determinato caratter,
+trim prende una stringa e prende i caratteri non stampabili davanti e indietro, si fa questa
+operazione per ogni stringa spezzata della linea.
+A noi serve leggere la linea per spezzarla in stringhe, la linea la leggiamo dai file csv.
+
+La funzione parse..() serve a convertire una stringa in un dato intero,float ed etc.

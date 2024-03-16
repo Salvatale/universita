@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Aspects"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Concurrency"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 01"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 02"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 03"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 04"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 05"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 06"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 07"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 09"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 10"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 11"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 12"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 13"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 14"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 15"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 16"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 17"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Example 17 Tests"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Exercise 1"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Exercise 2"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

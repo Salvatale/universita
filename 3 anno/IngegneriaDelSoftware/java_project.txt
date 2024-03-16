@@ -1,0 +1,13 @@
+Per creare un progetto java:
+Diamo un nome voluto al progetto, utilizzare la default location cosi il materiale finisce tutto nella cartella scelta.
+Sarebbe meglio utilizzare default JRE così il codice risulta compatibile con tutte le versioni e non solo con quella definita.
+Nei progetti java ci deve sempre almeno essere un package. Si crea facendo new package.
+La convenzione per dare un nome ad un package bisogna tenere conto del sito web dell'azienda per cui si realizza il software.
+Nel mio caso, non essendo un professionista allora utilizzo it.unipr.informatica.<nome>
+Questo è importante così ogni azienda ha i propri package definiti.
+
+Nella nostra classe main scriviamo una classe publica statica per far capire alla virtual machine che non avendo nessun oggetto da
+prendere allora seleziona la nostra public static void main(String[] args) come entrypoint.
+CTRL+backspace permette di comportarsi come se si premesse tab sul terminale.
+La Virtual Machine fa partire un thread che contiene il main e poi il main attiverà altri thread, una volta che tutti i thread sono
+terminati allora la Virtual Machine termina, se

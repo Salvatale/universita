@@ -1,0 +1,27 @@
+Nel mondo Java i messaggi sono elencati nelle interfacce, quindi esse descrivono l'insieme
+dei messaggi da inviare agli oggetti, l'insieme delle risposte che gli oggetti manderanno
+indietro.
+I Dynamic Proxy permettono di separare l'invio dei messaggi ed attesa e risposta da esecuzione
+del calcolo e attesa delle risposte.
+Formiamo un'insieme delle interfacce che costiuiscono i messaggi da inviare da un oggetto,
+InvokationHandler viene utilizato per ricevere i messaggi, se è uno di quelli elencati nelle
+interfacce allora viene attivato, dve produrre una risposta, se la risposta è void allora 
+basterà ritornare null.
+Le interfacce le formiamo con un array di descriptor, cioe le interfacce che il nostro oggetto
+implementa.
+Con Dynamic Proxy e l'interfaccia siamo in grado di creare degli oggetti che ricevono i messaggi
+elencati nell'interfaccia e producono dei risultati.
+Nella programmazione orientata agli oggetti, gli unici tipi di dato che utilizziamo sono
+le interfacce, la cosa interessante di un oggetto sono i messaggi che possiamo inviare.
+La classe è una fabbrica per costruire oggetti, una volta costruito, ci accediamo con un reference
+ed il tipo è un'interfaccia con cui possiamo dialogare, non ci interessa per esempio quale
+fabbrica ha costruito l'oggetto.
+newProxyInstance è un metodo statico che permette di costruire un Proxy che implementa le
+interfacce che elenchiamo, poi utilizza un metodo di dispatch che riceve i messaggi e decide
+cosa fare per produrre le risposte.
+getClass().getClassLoader() ritorna l'oggetto class Loader, prendiamo la class descriptor e
+grazie ad esso ci facciamo passare il ClassLoader.
+Dopo bisogna passare un array che contenga i descrittori delle interfacce che vogliamo che
+vengano implementate nell'oggetto Proxy.
+Tutte le volte che inviamo tramite il punto un messaggio all'oggetto riferito dal riferimento
+studente, viene passato all 'InvokationHandler

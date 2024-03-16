@@ -1,0 +1,62 @@
+Abstrac Factory si occupa di costruire oggetti, è un modo per incapsulare oggetti tramite
+interfaccia o classe astratta che avrà un metodo astratto che viene chiamata createProduct()
+che ritorna un AbstractProduct().
+Una volta realizzato le parti astratte, allora si realizza ler parti concrete.
+ConcreteFactory che ha il metodo concreto createProduct() che ritorna un AbstractProduct,
+si realizza un ConcreteProduct() che è sottoclasse di AbstractProduct e con una dipendenza
+andiamo a dire che ConcreteFactory produce ConcreteProduct.
+L'unico modo per costruire un ConcreteProduct è passare dalla AbstractFactory, quindi diventa
+un oggetto che portiamo in giro e chiamiamo createProduct(), un vantaggio è che se vogliamo
+cambiare il product creato ci basta modificare la ConcreteFactory o aggiungerne un'altra.
+
+
+Il Builder è l'oggetto che serve a costruire le varie parti, quando si vuole ottenere
+il Product avrà un metodo che permette di ottenerlo.
+Sull'interfaccia Builder chiameremo builPart() su ogni parte del nostro oggetto composto, 
+qaundo si avranno abbastanza componenti dell'oggetto composto allora si chiama getResult()
+che ritorna il Product che non sarà fatto solo da una classe soltanto.
+Un esempio tipico è lo StringBuilder, si ottiene quando si sommano due stringhe.
+Se abbiamo tre stringhe e vogliamo concatenarle allora il Builder memorizza le varie parti
+e quando si è completata la concatenazione allora si chiama il getResult() per ottenere in
+un colpo solo la stringa finale senza costruirla a parti.
+Il Builder serve tutte le volte che si hanno delle parti e l'oggetto è composto da parti, quindi
+è una soluzione piu efficace dato che si costruisce l'oggetto con le varie parti in un solo
+colpo e non a pezzi.
+
+Nei linguaggi basati su prototipi si costruisce un oggetto andando a replicarne un altro,
+per costruire un nuovo oggetto serve duplicare un oggetto che si possiede, duplicarlo e 
+alla fine modificarlo. In Javascript si esegue questa operazione.
+Questa operazione viene fatta a tempo di esecuzione, si parte da un oggetto primordiale e
+dopo aggiungere messaggi, lo stato ed ecc.
+Questo sistema offre una buona flessibilità ma ha lo svantaggio di non avere i tipi dato statico,
+non si riesce piu ad associare un tipo all'oggetto a tempo di compilazione, sono linguaggi
+dinamicamente tipati, di solito non hanno il compilatore dato che il compito del compilatore
+non avrebbe senso dato che serve ad aumentare la qualità del codice segnalando gli
+errori.
+In Javascript il codice viene compilato quando serve.
+Il Design Pattern Prototype permette di utilizzare un approccio basato su prototype anche
+se si è con linguaggio staticamente tipati come C#,c++,java ed etc.
+Nel momento in cui vogliamo creare un oggetto, cerchiamo di avere in mano l'oggetto prototype
+e poi si fa la copia con clone().
+In java facciamo che interface prototype extends Clonable, dopo che facciamo la copia, allora
+ci possiamo lavorare sopra come se fosse un oggetto nuovo, il vantaggio è che prototype è 
+un'interfaccia o classe astratta, nel momento in cui a tempo di esecuzione viene eseguita
+anOperation(), a seconda della classe concreta del prototype che abbiamo allora avremo oggetti
+copia diversi.
+Quando abbiamo bisogno di un oggetto nuovo allora ci facciamo passare il suo prototype, quando
+ci arriva allora chiamiamo clone() che costruisce un nuovo oggetto e dopo si lavora su quello,
+viene molto bene se l'oggetto prototype è immutabile dato che la clone si limita a ritornare
+la this
+
+
+Nella situazione in cui gli oggetti istanza di una classe ce ne deve essere solo una, per 
+esempio quando vogliamo un punto di accesso al sistema operativo che c'è solo uno e quello
+deve essere utilizzato, il Framework per fare GUI di Java ha un'unico punto per ricevere
+l'evento dal sistema operativo.
+Garantiamo che c'è sempre e soltanto al piu uno di questi oggetti, costruiamo in un modo flessibile
+quell'unico oggetto.
+Nell'interfaccia grafica non viene toccato niente della parte grafica del sistema operativo
+anche costruendo tutta l'interfaccia, una volta che setVisible viene impostato su true allora
+si comincia a disegnare.
+Singleton è un'insieme che ha un unico elemento, per costruire questo oggetto basta 
+scrivere il codice sorgente della slide.

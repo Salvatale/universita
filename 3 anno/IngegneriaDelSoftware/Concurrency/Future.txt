@@ -1,0 +1,92 @@
+public class ExecutionException extends Exception {
+    private static final long serialVersionUID = -18236152.....;
+    
+    public ExecutionException(Throwable cause){
+        super(cause);
+    }
+}
+
+la get() del Future estende Exception quindi l'eccezione va gestita essendo checked, quindi
+o la si cattura la si fa passare attraverso la signature del metodo.
+Non ha un messaggio ma ha un Throwable che utilizziamo come eccezione embedded, c'è stato 
+un problema che viene descritto dal Throwable, Throwable è interfaccia base di Exception e
+RuntimeException.
+
+public interface Future<T> {
+    public T get() throws InterruptedException, ExecutionException;
+
+    public boolean isDone();
+}
+
+Ha un metodo isDone() che dice che se il risulato è stato gia prodotto.
+Il metodo get() invece si mette in attesa se isDone() è falsa, sennò ritorna il valore prodotto
+o lancia l'eccezione prodotta.
+
+SimpleFuture ha un attributo mutex perchè la get() deve fare un'attesa e quindi serve una sezione
+critica.
+Un booleano done se è stata prodotto un risultato o un'eccezione.
+Il risultato di tipo T lo metto in value.
+Se viene lanciata l'eccezione, essa viene memorizzata in exception.
+
+La get() si sincronizza con mutex, se done è false allora ci mettiamo in attesa, sennò lanciamo
+l'eccezione oppure il risultato.
+L'Executor che utilizzerà il SimpleFuture avrà a disposizione questi metodi:
+- setValue: scrive il risultato del task nel Future, si ha un blocco sincronyzed, se done
+            è true allora è stato prodotto già un risultato ed allora si lancia un'eccezione
+            dato che è un bug.
+            Se invece done è false allora assegniamo a value il risultato andiamo a notificare
+            tutti quelli in attesa del Future, cioè i thread che sono bloccati nella wait
+            nel metodo get.
+- setException : è uguale a setValue, viene chiamata quando viene fatta la catch di un'eccezione,
+                 l'argomento throwable non può essere nullo,se done è true allora è stato
+                 già fornito il risultato o l'eccezione, sennò forniamo ad exception l'eccezione
+                 e dopo notifica tutti i thread in attesa.
+
+Il Future è utilizzato dagli ExecutorService per attivare dei task che ritornino dei risultati
+
+La nuova interfaccia di ExecutorService sarà:
+
+public interface ExecutorService extends Executor {
+    public void shutdown();
+
+    public Future<?> submit(Runnable task);
+
+    public <T> Future<T> submit(Callable<T> task);
+}
+Nella prima submit prende un Runnable che è void, nel valore del Future ci mettiamo nullo,
+permette di mettersi in attesa che il Runnable sia terminato, serve come via di mezzo per 
+avere la possibiltà di mettersi in attesa di un task che non producendo valori allora non ha
+un valore di ritorno, Runnable non lancia eccezioni, è un modo per capire se è finito il task
+e se è andato bene.
+Il submit(Callable<T> task) è piu interessandte e quindi la call() ha un tipo di ritorno T,
+quindi viene ritornato un Future di T, l'argomento task ha un certo tipo T e quindi il 
+compilatore deduce il tipo dal tipo degli argomenti quindi utilizziamo i metodo generici
+public <T>.
+
+Utilizziamo <?> quando non si riesce a dedurre a tempo di compilazione il tipo generico.
+Il compilatore stabilirà il tipo dopo oppure lo si porta dietro dappertutto, tutte le volte
+che si introduce questa notazione, sarà diversa dagli altri punti interrogativi, non è 
+necessariamente lo stesso tipo.
+
+In SimpleThreadPoolExecutorService avrà l'implementazione di submit, nell'execute passiamo
+come argomento il risulato che varia a seconda della situazione, facciamo la run del task
+passato come argomento, dopo la run se tutto è andato a buon fine, impostiamo il valore del
+future a null, altre get che erano in attesa, si sbloccano e ritornano null, se invece viene
+lanciata un'eccezione dalla run allora catturiamo il throwable e la impostiamo nel future,
+se c'erano eventuali get in attesa allora si sbloccano tutte e lanciano tutte la futureException
+che contiene il throwable, se arrivano altre get, non si metteranno in attesa ma lanceranno
+direttamente l'eccezione, quindi consentiamo all'utente di saperr quando il task è stato
+completato.
+
+L'implementazione di public <T> Future<T> submit(Callable<T> task) è circa uguale, 
+solo che utilizza il risultato della call() sul task per impostare il valore del future.
+Questa inner class riesce a vedere l'argomento task perchè è dentro allo scope, è possibile
+farlo solo se una volta costruito l'oggetto, esso è immutabile quindi non cambia piu valore.
+Se aggiungessimo task = null; appena prima di return future, allora avremo un problema nella
+nostra inner classe quando chiama la call() di task.
+La inner class memorizza anche tutti i valori delle variabili locali e degli argomenti
+null'ultima fotografia prima della run della inner class, quindi se permettiamo ai valori
+di cambiare, dopo non si capisce piu quale fotografia stiamo utilizzando.
+
+
+

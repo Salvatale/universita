@@ -1,0 +1,20 @@
+La Callback ha lo scopo di associare un Callable ad un oggetto di tipo Callback, una volta
+completato l'esecuzionde del Callable, nello stesso thread viene eseguito il Callback,
+passando come argomento il risultato prodotto dalla Callable.
+
+public interface Callback<T> {
+    public onSuccess(T result);
+
+    public void onFailure(Throwable throwable);
+}
+
+Il tipo generico T rappresenta il tipo del risultato del task.
+Al metodo onSuccess() viene passato il risultato del task, se è vero allora è andato tutto
+bene.
+onFailure riceve come argomento un Throwable che viene lanciato se il task non va a buon fine.
+Quindi se nel codice che ha eseguito il thread è andato tutto bene allora viene eseguito il
+metodo onSuccess(), se viene lanciata un'eccezione invece viene eseguito onFailure().
+
+Quindi nell'interfaccia di ExecutorService potremmo aggiungere un altro metodo submit.
+public <T> void submit(Callable<T> task, Callback<T> callback);
+Quindi nella submit andremo a chiamare i metodi callback a seconda della situazione.

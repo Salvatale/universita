@@ -1,0 +1,80 @@
+Ogni interfaccia o classe viene rappresentata a tempo di esecuzione da un oggetto chiamato
+class object o class descriptor.
+Ogni oggetto descriptor viene associato ad un oggetto class loader che è stato utilizzato dalla
+virtual machine per caricare il byte code della classe.
+La virtual machine offre un class loader di default che è quello che va a leggere il byte code
+dal class path, prende l'elenco di cartelle sul disco e prende i file punto da class da 
+queste cartelle, ma può essere costruito anche da noi.
+Lo spazio dei nomi delle classi è definito da un class loader, questa da la possibilità di
+costruire dei sistemi che vengono attivati e non si fermano piu nonostante modifiche ed 
+aggiornamenti, questo lavoro può essere fatto grazie alla sostituzione del class loader.
+
+getClass() fornisce la classe dell'oggetto.
+Se abbiamo una stringa a tempo di esecuzione che equivalente al nome di una classe, utilizzando
+il metodo forName(n) otteniamo il descriptor che è il desctittore di una classe o di un interfaccia
+a seconda che la stringa n sia un'interfaccia o una classe.
+Una volta fatto forName, stiamo chiedendo al loader di caricare la classe per noi, se essa è già 
+stata caricata allora viene ritornato subito il descriptor che la rappresenta, se invece 
+non è stata ancora caricata allora viene caricata tramite il class loader.
+Nel momento in cui si chiama forName allora siamo dentro ad una classe a fare esecuzione,
+implicitamente utilizziamo il class loader della classe, il class loader di default viene 
+usato per caricare la classe che contiene main, e d'ora in poi allora implicitamente viene
+utilizzato il class loader che ha caricato main.
+La virtual machine costruisce il boot class loader che carica:
+- la classe class loader
+- la class string
+- la classe class
+- etc
+Una volta caricate, viene costruito il class loader che viene utilizzato per le classi applicative
+e con esse si andranno a caricare altre classi.
+
+Quando abbiamo un oggetto possiamo arrivare all'oggetto che l'ha caricato ed una volta che
+abbiamo un class loader in mano che possiamo utilizzare, quindi se vogliamo fare delle modifiche,
+ci basta un nuovo class loader per capire per esempio un nuovo DownloadManager, nel momento
+in cui il vecchio class loader non verrà piu utilizzato allora la virtual machine se la 
+porterà via.
+
+A tempo di esecuzione possiamo decidere la classe di un oggetto utilizzando il package 
+reflection, prendo il descrittore di class c e chiamo il metodo c.cast(o);
+A seconda del descrittore che riceviamo, eseguo il cast sul riferimento di quell'oggetto.
+
+Invece con c.isInstance(o) chiedo se è convertibile tramite cast ad un riferimento di classe C.
+Praticamente chiede se posso vedere l'oggetto o come se fosse di classe C, se è true allora
+è possibile fare il cast se invece è false allora fallirà.
+
+Per sapere la classe Factory di un oggetto posso fare getClass.
+
+c.isAssignableFrom(k);
+se possiamo supportare un assegnamento, k è un descrittore di classe e ci dice k descrive una
+classe che è assegnabile ad oggetti di tipo c? 
+
+Introspection è l'elenco dei metodi degli oggetti che sono istanza di questa classe.
+c'è una classe metodo che descrive un metodo.
+La classe Class<T> permette di fare Introspection ma non permette di accedere al byte
+code corrispondente al codice tra le parentesi graffe, esistono library che permettono di
+leggere il byte code tra le graffe dei metodo per esempio.
+La classe class però non riesce a ritornare i metodi privati.
+Con l'oggetto Class possiamo anche invocare il metodo però non deve essere privato ovviamente,
+se invece è protected o package scope allora dipende dal nostro punto di visibilità.
+
+Nel metodo show(String className) si fa una forName per caricare la classe, se non va a buon
+fine allora viene lanciata un'eccezione, se invece va a buon fine viene chiamata dump() che
+serve a stampare tutto l'output.
+
+dump riceve come argomento Class<?> clazz che è il descrittore che ci dice tutte le informazioni
+di quella classe
+getName() : ritorna il nome completo della classe
+getSuperClass() : ritorna la classe base, è sempre almeno una a meno che abbiamo in mano
+                  la classe Object che invece ritorna null, anche le interfacce restituiscono
+                  null dato che non hanno classe base.
+getInterfaces() : ritorna tutte le interfacce che vengono implementate
+getFields() : ritorna gli attributi solo quelli visibile.
+getConstructors() : ritorna i costruttori.
+
+Possiamo creare una classe a tempo di esecuzione utilizzando sempre la classe Class,
+c.newInstance(); crea un oggetto o di classe c.
+
+Per invocare un metodo avendo un class descriptor m:
+m.invoke(o, a);
+oggetto o passando come argomenti a che sono un array di oggetti.
+
